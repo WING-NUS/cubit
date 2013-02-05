@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<results algorithmName="GS" algorithmVersion="101001" time="9:00" date="2013">
+<query content="author:&quot;Dongyuan Lu&quot;" label="" count="4" totalresults="4">
+  <result id="0">
+    <url>http://dl.acm.org/citation.cfm?id=1963234</url>
+    <title status="complete" source="scholar.google.com">Personalized search on Flickr based on searcher&#39;s preference prediction</title>
+    <pdf>http://www2011india.com/proceeding/companion/p81.pdf</pdf>
+    <author status="complete" source="scholar.google.com">D Lu, Q Li</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 20th international conference &#8230;</proceeding>
+    <year>2011</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">Abstract In this paper, we propose a personalized search model to assist users in obtaining interested photos on Flickr, which exploits the favorite marks of the searcher&#39;s friends to predict the searcher&#39;s preference on the returned photos. The proposed model utilizes a ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:n7k2k_5eItkJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_ylo=2000&amp;as_yhi=2011&amp;as_vis=1</relatedLink>
+    <numVersions>6</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=15646172502923065759&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_ylo=2000&amp;as_yhi=2011&amp;as_vis=1</versionLink>
+    <numCite>5</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=15646172502923065759&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="5">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=2393358</url>
+        <title status="complete" source="scholar.google.com">Right buddy makes the difference: An early exploration of social relation analysis in multimedia applications</title>
+        <author status="complete" source="scholar.google.com">J Sang, C Xu</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 20th ACM international conference &#8230;</proceeding>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Social media is becoming popular these days, where user necessarily interacts with each other to form social networks. Influence network, as one special case of social network, has been recognized as significantly impacting social activities and user decisions. We ...</snippet>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=12703279017938959809&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=5</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6156448</url>
+        <title status="complete" source="scholar.google.com">User-Aware Image Tag Refinement via Ternary Semantic Analysis</title>
+        <author status="complete" source="scholar.google.com">J Sang, C Xu, J Liu</author>
+        <proceeding status="complete" source="scholar.google.com">Multimedia, IEEE Transactions on</proceeding>
+        <year>2012</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Large-scale user contributed images with tags are easily available on photo sharing websites. However, the noisy or incomplete correspondence between the images and tags prohibits them from being leveraged for precise image retrieval and effective ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:b7ZmRORn_AgJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=647506676532295279&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=647506676532295279&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=5</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6111487</url>
+        <title status="complete" source="scholar.google.com">Learn to Personalized Image Search From the Photo Sharing Websites</title>
+        <pdf>http://www.ieeeprojects.yavum.com/ieee2012basepaper/Learn%20to%20Personalized%20Image%20Search%20from%20the%20Photo%20Sharing%20Websites.pdf</pdf>
+        <author status="complete" source="scholar.google.com">J Sang, C Xu, D Lu</author>
+        <proceeding status="complete" source="scholar.google.com">Multimedia, IEEE Transactions on</proceeding>
+        <year>2012</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Increasingly developed social sharing websites like Flickr and Youtube allow users to create, share, annotate, and comment medias. The large-scale user-generated metadata not only facilitate users in sharing and organizing multimedia content, but provide useful ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:OzvsVCIJ4cIJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>6</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=14042515156176223035&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=14042515156176223035&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=5</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://www.springerlink.com/index/H330672638818014.pdf</url>
+        <title status="complete" source="scholar.google.com">Who resemble you better, your friends or co-visited users</title>
+        <pdf>http://sewm.pku.edu.cn/project/HGJ-WDM/support_material/ZhangYan/ApWeb2012-majinjing.pdf</pdf>
+        <author status="complete" source="scholar.google.com">J Ma, Y Zhang</author>
+        <proceeding status="complete" source="scholar.google.com">Web Technologies and Applications</proceeding>
+        <year>2012</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">People are alike their graphic neighbors in social networks, which is generally accepted as the basic assumption in interest prediction. But what kind of neighbors is a better information source? This paper aims at answering this question by comparing the results of predicting ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:WUsQu6yKfpgJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=10988372615308004185&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="4">
+        <url>http://www.sciencedirect.com/science/article/pii/S0167923611002405</url>
+        <title status="complete" source="scholar.google.com">A graph-based action network framework to identify prestigious members through member&#39;s prestige evolution</title>
+        <author status="complete" source="scholar.google.com">D Lu, Q Li, SS Liao</author>
+        <proceeding status="complete" source="scholar.google.com">Decision Support Systems</proceeding>
+        <year>2012</year>
+        <source>Elsevier</source>
+        <snippet status="partial" source="scholar.google.com">Prestigious members on social networking websites are attracting increasing attentions from peers and corporations. People are used to consulting prestigious members for useful information and corporations are seeking opportunities to leverage them for âword of ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:nevAz78fT_YJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=17748439565175155613&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=17748439565175155613&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=5</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="1">
+    <url>http://www.springerlink.com/index/N244710G78760774.pdf</url>
+    <title status="complete" source="scholar.google.com">Exploiting semantic hierarchies for Flickr group</title>
+    <author status="complete" source="scholar.google.com">D Lu, Q Li</author>
+    <proceeding status="complete" source="scholar.google.com">Active Media Technology</proceeding>
+    <year>2010</year>
+    <source>Springer</source>
+    <snippet status="partial" source="scholar.google.com">The development of Web 2.0 provides a convenient platform for on-line members to exchange information, keep contact with others and express oneselves. Flickr group, as a representative one, is a user-organized, user-managed community. However, the rapidly ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:UTRrXumOW6UJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_ylo=2000&amp;as_yhi=2011&amp;as_vis=1</relatedLink>
+    <numVersions>3</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=11915274372101387345&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_ylo=2000&amp;as_yhi=2011&amp;as_vis=1</versionLink>
+    <numCite>3</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=11915274372101387345&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="3">
+        <result id="0">
+        <url>http://www.springerlink.com/index/V47800P7782106GG.pdf</url>
+        <title status="complete" source="scholar.google.com">Recommending Flickr groups with social topic model</title>
+        <pdf>http://research.microsoft.com/en-us/um/people/jingdw/pubs%5CIRJournal2012-FlickrGroupRecommendation.pdf</pdf>
+        <author status="complete" source="scholar.google.com">J Wang, Z Zhao, J Zhou, H Wang, B Cui, G Qi</author>
+        <proceeding status="complete" source="scholar.google.com">Information retrieval</proceeding>
+        <year>2012</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Abstract The explosion of multimedia content in social media networks raises a great demand of developing tools to facilitate producing, sharing and viewing media content. Flickr groups, self-organized communities with declared common interests, are able to ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:D9FrlXWljOMJ:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>6</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=16396662267785761039&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=16396662267785761039&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=3</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://www.sciencedirect.com/science/article/pii/S0167923611002405</url>
+        <title status="complete" source="scholar.google.com">A graph-based action network framework to identify prestigious members through member&#39;s prestige evolution</title>
+        <author status="complete" source="scholar.google.com">D Lu, Q Li, SS Liao</author>
+        <proceeding status="complete" source="scholar.google.com">Decision Support Systems</proceeding>
+        <year>2012</year>
+        <source>Elsevier</source>
+        <snippet status="partial" source="scholar.google.com">Prestigious members on social networking websites are attracting increasing attentions from peers and corporations. People are used to consulting prestigious members for useful information and corporations are seeking opportunities to leverage them for âword of ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:nevAz78fT_YJ:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=17748439565175155613&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=17748439565175155613&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=3</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6406452</url>
+        <title status="complete" source="scholar.google.com">Rigid or Flexible? A New Navigation Approach for Better Consumer Service Based on Knowledge Enhancement</title>
+        <author status="complete" source="scholar.google.com">H Bao, Q Li, D Zeng, H Gao</author>
+        <proceeding status="partial" source="scholar.google.com">Data Mining Workshops (ICDMW) &#8230;</proceeding>
+        <year>2012</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract With the rapid development of the Internet and E-commerce, online shopping sites are becoming a popular platform for products selling. Shopping sites such as amazon. com, dangdang. com provide consumers with a hierarchical navigation for selecting products ...</snippet>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="2">
+    <url>http://en.cnki.com.cn/Article_en/CJFDTOTAL-ZGLX201009005.htm</url>
+    <title status="complete" source="scholar.google.com">The effects of lower body negative pressure combined with physical training on T, CK and BUN in blood plasma</title>
+    <author status="partial" source="scholar.google.com">L Dongyuan, X Li, Z Yu, Z Linfu, W Lei&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Chinese Journal of &#8230;</proceeding>
+    <year>2010</year>
+    <source>en.cnki.com.cn</source>
+    <snippet status="partial" source="scholar.google.com">Objective To investigate the effects of physical exercise, lower body negative pressure and their combination on the blood indexes, and provide experiment basis for special anti-G physical training program which was designed to improve the capacity of the anti-G of ...Related articles Cite More</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:M5BxG765YIQJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_ylo=2000&amp;as_yhi=2011&amp;as_vis=1</relatedLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="3">
+    <url>http://en.cnki.com.cn/Article_en/CJFDTOTAL-MZMJ200916000.htm</url>
+    <title status="complete" source="scholar.google.com">Antimicrobial activity of different solvent extracts from Eucalyptus robusta leaf</title>
+    <author status="partial" source="scholar.google.com">L Dongyuan, Z Yucheng, Z Jingjing&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Chinese Journal of &#8230;</proceeding>
+    <year>2009</year>
+    <source>en.cnki.com.cn</source>
+    <snippet status="partial" source="scholar.google.com">Antimicrobial activities of Eucalyptus robusta Smith leaves extract with six organic solvents againstthree bacteria(Staphylococcus aureus,Escherichia coli and Bacillus subtilis) and twofungi(Trichoderma viride and Penicillium) was studied by agar-well diffusion method.The results ... Related articles Cite More</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:IbtRJUnY8OMJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_ylo=2000&amp;as_yhi=2011&amp;as_vis=1</relatedLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+</query>
+</results>

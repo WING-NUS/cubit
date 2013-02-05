@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding='UTF-8'?>
+
+<config id="002" name="SMALL" type="group" perl_src="c:/perl/bin/perl.exe" mthd="-T" gsnap_src="gsnap/bin/query_gscholar.pl">
+
+	<dir>./gsnap/cache/gs/</dir>
+	<n>all</n>	
+	<update_frequency>5</update_frequency>
+	
+	<members>
+		<member type="person" id="00104">Jesse Prabawa Gozali</member>
+		<member type="person" id="00105">Jun Ping Ng</member>
+	</members>
+	
+	<showIndentifier>yes</showIndentifier>
+	<citedBy>all</citedBy>
+	<fixGSError></fixGSError>	
+	<fromYear>1990</fromYear>
+	<toYear>2013</toYear>
+
+</config>

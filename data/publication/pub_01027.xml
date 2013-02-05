@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<results algorithmName="GS" algorithmVersion="101001" time="9:00" date="2013">
+<query content="author:&quot;Zhao Shengdong&quot; NUS" label="" count="24" totalresults="24">
+  <result id="0">
+    <url>http://dl.acm.org/citation.cfm?id=1518730</url>
+    <title status="complete" source="scholar.google.com">Magic cards: a paper tag interface for implicit robot control</title>
+    <pdf>https://www0.comp.nus.edu.sg/~zhaosd/paper/CHI09_MagicCards.pdf</pdf>
+    <author status="complete" source="scholar.google.com">S Zhao, K Nakamura, K Ishii, T Igarashi</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 27th &#8230;</proceeding>
+    <year>2009</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... 1 JST ERATO Tokyo, Japan 2 Department of Computer Science The University of Tokyo3 Department of Computer Science National University of Singapore zhaosd@comp.nus.edu.sg; {nakamura, kenta}@designinterface.jp; takeo@acm.org ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:efDrcr7QYCoJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>27</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=3053670063747625081&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>19</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=3053670063747625081&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="19">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=1753326.1753693</url>
+        <title status="complete" source="scholar.google.com">Cooking with robots: designing a household system working in open environments</title>
+        <pdf>http://designinterface.jp/projects/Cooky/cooky.pdf</pdf>
+        <author status="partial" source="scholar.google.com">Y Sugiura, D Sakamoto, A Withana, M Inami&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 28th &#8230;</proceeding>
+        <year>2010</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract We propose a cooking system that operates in an open environment. The system cooks a meal by pouring various ingredients into a boiling pot on an induction heating cooker and adjusts the heating strength according to the user&#39;s instructions. We then ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:MJOe_4nTWrYJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>8</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=13140047452459406128&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>12</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=13140047452459406128&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=19</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5759433</url>
+        <title status="complete" source="scholar.google.com">Random dot markers</title>
+        <pdf>http://hvrl.ics.keio.ac.jp/uchiyama/me/papers/ieeevr_2011.pdf</pdf>
+        <author status="complete" source="scholar.google.com">H Uchiyama, H Saito</author>
+        <proceeding status="partial" source="scholar.google.com">Virtual Reality Conference (VR), 2011 &#8230;</proceeding>
+        <year>2011</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract This paper presents a novel approach for detecting and tracking markers with randomly scattered dots for augmented reality applications. Compared with traditional markers with square pattern, our random dot markers have several significant advantages ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:i8slb1AuwsEJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>14</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=13961772717798968203&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>15</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=13961772717798968203&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=19</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5509483</url>
+        <title status="complete" source="scholar.google.com">A dipole field for object delivery by pushing on a flat surface</title>
+        <pdf>http://c15x4fug.securesites.net/projects/push/push.pdf</pdf>
+        <author status="complete" source="scholar.google.com">T Igarashi, Y Kamiyama, M Inami</author>
+        <proceeding status="partial" source="scholar.google.com">Robotics and Automation ( &#8230;</proceeding>
+        <year>2010</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract This paper introduces a simple algorithm for non-prehensile object transportation by a pushing robot on a flat surface. We assume that the global position and orientation of the robot and objects are known. The system computes a dipole field around the object ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:_VYZ6v_ygAQJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>10</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=324526354128787197&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>10</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=324526354128787197&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=19</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5479474</url>
+        <title status="complete" source="scholar.google.com">Selecting and commanding individual robots in a multi-robot system</title>
+        <pdf>http://summit.sfu.ca/system/files/iritems1/9982/etd5891.pdf</pdf>
+        <author status="partial" source="scholar.google.com">A Couture-Beil, RT Vaughan&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Computer and Robot &#8230;</proceeding>
+        <year>2010</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract We present a novel real-time computer vision-based system for facilitating interactions between a single human and a multi-robot system: a user first selects an individual robot from a group of robots, by simply looking at it, and then commands the ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:WYebA4FwnngJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>25</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=8691508030285252441&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>3</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=8691508030285252441&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=19</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="4">
+        <url>http://www.springerlink.com/index/85787123425422N4.pdf</url>
+        <title status="complete" source="scholar.google.com">Do not disturb: physical interfaces for parallel peripheral interactions</title>
+        <author status="partial" source="scholar.google.com">F Olivera, M GarcÃ­a-Herranz, P Haya&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Human-Computer &#8230;</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Interaction is, intrinsically, a multi-thread process. Supported by our various senses, our ability to speak, and the structure of our body and mind we can get simultaneously involved in multiple interactions, using different resources for each of them. This paper analyses ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:tOwCwnMDqZ8J:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=11504730518805736628&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=11504730518805736628&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=19</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="5">
+        <url>http://dl.acm.org/citation.cfm?id=1935730</url>
+        <title status="complete" source="scholar.google.com">Rudiments 1, 2 &amp; 3: design speculations on autonomy</title>
+        <pdf>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.188.3358&amp;rep=rep1&amp;type=pdf</pdf>
+        <author status="partial" source="scholar.google.com">J Helmes, AS Taylor, X Cao, K HÃ¶Ã¶k, P Schmitt&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the fifth &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract This work describes the design process and installation of three speculative, rudimentary machines, or rudiments. Through careful iterations in their design, the rudiments are intended to provoke curiosity and discussion around the possibility of autonomy in ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:fI-v001QOl0J:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>7</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=6717770089370718076&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=6717770089370718076&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=19</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="6">
+        <url>http://dl.acm.org/citation.cfm?id=1979035</url>
+        <title status="complete" source="scholar.google.com">Roboshop: multi-layered sketching interface for robot housework assignment and management</title>
+        <pdf>https://www.designinterface.jp/projects/Roboshop/Roboshop-CR.pdf</pdf>
+        <author status="complete" source="scholar.google.com">K Liu, D Sakamoto, M Inami, T Igarashi</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 2011 annual &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract As various home robots come into homes, the need for efficient robot task management tools is arising. Current tools are designed for controlling individual robots independently, so they are not ideally suitable for assigning coordinated action among ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:NNMHGA99PRQJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>9</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=1458459358119056180&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=1458459358119056180&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=19</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="7">
+        <url>http://www.springerlink.com/index/E2250270631U4V66.pdf</url>
+        <title status="complete" source="scholar.google.com">Extending commands embedded in actions for human-robot cooperative tasks</title>
+        <pdf>http://www.ymd.nii.ac.jp/lab/publication/paper/2010/IJSR-2010-kazuki.pdf</pdf>
+        <author status="complete" source="scholar.google.com">K Kobayashi, S Yamada</author>
+        <proceeding status="complete" source="scholar.google.com">International Journal of Social Robotics</proceeding>
+        <year>2010</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In this paper, we propose a novel method to control a robot without robot manipulation. Users do not need to precisely manipulate the robot and to learn the manipulation method. The proposed method can send commands to a robot by using a ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:aeNNkuj48HMJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>7</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=8354450986542949225&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=8354450986542949225&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=19</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="8">
+        <url>http://hci.comp.nus.edu.sg/modules/2009f_documents/LFSX_final_Report.pdf</url>
+        <title status="complete" source="scholar.google.com">Explore the Design Space of Using GWAP to Enhance Human Robot Interaction</title>
+        <pdf>http://hci.comp.nus.edu.sg/modules/2009f_documents/LFSX_final_Report.pdf</pdf>
+        <author status="complete" source="scholar.google.com">QKHTHY Bo</author>
+        <year>2009</year>
+        <source>hci.comp.nus.edu.sg</source>
+        <snippet status="partial" source="scholar.google.com">Executive Summary Robots used in domestic services provide us a new context to explore Human Robot Interaction (HRI). Previous researches have explored the design space of explicitly and implicitly control robot by robot user. In this project, we are trying to expand ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:6VEOB4nYVZEJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:6VEOB4nYVZEJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=10472514591560454633&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="9">
+        <url>http://autonomy.cs.sfu.ca/doc/vaughan_fasr_final2010.pdf</url>
+        <title status="complete" source="scholar.google.com">Fast and Frugal Autonomous Sustain and Resupply: Final Report</title>
+        <pdf>http://autonomy.cs.sfu.ca/doc/vaughan_fasr_final2010.pdf</pdf>
+        <author status="partial" source="scholar.google.com">RT Vaughan, J Wawerla, Y Litus, A Lein&#8230;</author>
+        <year>2010</year>
+        <source>autonomy.cs.sfu.ca</source>
+        <snippet status="partial" source="scholar.google.com">2.1 Abstract We describe a simple controller for swarms of foraging robots that reduces mutual spatial interference and adapts to non-uniform resource distributions. We discuss several sources of such non-uniformity, and show that some non-uniform distributions are ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:YMaKMiK7El4J:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:YMaKMiK7El4J:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>8</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=6778686144697255520&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="10">
+        <url>http://www.shengdongzhao.com/wp-content/uploads/2012/09/6C-04S.pdf</url>
+        <title status="complete" source="scholar.google.com">Older Adults and Computer Usage: Common Activities and Essential Applications</title>
+        <pdf>http://www.shengdongzhao.com/wp-content/uploads/2012/09/6C-04S.pdf</pdf>
+        <author status="complete" source="scholar.google.com">M Wong, K Chan, N Madhugiri, S Zhao</author>
+        <proceeding status="complete" source="scholar.google.com">shengdongzhao.com</proceeding>
+        <snippet status="partial" source="scholar.google.com">ABSTRACT The global aging population changed the landscape of the information technology industry. Older adults as computer and Internet users are becoming the fastest growing segment in the world today. In this paper, we conducted an interview and ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:nc42M1-Vo_IJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:nc42M1-Vo_IJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="11">
+        <url>http://junkato.jp/publications/kato-master.pdf</url>
+        <title status="complete" source="scholar.google.com">A TOOLKIT FOR PROTOTYPING INTERACTIVE ROBOT APPLICATIONS</title>
+        <pdf>http://junkato.jp/publications/kato-master.pdf</pdf>
+        <author status="complete" source="scholar.google.com">ã¤ã³ã¿ã©ã¯ãã£ããªã­ãããã¢ããªã±ã¼ã·ã§ã³ã®</author>
+        <year>2011</year>
+        <source>junkato.jp</source>
+        <snippet status="partial" source="scholar.google.com">ABSTRACT Prototyping is critical for the development of interactive robot applications that handle real-world tasks such as cooking and folding clothes according to user instructions. However, prototyping such application is not easy for software programmers without prior ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:UknGUsKI0-gJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:UknGUsKI0-gJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=16776903405078989138&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="12">
+        <url>http://www.ayu.ics.keio.ac.jp/members/kenta/DragAndDrop/RO-MAN2010-DragAndDrop.pdf</url>
+        <title status="complete" source="scholar.google.com">Drag-and-Drop Interface for Registration-Free Object Delivery</title>
+        <pdf>http://www.ayu.ics.keio.ac.jp/members/kenta/DragAndDrop/RO-MAN2010-DragAndDrop.pdf</pdf>
+        <author status="partial" source="scholar.google.com">K Ishii, Y Takeoka, M Inami&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">The 19th IEEE International &#8230;</proceeding>
+        <year>2010</year>
+        <source>ayu.ics.keio.ac.jp</source>
+        <snippet status="partial" source="scholar.google.com">AbstractâWe propose a simple drag-and-drop interface on a touch screen to give instructions to an object-delivery robot. The user uses a finger to drag a target object and drop it to a target location on the screen that shows an image of the floor provided by a ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:hGUiaBuMVQwJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:hGUiaBuMVQwJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>9</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=888770550814631300&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="13">
+        <url>http://www.springerlink.com/index/Q3687735Q0823J15.pdf</url>
+        <title status="complete" source="scholar.google.com">What Is Mixed Reality, Anyway? Considering the Boundaries of Mixed Reality in the Context of Robots</title>
+        <pdf>http://utouch.cpsc.ucalgary.ca/docs/WhatIsMixedRealityAnyway-SIS2011-JY.pdf</pdf>
+        <author status="complete" source="scholar.google.com">J Young, E Sharlin, T Igarashi</author>
+        <proceeding status="partial" source="scholar.google.com">Mixed Reality and Human-Robot &#8230;</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Mixed reality, as an approach in human-computer interaction, is often implicitly tied to particular implementation techniques (eg, see-through device) and modalities (eg, visual, graphical displays). In this paper we attempt to clarify the definition of mixed reality as a ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:zjb3brZZMuoJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>6</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=16875649393791284942&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="14">
+        <url>http://www.designinterface.jp/projects/Pebbles/Pebbles_uist.pdf</url>
+        <title status="complete" source="scholar.google.com">Pebbles: an interactive configuration tool for indoor robot navigation</title>
+        <pdf>http://www.designinterface.jp/projects/Pebbles/Pebbles_uist.pdf</pdf>
+        <author status="partial" source="scholar.google.com">H Mi, K Ishii, L Ma, N Laokulrat, M Inami&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Adjunct proceedings of &#8230;</proceeding>
+        <year>2012</year>
+        <source>designinterface.jp</source>
+        <snippet status="partial" source="scholar.google.com">ABSTRACT This study presents an interactive configuration tool that assists non-expert users to design specific navigation route for mobile robot in an indoor environment. The user places small active markers, called pebbles, on the floor along the desired route in order ...</snippet>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:SDe0jkcld-gJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="15">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6106754</url>
+        <title status="complete" source="scholar.google.com">A navigation method of service robots at shelters</title>
+        <author status="partial" source="scholar.google.com">T Takahashi, M Shimizu&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Safety, Security, and &#8230;</proceeding>
+        <year>2011</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Great East Japan Earthquake occurred at March 11 2011 and following Tsunami and the Fukushima 1 nuclear disaster have forced many people to evacuate from their habitations to other places. These have thrown down many challenges to service robots. ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:ESCLtoTZ5rcJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="16">
+        <url>http://dl.acm.org/ft_gateway.cfm?id=2350076&amp;type=pdf</url>
+        <title status="complete" source="scholar.google.com">Robots in my contact list: Using social media platforms for human-robot interaction in domestic environment</title>
+        <pdf>http://www.shengdongzhao.com/wp-content/uploads/2012/07/APCHI2012_cameraReady.pdf</pdf>
+        <author status="complete" source="scholar.google.com">X Ma, X Yang, S Zhao, CW Fu, Z Lan, Y Pu</author>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">ABSTRACT This paper proposes to put domestic robots as buddies on our contact lists, thereby extending the use of social media in interpersonal interaction further to human-robot interaction (HRI). In detail, we present a robot management system that employs ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:peer7xKk6Y4J:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>8</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=10297942424196736933&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="17">
+        <url>http://www.designinterface.jp/~kenta/ja/MagicCards/Interaction2011-MagicCards.pdf</url>
+        <title status="complete" source="scholar.google.com">Magic Cards: ç´ã«ã¼ããå©ç¨ããã­ãããã¨ã®ã¤ã³ã¿ã©ã¯ã·ã§ã³</title>
+        <pdf>http://www.designinterface.jp/~kenta/ja/MagicCards/Interaction2011-MagicCards.pdf</pdf>
+        <author status="complete" source="scholar.google.com">S Zhao</author>
+        <proceeding status="complete" source="scholar.google.com">designinterface.jp</proceeding>
+        <snippet status="partial" source="scholar.google.com">å®¶åº­ç¨ã­ãããã«å¯¾ããä½æ¥­ã®æç¤ºã¦ã¼ã¶ã¤ã³ã¿ãã§ã¼ã¹ã¨ãã¦ ãç´ã«ã¼ããç½®ãã ã¨ããã¤ã³ã¿ã©ã¯ã·ã§ã³ææ³ãææ¡ãã. ãã¨ãã°,ããããæé¤ããã ã¨ããç´ã«ã¼ããé¨å±ã«ç½®ãã¦å®¶ãåºãã¨, ã¦ã¼ã¶ãå®¶ãåºã¦ããéã«ãã®å ´æãæé¤ããã. ææ¡ææ³ã¯, é³å£°ãç¨ãã ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:HN0MFaTAd8YJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:HN0MFaTAd8YJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>9</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=14301110952698633500&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="18">
+        <url>http://www-ui.is.s.u-tokyo.ac.jp/~takeo/papers/jrsj2010.pdf</url>
+        <title status="complete" source="scholar.google.com">ã­ãããã®ããã®ã¦ã¼ã¶ã¤ã³ã¿ãã§ã¼ã¹</title>
+        <pdf>http://www-ui.is.s.u-tokyo.ac.jp/~takeo/papers/jrsj2010.pdf</pdf>
+        <author status="complete" source="scholar.google.com">äºååµå¥å¤«</author>
+        <proceeding status="complete" source="scholar.google.com">æ¥æ¬ã­ãããå­¦ä¼èª</proceeding>
+        <year>2010</year>
+        <source>www-ui.is.su-tokyo.ac.jp</source>
+        <snippet status="partial" source="scholar.google.com">1. ã¦ã¼ã¶ã¤ã³ã¿ãã§ã¼ã¹ã®å¿è¦æ§ iRobot ç¤¾ã®æé¤ã­ãããã«ä»£è¡¨ãããããã«ã­ããããå®éã«å®¶åº­åã«å¥ã£ã¦ãã¦ãã, ããã«å°æ¥çã«ã¯, ASIMO ã HRP2 ã®ãããªãã¥ã¼ããã¤ããå®¶äºãæä¼ã£ã¦ãããããã«ãªããã¨ãæå¾ããã¦ãã. ããã, ã©ããªã«é«åº¦ãªæ©è½ãæããã­ããããã§ããã¨ãã¦ ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:E4SO0k5-gFsJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:E4SO0k5-gFsJ:scholar.google.com/&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=6593408731475510291&amp;hl=en&amp;num=19&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="1">
+    <url>http://www.springerlink.com/index/g8212300v875k486.pdf</url>
+    <title status="complete" source="scholar.google.com">Designing laser gesture interface for robot control</title>
+    <pdf>http://www.sakamura-lab.org/~kenta/LaserGestures/INTERACT2009-LaserGestures.pdf</pdf>
+    <author status="complete" source="scholar.google.com">K Ishii, S Zhao, M Inami, T Igarashi, M Imai</author>
+    <proceeding status="partial" source="scholar.google.com">Human-Computer Interactionâ &#8230;</proceeding>
+    <year>2009</year>
+    <source>Springer</source>
+    <snippet status="partial" source="scholar.google.com">... National University of Singapore 3 Graguate School of Media Design, Keio University 4 GraduateSchool of Information Science and Technology, The University of Tokyo 5 Faculty of Scienceand Technology, Keio University kenta@designinterface.jp, zhaosd@comp.nus.edu.sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:kvJV4E-GtNoJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>24</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=15759368673700475538&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>18</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=15759368673700475538&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="18">
+        <result id="0">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6281349</url>
+        <title status="complete" source="scholar.google.com">A robotic game to evaluate interfaces used to show and teach visual objects to a robot in real world condition</title>
+        <pdf>http://hal.archives-ouvertes.fr/docs/00/64/74/59/PDF/288r-rouanet.pdf</pdf>
+        <author status="partial" source="scholar.google.com">P Rouanet, F Danieau&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Human-Robot Interaction ( &#8230;</proceeding>
+        <year>2011</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In this paper, we present a real world user study of 4 interfaces designed to teach new visual objects to a social robot. This study was designed as a robotic game in order to maintain the user&#39;s motivation during the whole experiment. Among the 4 interfaces 3 ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:boQ5_3VBiYgJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>7</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=9838466836016497774&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>4</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=9838466836016497774&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=18</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://dl.acm.org/citation.cfm?id=1734519</url>
+        <title status="complete" source="scholar.google.com">Photograph-based interaction for teaching object delivery tasks to robots</title>
+        <pdf>http://c15x4fug.securesites.net/projects/snappy/HRI2010_Hashimoto.pdf</pdf>
+        <author status="partial" source="scholar.google.com">S Hashimoto, A Ostanin, M Inami&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 5th &#8230;</proceeding>
+        <year>2010</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Personal photographs are important media for communication in our daily lives. People take photos to remember things about themselves and show them to others to share the experience. We expect that a photograph can be useful tool for teaching a task to a ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:beNs-BH7G1EJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>6</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=5844540996044252013&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>3</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=5844540996044252013&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=18</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://dl.acm.org/citation.cfm?id=1866238</url>
+        <title status="complete" source="scholar.google.com">Blinkbot: look at, blink and move</title>
+        <pdf>http://www.designinterface.jp/en/projects/BlinkBot/BlinkBot.pdf</pdf>
+        <author status="complete" source="scholar.google.com">P Mistry, K Ishii, M Inami, T Igarashi</author>
+        <proceeding status="partial" source="scholar.google.com">Adjunct proceedings of the 23nd &#8230;</proceeding>
+        <year>2010</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In this paper we present BlinkBot-a hands free input interface to control and command a robot. BlinkBot explores the natural modality of gaze and blink to direct a robot to move an object from a location to another. The paper also explains detailed hardware ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:ySNTEAkQWDoJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>6</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=4204127883264992201&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=4204127883264992201&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=18</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://dl.acm.org/citation.cfm?id=1979035</url>
+        <title status="complete" source="scholar.google.com">Roboshop: multi-layered sketching interface for robot housework assignment and management</title>
+        <pdf>https://www.designinterface.jp/projects/Roboshop/Roboshop-CR.pdf</pdf>
+        <author status="complete" source="scholar.google.com">K Liu, D Sakamoto, M Inami, T Igarashi</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 2011 annual &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract As various home robots come into homes, the need for efficient robot task management tools is arising. Current tools are designed for controlling individual robots independently, so they are not ideally suitable for assigning coordinated action among ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:NNMHGA99PRQJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>9</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=1458459358119056180&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=1458459358119056180&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=18</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="4">
+        <url>http://dl.acm.org/citation.cfm?id=2047259</url>
+        <title status="complete" source="scholar.google.com">Pub-point upon body: exploring eyes-free interaction and methods on an arm</title>
+        <author status="partial" source="scholar.google.com">SY Lin, CH Su, KY Cheng, RH Liang, TH Kuo&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 24th &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract This paper presents a novel interaction system, PUB (Point Upon Body), to explore eyes-free interaction in a personal space by allowing users tapping on their own arms to be provided with haptic feedback from their skin. Two user studies determine how users can ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:xrXlOWNpz2MJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numCite>5</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=7192083004828005830&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=18</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="5">
+        <url>http://hci.comp.nus.edu.sg/modules/2009f_documents/LFSX_final_Report.pdf</url>
+        <title status="complete" source="scholar.google.com">Explore the Design Space of Using GWAP to Enhance Human Robot Interaction</title>
+        <pdf>http://hci.comp.nus.edu.sg/modules/2009f_documents/LFSX_final_Report.pdf</pdf>
+        <author status="complete" source="scholar.google.com">QKHTHY Bo</author>
+        <year>2009</year>
+        <source>hci.comp.nus.edu.sg</source>
+        <snippet status="partial" source="scholar.google.com">Executive Summary Robots used in domestic services provide us a new context to explore Human Robot Interaction (HRI). Previous researches have explored the design space of explicitly and implicitly control robot by robot user. In this project, we are trying to expand ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:6VEOB4nYVZEJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:6VEOB4nYVZEJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=10472514591560454633&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="6">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6384810</url>
+        <title status="complete" source="scholar.google.com">The Impact of Human--Robot Interfaces on the Learning of Visual Objects</title>
+        <pdf>http://hal.inria.fr/docs/00/75/82/41/PDF/tro-2010-v10.pdf</pdf>
+        <author status="complete" source="scholar.google.com">P Rouanet, PY Oudeyer, F Danieau, D Filliat</author>
+        <year>2013</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract This paper studies the impact of interfaces, allowing nonexpert users to efficiently and intuitively teach a robot to recognize new visual objects. We present challenges that need to be addressed for real-world deployment of robots capable of learning new visual ...</snippet>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="7">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6119727</url>
+        <title status="complete" source="scholar.google.com">Development of position recording system on structural surface using laser pointer</title>
+        <author status="partial" source="scholar.google.com">H Seki, T Fukumura, Y Kamiya&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">IECON 2011-37th Annual &#8230;</proceeding>
+        <year>2011</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Surfaces of old structures are inspected by workers and the positions of the damaged places are manually recorded for their maintenance. In order to lighten this work, we propose a novel system to record position on structural surface by a laser pointer and ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:-aAQTAE8X_cJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="8">
+        <url>http://cdn.intechopen.com/pdfs/40261/InTech-Design_and_evaluation_of_cell_phone_pointing_interface_for_robot_control.pdf</url>
+        <title status="complete" source="scholar.google.com">Design and Evaluation of Cell Phone Pointing Interface for Robot Control</title>
+        <pdf>http://cdn.intechopen.com/pdfs/40261/InTech-Design_and_evaluation_of_cell_phone_pointing_interface_for_robot_control.pdf</pdf>
+        <author status="complete" source="scholar.google.com">S Koceski, N Koceska, I Kocev</author>
+        <proceeding status="complete" source="scholar.google.com">Int J Adv Robotic Sy</proceeding>
+        <year>2012</year>
+        <source>cdn.intechopen.com</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In this work a pointing interface based on human gestures using a mobile phone accelerometer for interaction with robots is proposed. Through this interface the user can sketch stroke gestures on a computer screen using the cell phone accelerometer to make ...</snippet>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:YqiEVvmAUZsJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="9">
+        <url>http://www.sciencedirect.com/science/article/pii/S0020025512007852</url>
+        <title status="complete" source="scholar.google.com">Efficient Jitter Compensation Using Double Exponential Smoothing</title>
+        <author status="complete" source="scholar.google.com">MG Chung, SK Kim</author>
+        <proceeding status="complete" source="scholar.google.com">Information Sciences</proceeding>
+        <year>2012</year>
+        <source>Elsevier</source>
+        <snippet status="partial" source="scholar.google.com">This paper proposes a new jitter reduction scheme based on double exponential smoothing (DES). We compare this DES-based method to jitter reduction methods based on the Kalman filter (KF) and extended Kalman filter (EKF), two well-known methods of jitter ...</snippet>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="10">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6181591</url>
+        <title status="complete" source="scholar.google.com">Interactions with a line-follower: An interactive tabletop system with a markerless gesture interface for robot control</title>
+        <author status="complete" source="scholar.google.com">T Fujiwara, Y Iwatani</author>
+        <proceeding status="partial" source="scholar.google.com">Robotics and Biomimetics (ROBIO), &#8230;</proceeding>
+        <year>2011</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract An interactive desktop system for robot control is presented in this paper. The system consists of a digital desk, a markerless gesture interface and a line-follower. The digital desk is a network system composed of a camera, a computer and a projector. Hand ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:dTuyiGdNC7EJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=12757375476527414133&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=18</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="11">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5976477</url>
+        <title status="complete" source="scholar.google.com">Sensors for Gesture Recognition Systems</title>
+        <author status="complete" source="scholar.google.com">S Berman, H Stern</author>
+        <proceeding status="partial" source="scholar.google.com">Systems, Man, and Cybernetics, Part C: &#8230;</proceeding>
+        <year>2012</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract A gesture recognition system (GRS) is comprised of a gesture, gesture-capture device (sensor), tracking algorithm (for motion capture), feature extraction, and classification algorithm. With the impending movement toward natural communication with mechanical ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:dgpQkTYaMgUJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=374390540693670518&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="12">
+        <url>http://dl.acm.org/citation.cfm?id=1959840</url>
+        <title status="complete" source="scholar.google.com">ClippingLight: a method for easy snapshots with projection viewfinder and tilt-based zoom control</title>
+        <author status="partial" source="scholar.google.com">Y Kajiwara, K Tajimi, K Uemura, N Sakata&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 2nd &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In this paper, we present a novel method to take photos with a hand-held camera. Cameras are being used for new purposes in our daily lives these days, such as to augment human memory or scan visual markers (eg QR-codes) and opportunities to take ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:UcS3mTCIr-EJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=16262366521776915537&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=18</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="13">
+        <url>http://www.dominikschmidt.net/wp-content/uploads/2012/07/2012-Schmidt-D-PICOntrol.pdf</url>
+        <title status="complete" source="scholar.google.com">PICOntrol: Using a Handheld Projector for Direct Control of Physical Devices through Visible Light</title>
+        <pdf>http://www.dominikschmidt.net/wp-content/uploads/2012/07/2012-Schmidt-D-PICOntrol.pdf</pdf>
+        <author status="complete" source="scholar.google.com">D Schmidt, D Molyneaux, X Cao</author>
+        <year>2012</year>
+        <source>dominikschmidt.net</source>
+        <snippet status="partial" source="scholar.google.com">ABSTRACT Today&#39;s environments are populated with a growing number of electric devices which come in diverse form factors and provide a plethora of functions. However, rich interaction with these devices can become challenging if they need be controlled from a ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:ZXTxpm0aHSsJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:ZXTxpm0aHSsJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="14">
+        <url>http://dl.acm.org/ft_gateway.cfm?id=2350076&amp;type=pdf</url>
+        <title status="complete" source="scholar.google.com">Robots in my contact list: Using social media platforms for human-robot interaction in domestic environment</title>
+        <pdf>http://www.shengdongzhao.com/wp-content/uploads/2012/07/APCHI2012_cameraReady.pdf</pdf>
+        <author status="complete" source="scholar.google.com">X Ma, X Yang, S Zhao, CW Fu, Z Lan, Y Pu</author>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">ABSTRACT This paper proposes to put domestic robots as buddies on our contact lists, thereby extending the use of social media in interpersonal interaction further to human-robot interaction (HRI). In detail, we present a robot management system that employs ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:peer7xKk6Y4J:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>8</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=10297942424196736933&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="15">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6005235</url>
+        <title status="complete" source="scholar.google.com">An augmented reality system for teaching sequential tasks to a household robot</title>
+        <pdf>http://grouplab.cpsc.ucalgary.ca/grouplab/uploads/Publications/Publications/2011-TasksToRobots.Roman.pdf</pdf>
+        <author status="partial" source="scholar.google.com">R Fung, S Hashimoto, M Inami&#8230;</author>
+        <proceeding status="complete" source="scholar.google.com">RO-MAN, 2011 IEEE</proceeding>
+        <year>2011</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract We present a method of instructing a sequential task to a household robot using a hand-held augmented reality device. The user decomposes a high-level goal such as âprepare a drinkâ into steps such as delivering a mug under a kettle and pouring hot water ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:s8-Q_4Za3XkJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>12</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=8781274384302133171&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="16">
+        <url>http://www.theses.fr/2012BOR14510/document</url>
+        <title status="complete" source="scholar.google.com">Apprendre Ã  un robot Ã  reconnaÃ®tre des objets visuels nouveaux et Ã  les associer Ã  des mots nouveaux: le rÃ´le de l&#39;interface</title>
+        <pdf>http://www.theses.fr/2012BOR14510/document</pdf>
+        <author status="complete" source="scholar.google.com">DFEEIP HdR, RGDARP HdR</author>
+        <proceeding status="complete" source="scholar.google.com">theses.fr</proceeding>
+        <snippet status="partial" source="scholar.google.com">RÃ©sumÃ© Cette thÃ¨se s&#39; intÃ©resse au rÃ´le de l&#39;interface dans l&#39;interaction humain-robot pour l&#39;apprentissage. Elle Ã©tudie comment une interface bien conÃ§ue peut aider les utilisateurs non-experts Ã  guider l&#39;apprentissage social d&#39;un robot, notamment en facilitant les ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:kC4gkwAY5ScJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:kC4gkwAY5ScJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=2874730327893356176&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="17">
+        <url>http://www-ui.is.s.u-tokyo.ac.jp/~takeo/papers/jrsj2010.pdf</url>
+        <title status="complete" source="scholar.google.com">ã­ãããã®ããã®ã¦ã¼ã¶ã¤ã³ã¿ãã§ã¼ã¹</title>
+        <pdf>http://www-ui.is.s.u-tokyo.ac.jp/~takeo/papers/jrsj2010.pdf</pdf>
+        <author status="complete" source="scholar.google.com">äºååµå¥å¤«</author>
+        <proceeding status="complete" source="scholar.google.com">æ¥æ¬ã­ãããå­¦ä¼èª</proceeding>
+        <year>2010</year>
+        <source>www-ui.is.su-tokyo.ac.jp</source>
+        <snippet status="partial" source="scholar.google.com">1. ã¦ã¼ã¶ã¤ã³ã¿ãã§ã¼ã¹ã®å¿è¦æ§ iRobot ç¤¾ã®æé¤ã­ãããã«ä»£è¡¨ãããããã«ã­ããããå®éã«å®¶åº­åã«å¥ã£ã¦ãã¦ãã, ããã«å°æ¥çã«ã¯, ASIMO ã HRP2 ã®ãããªãã¥ã¼ããã¤ããå®¶äºãæä¼ã£ã¦ãããããã«ãªããã¨ãæå¾ããã¦ãã. ããã, ã©ããªã«é«åº¦ãªæ©è½ãæããã­ããããã§ããã¨ãã¦ ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:E4SO0k5-gFsJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:E4SO0k5-gFsJ:scholar.google.com/&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=6593408731475510291&amp;hl=en&amp;num=18&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="2">
+    <url>http://dl.acm.org/citation.cfm?id=1979207</url>
+    <title status="complete" source="scholar.google.com">Measuring web page revisitation in tabbed browsing</title>
+    <pdf>https://www.comp.nus.edu.sg/~zhaosd/paper/chi2011-webrevisitation.pdf</pdf>
+    <author status="complete" source="scholar.google.com">H Zhang, S Zhao</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 2011 annual conference on &#8230;</proceeding>
+    <year>2011</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">Page 1. Measuring Web Page Revisitation in Tabbed Browsing Haimo Zhang, Shengdong ZhaoComputer Science, National University of Singapore {z-haimo, zhaosd}@comp.nus.edu.sgnus-hci.comp.nus.edu.sg ... We thank members of the NUS-HCI Lab for their support. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:rJgYMh3yjGUJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>11</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=7317489701778659500&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>4</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=7317489701778659500&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="4">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=2124322</url>
+        <title status="complete" source="scholar.google.com">No search result left behind: branching behavior with browser tabs</title>
+        <pdf>http://research.microsoft.com/pubs/167885/Final_Branching_WSDM12.pdf</pdf>
+        <author status="complete" source="scholar.google.com">J Huang, T Lin, RW White</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the fifth ACM international &#8230;</proceeding>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Today&#39;s Web browsers allow users to open links in new windows or tabs. This action, which we call&#39;branching&#39;, is sometimes performed on search results when the user plans to eventually visit multiple results. We detect branching behavior on a large ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:S20LY2eG4ykJ:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>4</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=3018403953869811019&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=3018403953869811019&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=4</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://www.thinkmind.org/index.php?view=article&amp;articleid=sotics_2011_2_50_30098</url>
+        <title status="complete" source="scholar.google.com">Taking into account Tabbed Browsing in Predictive Web Usage Mining</title>
+        <pdf>http://www.thinkmind.org/download.php?articleid=sotics_2011_2_50_30098</pdf>
+        <author status="complete" source="scholar.google.com">G Bonnin, A Brun, A Boyer</author>
+        <proceeding status="partial" source="scholar.google.com">SOTICS 2011, The First International &#8230;</proceeding>
+        <year>2011</year>
+        <source>thinkmind.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract: Over the last few years, browser tabs have become a very common tool for web users and have been extensively used to perform parallel navigations. Tabbing facilitates web browsing but results in an imbrication of navigations, which makes it more difficult to ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:mrkhifz6HV8J:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://dl.acm.org/citation.cfm?id=2371604</url>
+        <title status="complete" source="scholar.google.com">AutoWeb: automatic classification of mobile web pages for revisitation</title>
+        <author status="complete" source="scholar.google.com">J Liu, W Xu, Y Shi</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 14th international conference on &#8230;</proceeding>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Revisitation in mobile Web browsers takes more time than that in desktop browsers due to the limitations of mobile phones. In this paper, we propose AutoWeb, a novel approach to speed up revisitation in mobile Web browsing. In AutoWeb, opened Web ...</snippet>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://www.iceta.sk/proceedings/Iceta2012_Labaj.pdf</url>
+        <title status="complete" source="scholar.google.com">Modeling Parallel Web Browsing Behavior for Web-based Educational Systems</title>
+        <pdf>http://www.iceta.sk/proceedings/Iceta2012_Labaj.pdf</pdf>
+        <author status="complete" source="scholar.google.com">M Labaj, M BielikovÃ¡</author>
+        <proceeding status="complete" source="scholar.google.com">iceta.sk</proceeding>
+        <snippet status="partial" source="scholar.google.com">AbstractâWhen learners access web-based educational systems, they often take advantage of what current web browsers offer: multiple tabs with different pages. Whether they are solving an exercise or learning a whole new topic, they can concurrently browse ...</snippet>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:Glhvtz_tzhkJ:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="3">
+    <url>http://dl.acm.org/citation.cfm?id=1979016</url>
+    <title status="complete" source="scholar.google.com">MOGCLASS: evaluation of a collaborative system of mobile devices for classroom music education of young children</title>
+    <pdf>https://www0.comp.nus.edu.sg/~zhaosd/paper/chi2011_mogclass.pdf</pdf>
+    <author status="partial" source="scholar.google.com">Y Zhou, G Percival, X Wang, Y Wang&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 2011 &#8230;</proceeding>
+    <year>2011</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Children Yinsheng Zhou, Graham Percival, Xinxi Wang, Ye Wang, Shengdong Zhao Schoolof Computing (SoC), National University of Singapore, Singapore 117417 {yzhou86, wangxinx,wangye, zhaosd}@comp.nus.edu.sg, graham@percival-music.ca ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:jQvxbCYwtW8J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>12</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=8049392850589256589&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>5</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=8049392850589256589&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="5">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=2072531</url>
+        <title status="complete" source="scholar.google.com">The need for music information retrieval with user-centered and multimodal strategies</title>
+        <author status="partial" source="scholar.google.com">C Liem, M MÃ¼ller, D Eck, G Tzanetakis&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 1st &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Music is a widely enjoyed content type, existing in many multifaceted representations. With the digital information age, a lot of digitized music information has theoretically become available at the user&#39;s fingertips. However, the abundance of ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:U7b3CYt6UGgJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numCite>4</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=7516642515667629651&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=5</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://www.comp.nus.edu.sg/~yzhou86/fp047.pdf</url>
+        <title status="complete" source="scholar.google.com">MOGAT: Mobile Games with Auditory Training for Children with Cochlear Implants</title>
+        <pdf>http://www.comp.nus.edu.sg/~yzhou86/fp047.pdf</pdf>
+        <author status="complete" source="scholar.google.com">Y Zhou, KC Sim, P Tan, Y Wang</author>
+        <proceeding status="complete" source="scholar.google.com">ACM Multimedia</proceeding>
+        <year>2012</year>
+        <source>comp.nus.edu.sg</source>
+        <snippet status="partial" source="scholar.google.com">ABSTRACT Cochlear implants have improved the lives of tens of thousands of the hearing impaired by providing sufficient auditory perception for speech, but these devices are far from satisfactory for music perception. Many cochlear implant recipients, especially pre- ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:4KKKkSKeXiAJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:4KKKkSKeXiAJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=2332475528332354272&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=5</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6103017</url>
+        <title status="complete" source="scholar.google.com">An Interactive Music Learning System in Ensemble Performance Class</title>
+        <author status="complete" source="scholar.google.com">K Takano, S Sasaki</author>
+        <proceeding status="partial" source="scholar.google.com">Broadband and Wireless Computing, &#8230;</proceeding>
+        <year>2011</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract It is a significant research area in computer-assisted music learning to develop interactive learning materials to cultivate learner&#39;s performing abilities of musical instruments. Especially in the ensemble lesson at school, it is pointed out that not only the ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:z3l8C9DS4_sJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=18150582714220968399&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://dl.acm.org/citation.cfm?id=2030223</url>
+        <title status="complete" source="scholar.google.com">CoolMag: a tangible interaction tool to customize instruments for children in music education</title>
+        <author status="complete" source="scholar.google.com">C Zhang, L Shen, D Wang, F Tian, H Wang</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 13th &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In this paper, we describe CoolMag, a tangible interaction tool to enable children to create different instruments collaboratively in music education. With CoolMag, children could learn the basic playing methods of different instruments. It also has the potential to inspire ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:WlK_XZR32YcJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>7</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=9788986744178168410&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="4">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6391739</url>
+        <title status="complete" source="scholar.google.com">An Overview of Evaluation Methods for Collaborative Systems</title>
+        <pdf>http://sws2012.ime.usp.br/sbsc/SBSC2012/data/4890a127.pdf</pdf>
+        <author status="partial" source="scholar.google.com">NS Santos, LS Ferreira&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">&#8230; Systems (SBSC), 2012 &#8230;</proceeding>
+        <year>2012</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract What is the state-of-the-art of the research on evaluation methods available for collaborative systems? Based on a Systematic Literature Review, this paper takes an initial step to answer that question and presents an overview of what has been published in the ...</snippet>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="4">
+    <url>http://dl.acm.org/citation.cfm?id=1979024</url>
+    <title status="complete" source="scholar.google.com">Farmer&#39;s tale: a facebook game to promote volunteerism</title>
+    <pdf>https://www1.comp.nus.edu.sg/~zhaosd/paper/chi2011_farmerstale.pdf</pdf>
+    <author status="partial" source="scholar.google.com">DS Jianqiang, X Ma, S Zhao, JT Khoo, SL Bay&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the &#8230;</proceeding>
+    <year>2011</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Don Sim Jianqiang1, Xiaojuan Ma2, Shengdong Zhao1, Jing Ting Khoo1, Swee Ling Bay1,Zhenhui Jiang2 1Computer Science, 2Information Systems, National University of Singaporedonsim85@gmail.com, {maxj, zhaosd, jingting, t0800128, jiang}@comp.nus.edu.sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:CsACY5sbnc4J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>11</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=14888086297351733258&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>3</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=14888086297351733258&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="3">
+        <result id="0">
+        <url>http://meaningfulplay.msu.edu/proceedings2012/mp2012_submission_121.pdf</url>
+        <title status="complete" source="scholar.google.com">Reification and Real Life Goals as Facilitators of Progression in Digital Games</title>
+        <pdf>http://meaningfulplay.msu.edu/proceedings2012/mp2012_submission_121.pdf</pdf>
+        <author status="partial" source="scholar.google.com">NP Rasmussen, SD Gudnadottir, C Toft, TS Nielsen&#8230;</author>
+        <proceeding status="complete" source="scholar.google.com">meaningfulplay.msu.edu</proceeding>
+        <snippet status="partial" source="scholar.google.com">Abstract Gamification is the idea of using game design elements to better motivate and engage people in accomplishing objectives in their everyday lives and is among some scholars believed to be a key factor of motivation in real life in the future. However, so far it ...</snippet>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:sKoZwN2FZUkJ:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://dl.acm.org/citation.cfm?id=2208307</url>
+        <title status="complete" source="scholar.google.com">I&#39;d never get out of this!? $%# office: redesigning time management for the enterprise</title>
+        <pdf>http://www.comp.nus.edu.sg/~z-haimo/Files/CHI/5/p1755-dugan.pdf</pdf>
+        <author status="partial" source="scholar.google.com">C Dugan, W Geyer, M Muller, AN Valente&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the &#8230;</proceeding>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In this paper, we propose to improve time management in the enterprise by providing users interactive visualizations of how they are spending their time. Through an interview study (n= 21) in a multi-national corporation, we were able to determine the data ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:8mCM2MSMJwoJ:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=731708241545552114&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://dl.acm.org/ft_gateway.cfm?id=2350076&amp;type=pdf</url>
+        <title status="complete" source="scholar.google.com">Robots in my contact list: Using social media platforms for human-robot interaction in domestic environment</title>
+        <pdf>http://www.shengdongzhao.com/wp-content/uploads/2012/07/APCHI2012_cameraReady.pdf</pdf>
+        <author status="complete" source="scholar.google.com">X Ma, X Yang, S Zhao, CW Fu, Z Lan, Y Pu</author>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">ABSTRACT This paper proposes to put domestic robots as buddies on our contact lists, thereby extending the use of social media in interpersonal interaction further to human-robot interaction (HRI). In detail, we present a robot management system that employs ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:peer7xKk6Y4J:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>8</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=10297942424196736933&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="5">
+    <url>http://dl.acm.org/citation.cfm?id=1631272.1631438</url>
+    <title status="complete" source="scholar.google.com">Towards characterizing user interaction with progressively transmitted 3D meshes</title>
+    <author status="partial" source="scholar.google.com">RN De Silva, W Cheng, D Liu, WT Ooi&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 17th &#8230;</proceeding>
+    <year>2009</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Progressively Transmitted 3D Meshes Ransi De Silva Wei Cheng Dan Liu Wei Tsang OoiShengdong Zhao Department of Computer Science National University of Singapore,Singapore {ransi, chengwe2, liudan, ooiwt, zhaosd}@comp.nus.edu.sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:pLF9LGdekj4J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>2</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=4508769974172365220&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>1</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=4508769974172365220&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="1">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=1806595</url>
+        <title status="complete" source="scholar.google.com">Towards understanding user tolerance to network latency and data rate in remote viewing of progressive meshes</title>
+        <pdf>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.3916&amp;rep=rep1&amp;type=pdf</pdf>
+        <author status="complete" source="scholar.google.com">RN De Silva, W Cheng, WT Ooi, S Zhao</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 20th &#8230;</proceeding>
+        <year>2010</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract We conducted experiments with 38 users who interacted with 3 progressively streamed and rendered 3D meshes in order to study their tolerance levels for network data rate and delay. Our study shows that over 90% of users can tolerate a data rate of 80 KBps ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:m-od0PGBImQJ:scholar.google.com/&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>4</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=7215472428579678875&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>6</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=7215472428579678875&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=1</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="6">
+    <url>http://dl.acm.org/citation.cfm?id=1874048</url>
+    <title status="complete" source="scholar.google.com">Mogclass: a collaborative system of mobile devices forclassroom music education</title>
+    <pdf>http://www.comp.nus.edu.sg/~yzhou86/mmshc05843-zhou.pdf</pdf>
+    <author status="partial" source="scholar.google.com">Y Zhou, G Percival, X Wang, Y Wang&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the &#8230;</proceeding>
+    <year>2010</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Classroom Music Education Yinsheng Zhou, Graham Percival, Xinxi Wang, Ye Wang, ShengdongZhao School of Computing (SoC) National University of Singapore Singapore 117417 {yzhou86,wangxinx, wangye, zhaosd}@comp.nus.edu.sg graham@percival-music.ca ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:IzwNeBaw2pYJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>15</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=10870194261162015779&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>1</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=10870194261162015779&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="1">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=1979016</url>
+        <title status="complete" source="scholar.google.com">MOGCLASS: evaluation of a collaborative system of mobile devices for classroom music education of young children</title>
+        <pdf>https://www0.comp.nus.edu.sg/~zhaosd/paper/chi2011_mogclass.pdf</pdf>
+        <author status="partial" source="scholar.google.com">Y Zhou, G Percival, X Wang, Y Wang&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 2011 &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Composition, listening, and performance are essential activities in classroom music education, yet conventional music classes impose unnecessary limitations on students&#39; ability to develop these skills. Based on in-depth fieldwork and a user-centered design ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:jQvxbCYwtW8J:scholar.google.com/&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>12</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=8049392850589256589&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>5</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=8049392850589256589&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=1</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="7">
+    <url>http://dl.acm.org/citation.cfm?id=1979562</url>
+    <title status="complete" source="scholar.google.com">SandCanvas: new possibilities in sand animation</title>
+    <author status="partial" source="scholar.google.com">RH Kazi, KC Chua, S Zhao, R Davis&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">&#8230; 2-----------Proceedings of &#8230;</proceeding>
+    <year>2011</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Singapore. 13 Computing Drive. Singapore 117417 rubaiat@comp.nus.edu.sgKien-Chuan Chua Computer Science, National University of Singapore. 13 ComputingDrive. Singapore 117417 chkch@comp.nus.edu.sg Shengdong ...</snippet>
+    <numVersions>2</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=1912823272998242428&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="8">
+    <url>http://dl.acm.org/ft_gateway.cfm?id=2350076&amp;type=pdf</url>
+    <title status="complete" source="scholar.google.com">Robots in my contact list: Using social media platforms for human-robot interaction in domestic environment</title>
+    <pdf>http://www.shengdongzhao.com/wp-content/uploads/2012/07/APCHI2012_cameraReady.pdf</pdf>
+    <author status="complete" source="scholar.google.com">X Ma, X Yang, S Zhao, CW Fu, Z Lan, Y Pu</author>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Xiaoning Ma1, Xin Yang1, Shengdong Zhao1, Chi-Wing Fu2, Ziquan Lan1, Yiming Pu1 1NUS-HCI Lab ... Nanyang Technological University Singapore {xiaoning84, yangxinnus, ziquan111,yiming3478}@gmail.com; zhaosd@comp.nus.edu.sg; cwfu@ntu.edu.sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:peer7xKk6Y4J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>8</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=10297942424196736933&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="9">
+    <url>http://131.107.65.14/en-us/um/people/benko/publications/2012/Understanding%20MidAir%20Gestures%20-%20MSR-TR-2012-111.pdf</url>
+    <title status="complete" source="scholar.google.com">Understanding Mid-Air Hand Gestures: A Study of Human Preferences in Usage of Gesture Types for HCI</title>
+    <pdf>http://131.107.65.14/en-us/um/people/benko/publications/2012/Understanding%20MidAir%20Gestures%20-%20MSR-TR-2012-111.pdf</pdf>
+    <author status="partial" source="scholar.google.com">R Aigner, D Wigdor, H Benko, M Haller, D Lindbauer&#8230;</author>
+    <proceeding status="complete" source="scholar.google.com">131.107.65.14</proceeding>
+    <snippet status="partial" source="scholar.google.com">... at 5Department of Computer Science National University of Singapore Singaporezhaosd@comp.nus.edu.sg 6Interactive and Digital Media Institute National Universityof Singapore Singapore j.koh@nus.edu.sg ABSTRACT ...</snippet>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:9aGNTTKDHmcJ:scholar.google.com/+author:%22Zhao+Shengdong%22+NUS&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="10">
+    <url>http://dl.acm.org/citation.cfm?id=2388759</url>
+    <title status="complete" source="scholar.google.com">ICMI&#39;12 grand challenge: haptic voice recognition</title>
+    <author status="complete" source="scholar.google.com">KC Sim, S Zhao, K Yu, H Liao</author>
+    <proceeding status="partial" source="scholar.google.com">&#8230; of the 14th ACM international conference &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Khe Chai Sim National University of Singapore 13 Computing Drive Singapore 117417simkc@comp.nus.edu.sg Shengdong Zhao National University of Singapore 13Computing Drive Singapore 117417 zhaosd@comp.nus.edu.sg ...</snippet>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="11">
+    <url>http://dl.acm.org/citation.cfm?id=2388792</url>
+    <title status="complete" source="scholar.google.com">LUI: lip in multimodal mobile GUI interaction</title>
+    <author status="complete" source="scholar.google.com">M Azh, S Zhao</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 14th ACM international conference &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Maryam Azh1,2, Shengdong Zhao1,2 1 NUS-HCI Lab National University of Singapore 13Computing Drive, Singapore 117417 2 NUS Graduate School for Integrative Sciences &amp;Engineering 28 Medical Drive, Singapore 117456 {maryam, zhaosd}@comp.nus.edu.sg ...</snippet>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="12">
+    <url>http://speech.ddns.comp.nus.edu.sg/HVRGrandChallenge2012/data/hvr-grand-challenge-2012-plan.pdf</url>
+    <title status="complete" source="scholar.google.com">Haptic Voice Recognition (HVR) Grand Challenge 2012</title>
+    <pdf>http://speech.ddns.comp.nus.edu.sg/HVRGrandChallenge2012/data/hvr-grand-challenge-2012-plan.pdf</pdf>
+    <author status="complete" source="scholar.google.com">KC SIM, S ZHAO, K YU, H LIAO</author>
+    <year>2012</year>
+    <source>speech.ddns.comp.nus.edu.sg</source>
+    <snippet status="partial" source="scholar.google.com">... comp.nus.edu.sg/HVRGrandChallenge2012/index.php?view=downloads). 5.1 File Formats ... Moredetails about the workshop will be posted on the HVR Grand Challenge 2012 website (http://speech.ddns.comp.nus.edu.sg/HVRGrandChallenge2012/) in due course. 6 Page 7. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:CRNTruN2I7wJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:CRNTruN2I7wJ:scholar.google.com/+author:%22Zhao+Shengdong%22+NUS&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="13">
+    <url>http://dl.acm.org/citation.cfm?id=2208678</url>
+    <title status="complete" source="scholar.google.com">Exploring user motivations for eyes-free interaction on mobile devices</title>
+    <pdf>http://www.comp.nus.edu/~yi-bo/paper732.pdf</pdf>
+    <author status="complete" source="scholar.google.com">B Yi, X Cao, M Fjeld, S Zhao</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 2012 ACM annual &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Mobile Devices Bo Yi1, Xiang Cao2, Morten Fjeld3, Shengdong Zhao1 1Dept. of Computer ScienceNational University of Singapore {yi-bo, zhaosd}@ comp.nus.edu.sg ... We thank Erik Tobin,anonymous reviewers, and all members in the NUS HCI lab for their help. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:glMoCRgX8JgJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>9</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=11020333680175895426&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="14">
+    <url>http://dl.acm.org/citation.cfm?id=2254626</url>
+    <title status="complete" source="scholar.google.com">AutoComPaste: auto-completing text as an alternative to copy-paste</title>
+    <pdf>http://www.lri.fr/~chevalie/publications/autocompaste-AVI2012.pdf</pdf>
+    <author status="partial" source="scholar.google.com">S Zhao, F Chevalier, WT Ooi, CY Lee&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Auto-Completing Text as an Alternative to Copy-Paste Shengdong Zhao1 Fanny Chevalier2Wei Tsang Ooi1 Chee Yuan Lee1 Arpit Agarwal1,3 zhaosd@comp.nus.edu.sg fchevalier@ocadu.ca ooiwt@comp.nus.edu.sg leeyl@comp.nus.edu.sg aagarwl8@illinois.edu ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:ESTaG0U3pnoJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>5</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=8837812088720729105&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="15">
+    <url>http://www.shengdongzhao.com/wp-content/uploads/2012/08/question_APCHI_final1.pdf</url>
+    <title status="complete" source="scholar.google.com">A Classification of Opening Posts in Commercial Software Help Forums</title>
+    <pdf>http://www.shengdongzhao.com/wp-content/uploads/2012/08/question_APCHI_final1.pdf</pdf>
+    <author status="partial" source="scholar.google.com">X Kuang, B Yi, S Zhao, J Chow, T Grossman&#8230;</author>
+    <year>2012</year>
+    <source>shengdongzhao.com</source>
+    <snippet status="partial" source="scholar.google.com">... Help Forums Xiaole Kuang1, Bo Yi1, Shengdong Zhao1, Jianann Chow1, Tovi Grossman2,George Fitzmaurice2 1National University of Singapore {xiaole, yi-bo, zhaosd, jianann}@comp.nus.edu.sg 2AutoDesk Research {Tovi.Grossman, George.Fitzmaurice}@autodesk.com ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:jW31K_1rGMkJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:jW31K_1rGMkJ:scholar.google.com/+author:%22Zhao+Shengdong%22+NUS&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="16">
+    <url>http://www.shengdongzhao.com/wp-content/uploads/2012/09/6C-04S.pdf</url>
+    <title status="complete" source="scholar.google.com">Older Adults and Computer Usage: Common Activities and Essential Applications</title>
+    <pdf>http://www.shengdongzhao.com/wp-content/uploads/2012/09/6C-04S.pdf</pdf>
+    <author status="complete" source="scholar.google.com">M Wong, K Chan, N Madhugiri, S Zhao</author>
+    <proceeding status="complete" source="scholar.google.com">shengdongzhao.com</proceeding>
+    <snippet status="partial" source="scholar.google.com">... Essential Applications Melissa Wong, Kristal Chan, Niti Madhugiri, Shengdong Zhao ComputerScience, National University of Singapore {melissa.wongst, kristal.chanhy, niti1987}@gmail.com,zhaosd@comp.nus.edu,sg ... We thank members of the NUS-HCI Lab for their support. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:nc42M1-Vo_IJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:nc42M1-Vo_IJ:scholar.google.com/+author:%22Zhao+Shengdong%22+NUS&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="17">
+    <url>http://dl.acm.org/citation.cfm?id=2208302</url>
+    <title status="complete" source="scholar.google.com">Vignette: interactive texture design and manipulation with freeform gestures for pen-and-ink illustration</title>
+    <pdf>http://c15x4fug.securesites.net/projects/vignette/vignette.pdf</pdf>
+    <author status="complete" source="scholar.google.com">RH Kazi, T Igarashi, S Zhao, R Davis</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 2012 ACM &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... 1JST ERATO, IGARASHI Design Interface Project 3Information Systems, University of Tokyo2CS, National University of Singapore 4SIS, Singapore Management University {rubaiat,zhaosd}@comp.nus.edu.sg, takeo@acm.org, rcdavis@smu.edu.sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:eFGSYH2cg4gJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>10</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=9836878073412342136&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="18">
+    <url>http://dl.acm.org/citation.cfm?id=2342934</url>
+    <title status="complete" source="scholar.google.com">Vignette: a style preserving sketching tool for pen-and-ink illustration with texture synthesis</title>
+    <author status="partial" source="scholar.google.com">RH Kazi, T Igarashi, S Zhao, RC Davis&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">ACM SIGGRAPH 2012 &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... 2CS, National University of Singapore 4SIS, Singapore Management University {rubaiat,zhaosd}@comp.nus.edu.sg, {takeo, kenshi84}@acm.org, rcdavis@smu.edu.sg 1. IntroductionPen-and-ink illustrations take significant amounts of skill, artistry, and patience to create. ...</snippet>
+    <numVersions>3</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=6675848191578512296&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="19">
+    <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5949107</url>
+    <title status="complete" source="scholar.google.com">Assessing age-related performance decrements in user interface tasks</title>
+    <author status="partial" source="scholar.google.com">X Zhou, S Zhao, M Chignell&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Information and Automation &#8230;</proceeding>
+    <year>2011</year>
+    <source>ieeexplore.ieee.org</source>
+    <snippet status="partial" source="scholar.google.com">... National University of Singapore Huaxiang Zhangjialukou121,Beijing 100070 China Singaporezhouxiaolei.cueb@gmail.com zhaosd@comp.nus.edu.sg Mark Chignell Xiangshi Ren Mechanicaland Industrial Engineering The School of Information University of Toronto ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:BG5addQA-qIJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="20">
+    <url>http://dl.acm.org/citation.cfm?id=2208638</url>
+    <title status="complete" source="scholar.google.com">Beyond stereo: an exploration of unconventional binocular presentation for novel visual experience</title>
+    <pdf>http://www.shengdongzhao.com/wp-content/uploads/2012/06/chi2012_beyondstereo2.pdf</pdf>
+    <author status="complete" source="scholar.google.com">H Zhang, X Cao, S Zhao</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 2012 ACM annual &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Haimo Zhang 1,2 , Xiang Cao 1 , Shengdong Zhao 2 1 Microsoft Research Asia 5 DanlingStreet, Beijing, China xiangc@microsoft.com 2 National University of Singapore 13Computing Drive, Singapore {z-haimo, zhaosd}@comp.nus.edu.sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:bycdhu7Ou50J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>3</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=11365905608447174511&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="21">
+    <url>http://dl.acm.org/citation.cfm?id=2212486</url>
+    <title status="complete" source="scholar.google.com">Anyone can sketch vignettes!</title>
+    <author status="partial" source="scholar.google.com">RH Kazi, T Igarashi, S Zhao, R Davis&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 2012 &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Shengdong Zhao Computer Science, National University of Singapore 13 Computer Drive.Singapore 117417 zhaosd@comp.nus.edu.sg Richard C. Davis SIS, Singapore ManagementUniversity. 80 Stamford Road. Singapore 178902 rcdavis@smu.edu.sg ...</snippet>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="22">
+    <url>http://dl.acm.org/citation.cfm?id=1979133</url>
+    <title status="complete" source="scholar.google.com">SandCanvas: A multi-touch art medium inspired by sand animation</title>
+    <pdf>http://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=2484&amp;context=sis_research</pdf>
+    <author status="partial" source="scholar.google.com">RH Kazi, KC Chua, S Zhao, R Davis&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 2011 &#8230;</proceeding>
+    <year>2011</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Sand Animation Rubaiat Habib Kazi1, Kien-Chuan Chua1, Shengdong Zhao1, Richard C. Davis2,Kok-Lim Low1 1Computer Science, National University of Singapore 13 Computing Drive,Singapore 117417 {rubaiat,chkch,zhaosd,lowkl}@comp.nus.edu.sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:Erlbh5fKMPoJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>15</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=18028132060523903250&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>5</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=18028132060523903250&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="5">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=2208302</url>
+        <title status="complete" source="scholar.google.com">Vignette: interactive texture design and manipulation with freeform gestures for pen-and-ink illustration</title>
+        <pdf>http://c15x4fug.securesites.net/projects/vignette/vignette.pdf</pdf>
+        <author status="complete" source="scholar.google.com">RH Kazi, T Igarashi, S Zhao, R Davis</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 2012 ACM &#8230;</proceeding>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Vignette is an interactive system that facilitates texture creation in pen-and-ink illustrations. Unlike existing systems, Vignette preserves illustrators&#39; workflow and style: users draw a fraction of a texture and use gestures to automatically fill regions with the ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:eFGSYH2cg4gJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>10</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=9836878073412342136&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://www.sciencedirect.com/science/article/pii/S1877050912008290</url>
+        <title status="complete" source="scholar.google.com">A Smart Phone Tool to Create Photo Collages</title>
+        <author status="complete" source="scholar.google.com">A Marzo, O Ardaiz</author>
+        <proceeding status="complete" source="scholar.google.com">Procedia Computer Science</proceeding>
+        <year>2012</year>
+        <source>Elsevier</source>
+        <snippet status="partial" source="scholar.google.com">This paper presents the application PhotoPieces, a software tool which allows people to create photo collages on the fly in a camera-equipped handheld device using predefined or custom templates. Users can also create their own templates on-the-fly taking a photo and ...</snippet>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <title status="complete" source="scholar.google.com">Enhanced Feed-Forward for a User Aware Multi-Touch Device</title>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://dl.acm.org/citation.cfm?id=2076373</url>
+        <title status="complete" source="scholar.google.com">Tangible actions</title>
+        <pdf>http://www.dgp.utoronto.ca/~ravin/papers/its2011_tangibleactions.pdf</pdf>
+        <author status="complete" source="scholar.google.com">D Freeman, R Balakrishnan</author>
+        <proceeding status="partial" source="scholar.google.com">&#8230; of the ACM International Conference on &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract We present Tangible Actions, an ad-hoc, just-in-time, visual programming by example language designed for large multitouch interfaces. With the design of Tangible Actions, we contribute a continually-created system of programming tokens that occupy ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:n7_Y4yb3RMEJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>4</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=13926527694139867039&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=13926527694139867039&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=5</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="4">
+        <url>http://www.csie.ntu.edu.tw/~fuh/personal/UncleSandASandDrawingApplicationiniPad.pdf</url>
+        <title status="complete" source="scholar.google.com">UNCLE SAND: A SAND DRAWING APPLICATION IN IPAD</title>
+        <pdf>http://www.csie.ntu.edu.tw/~fuh/personal/UncleSandASandDrawingApplicationiniPad.pdf</pdf>
+        <author status="complete" source="scholar.google.com">CF Lin, CS Fuh</author>
+        <proceeding status="complete" source="scholar.google.com">csie.ntu.edu.tw</proceeding>
+        <snippet status="complete" source="scholar.google.com">ABSTRACT Uncle Sand is a convenient application to produce sand drawings with your fingers. With only a few finger movements, you could realize all imaginations and reproduce the greatest times on your iPad. Keywords: Sand drawing; Creativity; Multi-touch; iPad;</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:sWfw5pSBeOIJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:sWfw5pSBeOIJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="23">
+    <url>https://tspace.library.utoronto.ca/handle/1807/17488</url>
+    <title status="complete" source="scholar.google.com">Earpod: Efficient hierarchical eyes-free menu selection</title>
+    <pdf>https://tspace.library.utoronto.ca/bitstream/1807/17488/1/Zhao_Shengdong_200903_PHD_thesis.pdf</pdf>
+    <author status="complete" source="scholar.google.com">S Zhao</author>
+    <year>2009</year>
+    <source>tspace.library.utoronto.ca</source>
+    <snippet status="partial" source="scholar.google.com">Page 1. earPod: Efficient Hierarchical Eyes-free Menu Selection by Shengdong Zhao A thesissubmitted in conformity with the requirements for the degree of Doctor of Philosophy Departmentof Computer Science University of Toronto Â© Copyright by Shengdong Zhao 2009 ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:W77S2r-1DwIJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>7</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=148537148341141083&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>1</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=148537148341141083&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="1">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=1979009</url>
+        <title status="complete" source="scholar.google.com">Fast or safe?: how performance objectives determine modality output choices while interacting on the move</title>
+        <pdf>http://www.uclic.ucl.ac.uk/people/d.brumby/publications/Brumby.2011.CHI.pdf</pdf>
+        <author status="partial" source="scholar.google.com">DP Brumby, SCE Davies, CP Janssen&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 2011 &#8230;</proceeding>
+        <year>2011</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In-car devices that use audio output have been shown to be less distracting than traditional graphical user interfaces, but can be cumbersome and slow to use. In this paper, we report an experiment that demonstrates how these performance characteristics impact ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:aJpVOFgvskgJ:scholar.google.com/&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=5238301372534069864&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>5</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=5238301372534069864&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=1</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+</query>
+</results>

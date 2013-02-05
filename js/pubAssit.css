@@ -1,0 +1,128 @@
+
+body
+{
+
+	width: 800px;
+	
+	padding:15px 10px 10px 50px;
+}
+
+#root_list{
+	width: 800px;
+	background-color: #F0F0F0;
+}
+
+.detail-label
+{
+	background-color:MediumSlateBlue;
+	color: white;
+}
+
+.detail-div
+{
+	width:95%;
+	background-color:MintCream ;
+	outline-style:dotted;
+	outline-width:1px;
+	padding:15px 10px 10px 20px;
+}
+.clearfix
+{
+	clear:both;
+	visibility:hidden;
+	width: 100%
+}
+
+.chart-div
+{
+	float: left;
+	width:75%; 
+	height:160px;
+	padding-top:5px; 
+}
+.citator-div
+{
+	float: right;
+	width: 25%;
+	height:160px;
+	padding-top:5px; 
+}
+
+a
+{
+	text-decoration: none;
+	color: RoyalBlue ;
+}
+li
+{
+	padding:5px 0 0 5px;
+	text-align:justify;
+}
+
+
+.t_title
+{
+	text-decoration: underline;
+}
+.proceeding
+{
+	font-style:italic;
+}
+.abstract_title
+{
+	font-weight:bold;
+}
+#header
+{
+	width:95%;
+
+}	
+.author_citation_button{
+	color: white;
+	background-color:Green;
+	font-size: 14px;
+	padding:2px 1px 1px 2px;
+}
+.author_citor{
+	width: 25%;
+	height:200px;
+	float:right;
+}
+
+.author_cit_div{
+	width: 75%;
+	height:200px;
+	float:left;
+}
+.author_cit_total{
+	font-size: 18px;
+	padding:2px 1px 1px 25px;
+	color: Purple;
+}
+.person_item{
+	color: RoyalBlue;
+	font-size: 20px;
+}
+.person_item_none{
+	color: black;
+	font-size: 20px;
+}
+.group_item{
+	color: Red;
+	font-size: 20px;
+}
+.group_div{
+	width:95%;
+	background-color:MintCream ;
+	outline-style:dotted;
+	outline-width:1px;
+	padding:15px 10px 10px 10px;
+}
+
+.person_div{
+	width:95%;
+	background-color:#FFFFCC ;
+	outline-style:dotted;
+	outline-width:1px;
+	padding:15px 10px 10px 10px;
+}

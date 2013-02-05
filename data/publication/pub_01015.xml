@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<results algorithmName="GS" algorithmVersion="101001" time="9:00" date="2013">
+<query content="author:&quot;Golam Ashraf&quot; NUS" label="" count="10" totalresults="10">
+  <result id="0">
+    <url>http://www.thinkmind.org/index.php?view=article&amp;articleid=content_2010_1_50_60021</url>
+    <title status="complete" source="scholar.google.com">Drafting 2D Characters with Primitive Shape Scaffolds</title>
+    <pdf>http://www.thinkmind.org/download.php?articleid=content_2010_1_50_60021</pdf>
+    <author status="partial" source="scholar.google.com">G Ashraf, KM Nahiduzzaman, NKH Le&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">CONTENT 2010, The &#8230;</proceeding>
+    <year>2010</year>
+    <source>thinkmind.org</source>
+    <snippet status="partial" source="scholar.google.com">Page 1. Drafting 2D Characters with Primitive Shape Scaffolds Golam Ashraf School of ComputingNational University of Singapore gashraf@nus.edu.sg Kaiser Md. Nahiduzzaman School ofComputing National University of Singapore kaisernahid@gmail.com ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:NV0JhK4XohkJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>2</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=1847064835482279221&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>3</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=1847064835482279221&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="3">
+        <result id="0">
+        <url>http://scholarbank.nus.sg/handle/10635/23749</url>
+        <title status="complete" source="scholar.google.com">Sketch-based character prototyping by deformation</title>
+        <pdf>http://scholarbank.nus.sg/bitstream/handle/10635/23749/LiM.pdf?sequence=1</pdf>
+        <author status="complete" source="scholar.google.com">L Mo</author>
+        <year>2011</year>
+        <source>scholarbank.nus.sg</source>
+        <snippet status="partial" source="scholar.google.com">Most 3D character editing tools are complex and non-intuitive. It takes lot of skill and labor from the artists to create even a draft 3D humanoid model. This paper proposes an intuitive 2D sketch driven drafting tool that allows users to quickly shape and proportion existing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:PLopSV2ssl0J:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>5</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=6751648308041202236&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://www.springerlink.com/index/D80524611684214V.pdf</url>
+        <title status="complete" source="scholar.google.com">Shape stylized face caricatures</title>
+        <author status="complete" source="scholar.google.com">N Le, Y Why, G Ashraf</author>
+        <proceeding status="complete" source="scholar.google.com">Advances in Multimedia Modeling</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Facial caricatures exaggerate key features to emphasize unique structural and personality traits. It is quite a challenge to retain the identity of the original person despite the exaggerations. We find that primitive shapes are well known for representing certain ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:K4fvghL6TwcJ:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=526914638838728491&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://www.springerlink.com/index/A7JJ6P7528664836.pdf</url>
+        <title status="complete" source="scholar.google.com">Sketch based 3D character deformation</title>
+        <author status="complete" source="scholar.google.com">M Li, G Ashraf</author>
+        <proceeding status="complete" source="scholar.google.com">Transactions on edutainment V</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Most 3D character editing tools are complex and non-intuitive. It takes lot of skill and labor from the artists to create even a draft 3D humanoid model. This paper proposes an intuitive 2D sketch-driven drafting tool that allows users to quickly shape and proportion existing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:DudPo-PeKCsJ:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>4</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=3109980611978192654&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="1">
+    <url>http://www.springerlink.com/index/R7223843626776H1.pdf</url>
+    <title status="complete" source="scholar.google.com">Learning from humanoid cartoon designs</title>
+    <author status="partial" source="scholar.google.com">M Islam, K Nahiduzzaman, W Peng&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Advances in Data Mining. &#8230;</proceeding>
+    <year>2010</year>
+    <source>Springer</source>
+    <snippet status="partial" source="scholar.google.com">... Learning from Humanoid Cartoon Designs Md. Tanvirul Islam, Kaiser Md. Nahiduzzaman, WhyYong Peng, and Golam Ashraf National University of Singapore, Singapore-117417tanvirulbd@gmail.com, kaisernahid@yahoo.com, {psywyp,gashraf}@nus.edu.sg Abstract. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:gnf3oju_h3IJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>3</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=8252775105037825922&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>8</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=8252775105037825922&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="8">
+        <result id="0">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5656507</url>
+        <title status="complete" source="scholar.google.com">Learning character design from experts and laymen</title>
+        <author status="partial" source="scholar.google.com">MT Islam, KM Nahiduzzaman, YP Why&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Cyberworlds (CW), &#8230;</proceeding>
+        <year>2010</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract The use of pose and proportion to represent character traits is well established in art and psychology literature. However, there are no Golden Rules that quantify a generic design template for stylized character figure drawing. Given the wide variety of drawing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:NHMmVarYsSAJ:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>5</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=2355902306176103220&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>3</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=2355902306176103220&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=8</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://www.thinkmind.org/index.php?view=article&amp;articleid=content_2010_1_50_60021</url>
+        <title status="complete" source="scholar.google.com">Drafting 2D Characters with Primitive Shape Scaffolds</title>
+        <pdf>http://www.thinkmind.org/download.php?articleid=content_2010_1_50_60021</pdf>
+        <author status="partial" source="scholar.google.com">G Ashraf, KM Nahiduzzaman, NKH Le&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">CONTENT 2010, The &#8230;</proceeding>
+        <year>2010</year>
+        <source>thinkmind.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract-Primitive shapes, namely circle, triangle and square, form the basis of design and cognition of a large number of objects we find around us. Inspired by this, we have recently proposed a primitive shape field representation that simplifies detailed convex shapes. In ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:NV0JhK4XohkJ:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=1847064835482279221&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>3</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=1847064835482279221&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=8</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5568901</url>
+        <title status="complete" source="scholar.google.com">Learning shape-proportion relationships from labeled humanoid cartoons</title>
+        <author status="complete" source="scholar.google.com">MT Islam, YP Why, G Ashraf</author>
+        <proceeding status="partial" source="scholar.google.com">Digital Content, Multimedia &#8230;</proceeding>
+        <year>2010</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Character design artists typically use shape, pose and proportion as the first design layer to express role, physicality and personality traits. Inspired by this we approach the problem of automatic character synthesis by attempting to learn relations among the body- ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:dD0qqvZ6aOgJ:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=16746770414212627828&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=16746770414212627828&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=8</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://scholarbank.nus.sg/handle/10635/23749</url>
+        <title status="complete" source="scholar.google.com">Sketch-based character prototyping by deformation</title>
+        <pdf>http://scholarbank.nus.sg/bitstream/handle/10635/23749/LiM.pdf?sequence=1</pdf>
+        <author status="complete" source="scholar.google.com">L Mo</author>
+        <year>2011</year>
+        <source>scholarbank.nus.sg</source>
+        <snippet status="partial" source="scholar.google.com">Most 3D character editing tools are complex and non-intuitive. It takes lot of skill and labor from the artists to create even a draft 3D humanoid model. This paper proposes an intuitive 2D sketch driven drafting tool that allows users to quickly shape and proportion existing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:PLopSV2ssl0J:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>5</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=6751648308041202236&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="4">
+        <url>http://www.springerlink.com/index/97744646867022TU.pdf</url>
+        <title status="complete" source="scholar.google.com">Informed character pose and proportion design</title>
+        <pdf>http://posgrado.escom.ipn.mx/biblioteca/Informed%20character%20pose%20and%20proportion%20design.pdf</pdf>
+        <author status="complete" source="scholar.google.com">MT Islam, KM Nahiduzzaman, YP Why, G Ashraf</author>
+        <proceeding status="complete" source="scholar.google.com">The Visual Computer</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Abstract The use of pose and proportion to represent character traits is well established in art and psychology literature. However, there are no golden rules that quantify a generic design template for stylized character figure drawing. Given the wide variety of drawing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:ioTBe-kqVE8J:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>6</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=5716241009332028554&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=5716241009332028554&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=8</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="5">
+        <url>http://www.springerlink.com/index/D80524611684214V.pdf</url>
+        <title status="complete" source="scholar.google.com">Shape stylized face caricatures</title>
+        <author status="complete" source="scholar.google.com">N Le, Y Why, G Ashraf</author>
+        <proceeding status="complete" source="scholar.google.com">Advances in Multimedia Modeling</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Facial caricatures exaggerate key features to emphasize unique structural and personality traits. It is quite a challenge to retain the identity of the original person despite the exaggerations. We find that primitive shapes are well known for representing certain ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:K4fvghL6TwcJ:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=526914638838728491&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="6">
+        <url>http://ibai-publishing.org/journal/issue_mldm/2011_july/mldm_4_1_17-29.pdf</url>
+        <title status="complete" source="scholar.google.com">Learning Primitive Shapes in Cartoon Designs</title>
+        <pdf>http://ibai-publishing.org/journal/issue_mldm/2011_july/mldm_4_1_17-29.pdf</pdf>
+        <author status="partial" source="scholar.google.com">MT Islam, KM Nahiduzzaman, YP Why&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">&#8230; on Machine Learning &#8230;</proceeding>
+        <year>2011</year>
+        <source>ibai-publishing.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract. Character design is a key ingredient to the success of any comicbook, graphic novel, or animated feature. Artists typically use shape, size and proportion as the first design layer to express role, physicality and personality traits. In this paper, we propose a ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:DUdQm0SR6e0J:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:DUdQm0SR6e0J:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>5</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=17143393180412036877&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="7">
+        <url>http://www.springerlink.com/index/A7JJ6P7528664836.pdf</url>
+        <title status="complete" source="scholar.google.com">Sketch based 3D character deformation</title>
+        <author status="complete" source="scholar.google.com">M Li, G Ashraf</author>
+        <proceeding status="complete" source="scholar.google.com">Transactions on edutainment V</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Most 3D character editing tools are complex and non-intuitive. It takes lot of skill and labor from the artists to create even a draft 3D humanoid model. This paper proposes an intuitive 2D sketch-driven drafting tool that allows users to quickly shape and proportion existing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:DudPo-PeKCsJ:scholar.google.com/&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>4</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=3109980611978192654&amp;hl=en&amp;num=8&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="2">
+    <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5568901</url>
+    <title status="complete" source="scholar.google.com">Learning shape-proportion relationships from labeled humanoid cartoons</title>
+    <author status="complete" source="scholar.google.com">MT Islam, YP Why, G Ashraf</author>
+    <proceeding status="partial" source="scholar.google.com">Digital Content, Multimedia &#8230;</proceeding>
+    <year>2010</year>
+    <source>ieeexplore.ieee.org</source>
+    <snippet status="partial" source="scholar.google.com">... Golam Ashraf School Of Computing National University of Singapore gashraf@nus.edu.sg Abstract- Character design artists typically use shape, pose and proportion as the firstdesign layer to express role, physicality and personality traits. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:dD0qqvZ6aOgJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>2</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=16746770414212627828&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>2</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=16746770414212627828&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="2">
+        <result id="0">
+        <url>http://scholarbank.nus.sg/handle/10635/23749</url>
+        <title status="complete" source="scholar.google.com">Sketch-based character prototyping by deformation</title>
+        <pdf>http://scholarbank.nus.sg/bitstream/handle/10635/23749/LiM.pdf?sequence=1</pdf>
+        <author status="complete" source="scholar.google.com">L Mo</author>
+        <year>2011</year>
+        <source>scholarbank.nus.sg</source>
+        <snippet status="partial" source="scholar.google.com">Most 3D character editing tools are complex and non-intuitive. It takes lot of skill and labor from the artists to create even a draft 3D humanoid model. This paper proposes an intuitive 2D sketch driven drafting tool that allows users to quickly shape and proportion existing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:PLopSV2ssl0J:scholar.google.com/&amp;hl=en&amp;num=2&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>5</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=6751648308041202236&amp;hl=en&amp;num=2&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://www.springerlink.com/index/A7JJ6P7528664836.pdf</url>
+        <title status="complete" source="scholar.google.com">Sketch based 3D character deformation</title>
+        <author status="complete" source="scholar.google.com">M Li, G Ashraf</author>
+        <proceeding status="complete" source="scholar.google.com">Transactions on edutainment V</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Most 3D character editing tools are complex and non-intuitive. It takes lot of skill and labor from the artists to create even a draft 3D humanoid model. This paper proposes an intuitive 2D sketch-driven drafting tool that allows users to quickly shape and proportion existing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:DudPo-PeKCsJ:scholar.google.com/&amp;hl=en&amp;num=2&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>4</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=3109980611978192654&amp;hl=en&amp;num=2&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="3">
+    <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5656507</url>
+    <title status="complete" source="scholar.google.com">Learning character design from experts and laymen</title>
+    <author status="partial" source="scholar.google.com">MT Islam, KM Nahiduzzaman, YP Why&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Cyberworlds (CW), &#8230;</proceeding>
+    <year>2010</year>
+    <source>ieeexplore.ieee.org</source>
+    <snippet status="partial" source="scholar.google.com">... com Golam Ashraf School of Computing, National University of Singaporegashraf@nus.edu.sg Abstractâ The use of pose and proportion to represent charactertraits is well established in art and psychology literature. However ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:NHMmVarYsSAJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>5</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=2355902306176103220&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>3</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=2355902306176103220&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="3">
+        <result id="0">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5568901</url>
+        <title status="complete" source="scholar.google.com">Learning shape-proportion relationships from labeled humanoid cartoons</title>
+        <author status="complete" source="scholar.google.com">MT Islam, YP Why, G Ashraf</author>
+        <proceeding status="partial" source="scholar.google.com">Digital Content, Multimedia &#8230;</proceeding>
+        <year>2010</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Character design artists typically use shape, pose and proportion as the first design layer to express role, physicality and personality traits. Inspired by this we approach the problem of automatic character synthesis by attempting to learn relations among the body- ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:dD0qqvZ6aOgJ:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=16746770414212627828&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=16746770414212627828&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=3</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://www.springerlink.com/index/97744646867022TU.pdf</url>
+        <title status="complete" source="scholar.google.com">Informed character pose and proportion design</title>
+        <pdf>http://posgrado.escom.ipn.mx/biblioteca/Informed%20character%20pose%20and%20proportion%20design.pdf</pdf>
+        <author status="complete" source="scholar.google.com">MT Islam, KM Nahiduzzaman, YP Why, G Ashraf</author>
+        <proceeding status="complete" source="scholar.google.com">The Visual Computer</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">Abstract The use of pose and proportion to represent character traits is well established in art and psychology literature. However, there are no golden rules that quantify a generic design template for stylized character figure drawing. Given the wide variety of drawing ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:ioTBe-kqVE8J:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>6</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=5716241009332028554&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=5716241009332028554&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=3</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://his.diva-portal.org/smash/record.jsf?pid=diva2:421663</url>
+        <title status="complete" source="scholar.google.com">Kvinnors karaktÃ¤rsegenskaper: KÃ¶n, egenskaper och kvinnobilder fÃ¶r sf-spel</title>
+        <pdf>http://his.diva-portal.org/smash/get/diva2:421663/FULLTEXT01</pdf>
+        <author status="complete" source="scholar.google.com">D Larsson</author>
+        <year>2011</year>
+        <source>his.diva-portal.org</source>
+        <snippet status="partial" source="scholar.google.com">I bakgrundskapitlet studerades kvinnobilden i science fiction (fortsÃ¤ttningsvis kallat sf). Till grund fÃ¶r undersÃ¶kningen i kapitlet lÃ¥g frÃ¥gor som vad menas med sf som genre? Vilka kvinnobilder finns det inom sf? UtifrÃ¥n analysen delades kvinnobilden in i tre grupper: ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:5Af2OYQiLdkJ:scholar.google.com/&amp;hl=en&amp;num=3&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="4">
+    <url>http://www.springerlink.com/index/AG03063373146H22.pdf</url>
+    <title status="complete" source="scholar.google.com">Hardware accelerated skin deformation for animated crowds</title>
+    <pdf>http://pdf.aminer.org/000/269/232/normalizing_and_accelerating_ram_computations_and_the_problem_of_reasonable.pdf</pdf>
+    <author status="complete" source="scholar.google.com">G Ashraf, J Zhou</author>
+    <proceeding status="complete" source="scholar.google.com">Advances in Multimedia Modeling</proceeding>
+    <year>2006</year>
+    <source>Springer</source>
+    <snippet status="partial" source="scholar.google.com">... 1 School of Computing, National University of Singapore gashraf@nus.edu.sg 2 Electronic Arts,Singapore zhny@ea.com ... Zhou J., and G. Ashraf, Hardware Accelerated Crowd skinningDemonstration: Video clips, http://www.comp.nus.edu.sg/~ashraf/papers/hwSkinning</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:B_0IaC6uLL4J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>8</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=13703519280518724871&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>4</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=13703519280518724871&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="4">
+        <result id="0">
+        <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5945422</url>
+        <title status="complete" source="scholar.google.com">A Novel CPS System for Evaluating a Neural-Machine Interface for Artificial Legs</title>
+        <author status="partial" source="scholar.google.com">F Zhang, W DiSanto, J Ren, Z Dou&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">&#8230; (ICCPS), 2011 IEEE/ &#8230;</proceeding>
+        <year>2011</year>
+        <source>ieeexplore.ieee.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract This paper presents a novel cyber physical system (CPS) that senses signals from two physical systems-a human neuromuscular control system and a mechanical prosthesis--to drive a cyber virtual reality (VR) system for the purpose of evaluating a neural-machine ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:PWZTX0Y37MQJ:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>5</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=14189777301324129853&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>8</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=14189777301324129853&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=4</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.119.6719&amp;rep=rep1&amp;type=pdf</url>
+        <title status="complete" source="scholar.google.com">Simplified muscle dynamics for appealing real-time skin deformation</title>
+        <pdf>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.119.6719&amp;rep=rep1&amp;type=pdf</pdf>
+        <author status="complete" source="scholar.google.com">KS Lee, G Ashraf</author>
+        <proceeding status="partial" source="scholar.google.com">International Conference on Computer Graphics and &#8230;</proceeding>
+        <year>2007</year>
+        <source>Citeseer</source>
+        <snippet status="partial" source="scholar.google.com">Abstract-We propose significant simplifications in muscle modeling and simulation to facilitate real-time anatomical skin deformation for full-body articulated characters. The muscle shape is a function of an animated quadratic BÃ©zier action curve and control rings ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:S6wB7qLRKgYJ:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:S6wB7qLRKgYJ:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <numVersions>4</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=444398010957409355&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=444398010957409355&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=4</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://www.uv.es/guianvi/papers/CMMSE2010.pdf</url>
+        <title status="complete" source="scholar.google.com">A Distributed Visual Client for Large-Scale Crowd Simulations</title>
+        <pdf>http://www.uv.es/guianvi/papers/CMMSE2010.pdf</pdf>
+        <author status="complete" source="scholar.google.com">G Vigueras, M Lozano, JM Orduna, Y Chrysanthou</author>
+        <proceeding status="complete" source="scholar.google.com">uv.es</proceeding>
+        <snippet status="partial" source="scholar.google.com">Abstract The visualization system of large-scale crowd simulations should scale up with both the number of visuals (views of the virtual world) and the number of agents displayed in each visual. Otherwise, we could have large scale crowd simulations where only a small ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:G7O_GG4hFr8J:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:G7O_GG4hFr8J:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://iospress.metapress.com/index/B120252J4P06658V.pdf</url>
+        <title status="complete" source="scholar.google.com">A distributed visualization system for crowd simulations</title>
+        <author status="partial" source="scholar.google.com">G Vigueras, JM OrduÃ±a, M Lozano&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">Integrated Computer- &#8230;</proceeding>
+        <year>2011</year>
+        <source>IOS Press</source>
+        <snippet status="partial" source="scholar.google.com">The visualization system of large-scale crowd simulations should scale up with both the number of visuals (views of the virtual world) and the number of agents displayed in each visual. Otherwise, we could have large scale crowd simulations where only a small ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:6USPk4XfrcMJ:scholar.google.com/&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=14100171773166175465&amp;hl=en&amp;num=4&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>3</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=14100171773166175465&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=4</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="5">
+    <url>http://ibai-publishing.org/journal/issue_mldm/2011_july/mldm_4_1_17-29.pdf</url>
+    <title status="complete" source="scholar.google.com">Learning Primitive Shapes in Cartoon Designs</title>
+    <pdf>http://ibai-publishing.org/journal/issue_mldm/2011_july/mldm_4_1_17-29.pdf</pdf>
+    <author status="partial" source="scholar.google.com">MT Islam, KM Nahiduzzaman, YP Why&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">&#8230; on Machine Learning &#8230;</proceeding>
+    <year>2011</year>
+    <source>ibai-publishing.org</source>
+    <snippet status="partial" source="scholar.google.com">... Md. Tanvirul Islam, Kaiser Md. Nahiduzzaman, Why Yong Peng and Golam Ashraf NationalUniversity of Singapore, Singapore-117417, tanvirulbd@gmail.com, kaisernahid@yahoo.com, psywyp@nus.edu.sg, gashraf@nus.edu.sg Abstract. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:DUdQm0SR6e0J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:DUdQm0SR6e0J:scholar.google.com/+author:%22Golam+Ashraf%22+NUS&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <numVersions>5</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=17143393180412036877&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="6">
+    <url>http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.138.5433</url>
+    <title status="complete" source="scholar.google.com">Y.: Hardware accelerated skin deformation for animated crowds. Multimedia Modeling</title>
+    <author status="complete" source="scholar.google.com">G Ashraf, Z Junyu</author>
+    <year>2007</year>
+    <source>Citeseer</source>
+    <snippet status="partial" source="scholar.google.com">... Y.: Hardware accelerated skin deformation for animated crowds. Multimedia Modeling (2007).Cached. Download as a PDF. Download Links. [www.comp.nus.edu.sg]. Save to List; Add toCollection; Correct Errors; Monitor Changes. by Golam Ashraf , Zhou Junyu. Citations: 1 - 1 ...</snippet>
+    <numVersions>3</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=9533467063597089471&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="7">
+    <url>http://www.springerlink.com/index/97744646867022TU.pdf</url>
+    <title status="complete" source="scholar.google.com">Informed character pose and proportion design</title>
+    <pdf>http://posgrado.escom.ipn.mx/biblioteca/Informed%20character%20pose%20and%20proportion%20design.pdf</pdf>
+    <author status="complete" source="scholar.google.com">MT Islam, KM Nahiduzzaman, YP Why, G Ashraf</author>
+    <proceeding status="complete" source="scholar.google.com">The Visual Computer</proceeding>
+    <year>2011</year>
+    <source>Springer</source>
+    <snippet status="partial" source="scholar.google.com">... M. Tanvirul Islam Â· Kaiser M. Nahiduzzaman Â· Yong Peng Why Â· Golam Ashraf ... MT Islam Â· KMNahiduzzaman Â· G. Ashraf ( ) School of Computing, National University of Singapore, Singapore,Singapore e-mail: gashraf@nus.edu.sg MT Islam e-mail: tanvirulbd@gmail.com KM ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:ioTBe-kqVE8J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>6</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=5716241009332028554&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>1</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=5716241009332028554&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="1">
+        <result id="0">
+        <url>http://www.tandfonline.com/doi/abs/10.1080/20932685.2012.10593110</url>
+        <title status="complete" source="scholar.google.com">The Role of Fashion in the Characters of Online Games</title>
+        <author status="complete" source="scholar.google.com">SJ Kim, KH Kim, P Mattila</author>
+        <proceeding status="complete" source="scholar.google.com">Journal of Global Fashion Marketing</proceeding>
+        <year>2012</year>
+        <source>Taylor &amp; Francis</source>
+        <snippet status="partial" source="scholar.google.com">Abstract This research study aims to discover the relationships among the fashion of characters, storytelling, and game satisfaction in Massive Multiplayer Online Role Playing Games (MMORPG) in order to examine the influence of the fashion of characters in games ...</snippet>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="8">
+    <url>http://www.springerlink.com/index/D80524611684214V.pdf</url>
+    <title status="complete" source="scholar.google.com">Shape stylized face caricatures</title>
+    <author status="complete" source="scholar.google.com">N Le, Y Why, G Ashraf</author>
+    <proceeding status="complete" source="scholar.google.com">Advances in Multimedia Modeling</proceeding>
+    <year>2011</year>
+    <source>Springer</source>
+    <snippet status="partial" source="scholar.google.com">... Nguyen Kim Hai Le1, Yong Peng Why2, and Golam Ashraf1 1 School of Computing, NationalUniversity of Singapore 2 Faculty of Arts and Social Sciences (Psychology), National Universityof Singapore {dcslnkh,psywyp,gashraf}@nus.edu.sg Abstract. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:K4fvghL6TwcJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>3</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=526914638838728491&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="9">
+    <url>http://www.springerlink.com/index/A7JJ6P7528664836.pdf</url>
+    <title status="complete" source="scholar.google.com">Sketch based 3D character deformation</title>
+    <author status="complete" source="scholar.google.com">M Li, G Ashraf</author>
+    <proceeding status="complete" source="scholar.google.com">Transactions on edutainment V</proceeding>
+    <year>2011</year>
+    <source>Springer</source>
+    <snippet status="partial" source="scholar.google.com">... Springer-Verlag Berlin Heidelberg 2011 Sketch Based 3D Character Deformation Mo Li andGolam Ashraf National University of Singapore, Computing 1, Computing Drive 13, 117417Singapore, Republic of Singapore limo1985@gmail.com, gashraf@nus.edu.sg Abstract. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:DudPo-PeKCsJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>4</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=3109980611978192654&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+</query>
+</results>
