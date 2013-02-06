@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<results algorithmName="GS" algorithmVersion="101001" time="9:00" date="2013">
+<query content="author:&quot;Jovian Lin&quot; NUS" label="" count="1" totalresults="1">
+  <result id="0">
+    <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5718602</url>
+    <title status="complete" source="scholar.google.com">OCR Correction via Human Computational Game</title>
+    <author status="complete" source="scholar.google.com">LT Jovian, O Amprimo</author>
+    <proceeding status="partial" source="scholar.google.com">System Sciences (HICSS), 2011 44th &#8230;</proceeding>
+    <year>2011</year>
+    <source>ieeexplore.ieee.org</source>
+    <snippet status="partial" source="scholar.google.com">Page 1. OCR Correction via Human Computational Game Lin Tingji Jovian NationalUniversity of Singapore jovian@nus.edu.sg Olivier Amprimo National Library Boardof Singapore olivier_amprimo@nlb.gov.sg Abstract We ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:H3876caWz8AJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>3</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=13893489156521951007&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+</query>
+</results>

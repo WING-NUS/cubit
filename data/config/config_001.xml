@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding='UTF-8'?>
+
+<config id="001" name="WING" type="group" perl_src="c:/perl/bin/perl.exe" mthd="-T" gsnap_src="gsnap/bin/query_gscholar.pl">
+
+	<dir>./gsnap/cache/gs/</dir>
+	<n>all</n>	
+	<update_frequency>5</update_frequency>
+	
+	<members>
+		<member id="01016" type="person" affiliation="NUS" name="Kan Min Yen" needVerify="false"></member>
+		<member id="00102" type="person" affiliation="NUS" name="Kazunari Sugiyama" needVerify="false"></member>
+		<member id="00103" type="person" affiliation="NUS" name="Jin Zhao" needVerify="false"></member>
+		<member id="00104" type="person" affiliation="NUS" name="Jesse Prabawa Gozali" needVerify="false"></member>
+		<member id="00105" type="person" affiliation="NUS" name="Jun Ping Ng" needVerify="false"></member>
+		<member id="00106" type="person" affiliation="NUS" name="Aobo Wang" needVerify="false"></member>
+		<member id="00107" type="person" affiliation="NUS" name="Jovian Lin" needVerify="false"></member>
+		<member id="00108" type="person" affiliation="NUS" name="Tao Chen" needVerify="false"></member>
+		<member id="00109" type="person" affiliation="NUS" name="Xiangnan He" needVerify="false"></member>
+		<member id="00110" type="person" affiliation="NUS" name="Bamdad Bahrani" needVerify="false"></member>
+		<member id="00111" type="person" affiliation="NUS" name="Muthu Kumar C" needVerify="false"></member>
+		<member id="00112" type="person" affiliation="NUS" name="Yiping Jin" needVerify="false"></member>
+		<member id="00113" type="person" affiliation="NUS" name="Sudhanshu Khemka" needVerify="false"></member>
+		<member id="00114" type="person" affiliation="NUS" name="Eric Yulianto" needVerify="false"></member>
+		<member id="00115" type="person" affiliation="NUS" name="Yushi Wang" needVerify="false"></member>
+		<member id="00116" type="person" affiliation="NUS" name="Haochen Zhang" needVerify="false"></member>
+		<member id="00117" type="person" affiliation="NUS" name="Yun Huang" needVerify="false"></member>
+		<member id="00118" type="person" affiliation="NUS" name="Dongyuan Lu" needVerify="true"></member>
+		<member id="00119" type="person" affiliation="NUS" name="Ning Fang" needVerify="false"></member>
+	</members>
+	
+	<showIndentifier>yes</showIndentifier>
+	<citedBy>all</citedBy>
+	<fixGSError></fixGSError>	
+	<fromYear></fromYear>
+	<toYear></toYear>
+
+</config>

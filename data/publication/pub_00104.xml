@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<results algorithmName="GS" algorithmVersion="101001" time="9:00" date="2013">
+<query content="author: &quot;Jesse Prabawa Gozali&quot;" label="" count="12" totalresults="12">
+  <result id="0">
+    <url>http://dl.acm.org/citation.cfm?id=1699762</url>
+    <title status="complete" source="scholar.google.com">FireCite: Lightweight real-time reference string extraction from webpages</title>
+    <pdf>https://iiwas.comp.nus.edu.sg/~kanmy/papers/W09-36.pdf#page=81</pdf>
+    <author status="complete" source="scholar.google.com">CHA Hong, JP Gozali, MY Kan</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 2009 Workshop on &#8230;</proceeding>
+    <year>2009</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Ching Hoi Andy Hong Jesse Prabawa Gozali School of Computing National University ofSingapore {hongchin,jprabawa,kanmy}@comp.nus.edu.sg Min-Yen Kan Abstract ... The CORAdataset is annotated with thirteen fields, including author, title and date. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:BU2V7_RvVjwJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>44</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=4347785588055035141&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>5</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=4347785588055035141&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="5">
+        <result id="0">
+        <url>http://hal.archives-ouvertes.fr/tel-00530785/</url>
+        <title status="complete" source="scholar.google.com">RepÃ©rage et typage d&#39;expressions temporelles pour l&#39;annotation sÃ©mantique automatique de pages Web-Application au e-tourisme</title>
+        <pdf>http://hal.archives-ouvertes.fr/docs/00/53/07/85/PDF/tel-sw.pdf</pdf>
+        <author status="complete" source="scholar.google.com">S Weiser</author>
+        <year>2010</year>
+        <source>hal.archives-ouvertes.fr</source>
+        <snippet status="partial" source="scholar.google.com">RÃSUMÃ Cette thÃ¨se prÃ©sente Adetoa, systÃ¨me dÃ©diÃ© au repÃ©rage et Ã  l&#39;annotation sÃ©mantique automatique d&#39;expressions temporelles dans des pages Web pour une application de etourisme. La rÃ©alisation de ce systÃ¨me de TAL s&#39; appuie sur une Ã©tude ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:LsT4vaB6eKsJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>5</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=12355760408491508782&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=12355760408491508782&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=5</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://people.cs.vt.edu/~shpark/paper/SHP_prelim_proposal_2fox.pdf</url>
+        <title status="complete" source="scholar.google.com">Discipline-Independent and Style-Free Canonical Representation Extraction for Heterogeneously Styled References Using Knowledge from the Web</title>
+        <pdf>http://people.cs.vt.edu/~shpark/paper/SHP_prelim_proposal_2fox.pdf</pdf>
+        <author status="complete" source="scholar.google.com">SH Park</author>
+        <year>2011</year>
+        <source>people.cs.vt.edu</source>
+        <snippet status="partial" source="scholar.google.com">(ABSTRACT) In education and research, references play a key role. They give credit to prior works, and provide support for reviews, discussions, and arguments. The set of references attached to a publication can help describe that publication, can aid with its categorization ...</snippet>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:9LbKFkCc5PYJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="2">
+        <url>http://www.thinkmind.org/index.php?view=article&amp;articleid=iciw_2012_2_20_20184</url>
+        <title status="complete" source="scholar.google.com">DLConnector: Connecting a Publication List to Scholarly Digital Library</title>
+        <pdf>http://www.thinkmind.org/download.php?articleid=iciw_2012_2_20_20184</pdf>
+        <author status="partial" source="scholar.google.com">JM Chung, WWY Hsu, CY Lu, KP Wu&#8230;</author>
+        <proceeding status="partial" source="scholar.google.com">ICIW 2012, The &#8230;</proceeding>
+        <year>2012</year>
+        <source>thinkmind.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract: Researchers and graduate students spend a great deal of time on searching and reading papers. However, they may usually lack of experience on using proper keywords and finding the relevant papers can be challenging. To keep track on the newest activities ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:febRHkMo_okJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="3">
+        <url>http://dl.acm.org/citation.cfm?id=2232871</url>
+        <title status="complete" source="scholar.google.com">A hybrid two-stage approach for discipline-independent canonical representation extraction from references</title>
+        <pdf>http://www.cs.vt.edu/~shpark/paper/jcdl2012_ahybrid.pdf</pdf>
+        <author status="complete" source="scholar.google.com">SH Park, RW Ehrich, EA Fox</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 12th ACM/IEEE-CS &#8230;</proceeding>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract In education and research, references play a key role. However, extracting and parsing references are difficult problems. One concern is that there are many styles of references; hence, given a surface form, identifying what style was employed is ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:vYxRjpgkrv4J:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=18351645769222687933&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="4">
+        <url>http://www.cqvip.com/qk/96621x/201004/34084871.html</url>
+        <title status="complete" source="scholar.google.com">ä¿¡æ¯æ½åææ¯ç ç©¶ä¸æ¢è®¨</title>
+        <author status="complete" source="scholar.google.com">ä¼å®è¹ï¼ æææ</author>
+        <proceeding status="complete" source="scholar.google.com">ç¦å»ºçµè</proceeding>
+        <year>2010</year>
+        <source>cqvip.com</source>
+        <snippet status="partial" source="scholar.google.com">å¯¹ä¿¡æ¯æ½åææ¯çåå±èæ¯, æ¦å¿µè¿è¡äºæ¦è¿°. è¯¦ç»ä»ç»äºä¿¡æ¯æ½åä¸­ç ç©¶çåä¸ªå³é®ææ¯: å½åå®ä½è¯å«, å®ä½å³ç³»æ½å, æä»£æ¶è§£åäºä»¶æ¢æµ. æ ¹æ®éç¨æ¨¡åçä¸å, å¯¹ä¿¡æ¯æ½åè¿è¡äºåç±»ä»ç», åå«æåºäºåç±»æ½åæ¹æ³çä¼ç¹, ç¼ºç¹åç ç©¶é¾ç¹. æå, å¯¹å½å ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:LxROHnRWcAAJ:scholar.google.com/&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>2</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=31620254116221999&amp;hl=en&amp;num=5&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="1">
+    <url>http://wise.ajou.ac.kr:8080/pdfs/pdffile10754.pdf</url>
+    <title status="complete" source="scholar.google.com">A rich OPAC user interface with AJAX</title>
+    <pdf>http://wise.ajou.ac.kr:8080/pdfs/pdffile10754.pdf</pdf>
+    <author status="complete" source="scholar.google.com">JP Gozali, MY Kan</author>
+    <proceeding status="partial" source="scholar.google.com">&#8230; Conference on Digital Libraries: Proceedings of &#8230;</proceeding>
+    <year>2007</year>
+    <source>wise.ajou.ac.kr</source>
+    <snippet status="partial" source="scholar.google.com">... Jesse Prabawa Gozali Department of Computer Science National University of Singapore 3Science Drive 2, Singapore 117543 jessepra@comp.nus.edu.sg ... The Title/Author (compound),Year and Status columns are first displayed but may be changed by the âEdit Columns ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:75k3Fm6xCkwJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:75k3Fm6xCkwJ:scholar.google.com/+author:+%22Jesse+Prabawa+Gozali%22&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <numVersions>19</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=5479386983026891247&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>2</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=5479386983026891247&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="2">
+        <result id="0">
+        <url>http://books.google.com/books?hl=en&amp;lr=&amp;id=3325OuEYmNgC&amp;oi=fnd&amp;pg=PA425&amp;ots=WYAfMFnGxC&amp;sig=nnCBgfa1FeuVzaW3ebSxslTYACg</url>
+        <title status="complete" source="scholar.google.com">Heuristics for the Evaluation of Library Online Catalogues</title>
+        <author status="complete" source="scholar.google.com">T Weinhold, S Oettl, B Bekavac</author>
+        <proceeding status="partial" source="scholar.google.com">New Trends in Qualitive and &#8230;</proceeding>
+        <year>2011</year>
+        <source>books.google.com</source>
+        <snippet status="partial" source="scholar.google.com">Abstract: A widely used instrument to assess the quality of web interfaces is the so called heuristic evaluation. However, the evaluation criteria mentioned in commonly used heuristics, like for example the 10 heuristics of Nielsen (1994) are too generic for an in- ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:Wd_WxbATElgJ:scholar.google.com/&amp;hl=en&amp;num=2&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>3</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=6346156474872815449&amp;hl=en&amp;num=2&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>1</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=6346156474872815449&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=2</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+      <result id="1">
+        <url>http://dl.acm.org/citation.cfm?id=1456680</url>
+        <title status="complete" source="scholar.google.com">A lightweight Web interface to Grid scheduling systems</title>
+        <pdf>http://banzai.cs.uct.ac.za/~hussein/2008/grid/grid_2008_draft6.pdf</pdf>
+        <author status="complete" source="scholar.google.com">C Parker, H Suleman</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 2008 annual research &#8230;</proceeding>
+        <year>2008</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract Grid computing is often out of reach for the very scientists who need these resources because of the complexity of popular middleware suites. Some effort has gone into abstracting away these complexities using graphical user interfaces, some of which ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:z4-gNYGXjI0J:scholar.google.com/&amp;hl=en&amp;num=2&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>5</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=10199693837293621199&amp;hl=en&amp;num=2&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="2">
+    <url>https://www-old.comp.nus.edu.sg/~sugiyama/papers/p387-JCDL2010.pdf</url>
+    <title status="complete" source="scholar.google.com">ForeCite: Towards a reader-centric scholarly digital library</title>
+    <author status="partial" source="scholar.google.com">TD Nguyen, MY Kan, DT Dang, M HÃ¤nse&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Under &#8230;</proceeding>
+    <year>2010</year>
+    <source>www-old.comp.nus.edu.sg</source>
+    <snippet status="partial" source="scholar.google.com">... Markus HÃ¤nse2 Ching Hoi Andy Hong3 Minh-Thang Luong Jesse Prabawa Gozali KazunariSugiyama Yee Fan Tan ... Copyright is held by the author/owner(s). JCDL&#39;10, June 21â25, 2010,Gold Coast, Queensland, Australia. ACM 978-1-4503-0085-8/10/06. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:LEkHlIsTaWwJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:LEkHlIsTaWwJ:scholar.google.com/+author:+%22Jesse+Prabawa+Gozali%22&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <numVersions>28</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=7811796518855723308&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>1</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=7811796518855723308&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="1">
+        <result id="0">
+        <url>http://www.springerlink.com/index/D67585Q368741M1L.pdf</url>
+        <title status="complete" source="scholar.google.com">Robust argumentative zoning for sensemaking in scholarly documents</title>
+        <pdf>http://www.comp.nus.edu.sg/~kanmy/papers/alt4dl11.pdf</pdf>
+        <author status="complete" source="scholar.google.com">S Teufel, MY Kan</author>
+        <proceeding status="complete" source="scholar.google.com">Advanced Language Technologies for Digital Libraries</proceeding>
+        <year>2011</year>
+        <source>Springer</source>
+        <snippet status="partial" source="scholar.google.com">We present an automated approach to classify sentences of scholarly work with respect to their rhetorical function. While previous work that achieves this task of argumentative zoning requires richly annotated input, our approach is robust to noise and can process raw text. ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:LrlaymiHOosJ:scholar.google.com/&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>6</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=10032480004062492974&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <numCite>2</numCite>
+        <citeLink>http://scholar.google.com.sg/scholar?cites=10032480004062492974&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=1</citeLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="3">
+    <url>http://www.aclweb.org/anthology/W09-36</url>
+    <title status="complete" source="scholar.google.com">Proceedings of the 2009 Workshop on Text and Citation Analysis for Scholarly Digital Libraries}</title>
+    <author status="partial" source="scholar.google.com">S Shi, F Xing, M Zhu, Z Nie, JR Wen, S Merity&#8230;</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the &#8230;</proceeding>
+    <year>2009</year>
+    <source>aclweb.org</source>
+    <snippet status="partial" source="scholar.google.com">... Digital Libraries}, month = {August}, year = {2009}, address = {Suntec City, Singapore}, publisher ={Association for Computational Linguistics}, url = {http://www.aclweb.org/anthology/W/W09/W09-36} } @InProceedings{nagy-farkas-jelasity:2009:NLPIR4DL, author = {Nagy, Istv ...</snippet>
+    <numVersions>2</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=13858842374032583640&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="4">
+    <url>http://dl.comp.nus.edu.sg/dspace/handle/1900.100/2567</url>
+    <title status="complete" source="scholar.google.com">Rich and Dynamic Library Catalogs: A Case Study of Online Search Interfaces</title>
+    <pdf>http://dl.comp.nus.edu.sg/dspace/bitstream/1900.100/2567/1/tra8-07.pdf</pdf>
+    <author status="complete" source="scholar.google.com">JP Gozali, MY Kan</author>
+    <year>2007</year>
+    <source>dl.comp.nus.edu.sg</source>
+    <snippet status="partial" source="scholar.google.com">... author, at the address shown on the cover. JAFFAR, Joxan Dean of School Page 3. Rich andDynamic Library Catalogs: A Case Study of Online Search Interfaces Jesse Prabawa GozaliDepartment of Computer Science National University of Singapore 3 Science Drive 2 ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:YS4bD2TWOhkJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>32</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=1818001124835929697&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="5">
+    <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6266226</url>
+    <title status="complete" source="scholar.google.com">Hidden Markov Model for event photo stream segmentation</title>
+    <pdf>http://www.comp.nus.edu/~kanmy/papers/icmew2012-gozali.pdf</pdf>
+    <author status="complete" source="scholar.google.com">JP Gozali, MY Kan, H Sundaram</author>
+    <proceeding status="partial" source="scholar.google.com">Multimedia and Expo &#8230;</proceeding>
+    <year>2012</year>
+    <source>ieeexplore.ieee.org</source>
+    <snippet status="partial" source="scholar.google.com">... Jesse Prabawa Gozali, Min-Yen Kan Department of Computer Science National Universityof Singapore, Singapore Email: 1jprabawa, kanmyl@comp.nus.edu.sg ... As such, the firstauthor manually segmented the photos to provide ground truth. ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:SvBcl89Uh5gJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>17</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=10990846666195398730&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>1</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=10990846666195398730&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="1">
+        <result id="0">
+        <url>http://dl.acm.org/citation.cfm?id=2232875</url>
+        <title status="complete" source="scholar.google.com">How do people organize their photos in each event and how does it affect storytelling, searching and interpretation tasks?</title>
+        <pdf>http://dl.comp.nus.edu.sg/dspace/bitstream/1900.100/3725/1/TRC4-12+(Revised).pdf</pdf>
+        <author status="complete" source="scholar.google.com">JP Gozali, MY Kan, H Sundaram</author>
+        <proceeding status="partial" source="scholar.google.com">Proceedings of the 12th ACM/IEEE-CS &#8230;</proceeding>
+        <year>2012</year>
+        <source>dl.acm.org</source>
+        <snippet status="partial" source="scholar.google.com">Abstract This paper explores photo organization within an event photo stream, ie the chronological sequence of photos from a single event. The problem is important: with the advent of inexpensive, easy-to-use photo capture devices, people can take a large ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:V1Uj6EyR5_EJ:scholar.google.com/&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <numVersions>25</numVersions>
+        <versionLink>http://scholar.google.com.sg/scholar?cluster=17431060642258965847&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</versionLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="6">
+    <url>http://www.cmlab.csie.ntu.edu.tw/~zenic/Download/ICME2012/Workshops/data/4729zTOC.pdf</url>
+    <title status="complete" source="scholar.google.com">2012 IEEE International Conference on Multimedia and Expo Workshops ICMEW 2012</title>
+    <pdf>http://www.cmlab.csie.ntu.edu.tw/~zenic/Download/ICME2012/Workshops/data/4729zTOC.pdf</pdf>
+    <author status="partial" source="scholar.google.com">B Pieters, C Hollemeersch, J De Cock, P Lambert&#8230;</author>
+    <proceeding status="complete" source="scholar.google.com">cmlab.csie.ntu.edu.tw</proceeding>
+    <snippet status="partial" source="scholar.google.com">... Hidden Markov Model for Event Photo Stream Segmentation .....25 Jesse PrabawaGozali, Min-Yen Kan, and Hari Sundaram ... Author Index.....673 xiii</snippet>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:nUPpQRjAT-cJ:scholar.google.com/+author:+%22Jesse+Prabawa+Gozali%22&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <numVersions>2</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=16667751956339049373&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="7">
+    <url>http://books.google.com.sg/books?hl=en&amp;lr=&amp;id=UmeTSy3ygTEC&amp;oi=fnd&amp;pg=PR3&amp;dq=+%22Jesse+Prabawa+Gozali%22&amp;ots=e1neOmSLqS&amp;sig=OiFy9Jg-KothZjrvrLSltPt4a94</url>
+    <title status="complete" source="scholar.google.com">Information Retrieval Technology: 6th Asia Information Retrieval Societies Conference, AIRS 2010, Taipei, Taiwan, December 1-3, 2010, Proceedings</title>
+    <author status="complete" source="scholar.google.com">PJ Cheng, MY Kan, W Lam, P Nakov</author>
+    <year>2011</year>
+    <source>books.google.com</source>
+    <snippet status="partial" source="scholar.google.com">... com Â© Springer-Verlag Berlin Heidelberg 2010 Printed in Germany Typesetting: Camera-readyby author, data conversion by Scientiï¬c ... Beijing, China Bo Gong Oracle Corporation, USA JessePrabawa Gozali National University of Singapore, Singapore Jiafeng Guo Institute of ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:7fe7ptPMv3EJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>3</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=8196495056245094381&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <numCite>1</numCite>
+    <citeLink>http://scholar.google.com.sg/scholar?cites=8196495056245094381&amp;as_sdt=2005&amp;sciodt=1,5&amp;hl=en&amp;num=100</citeLink>
+    <citedBy totalresults="1">
+        <result id="0">
+        <url>http://bit.tokem.fi/ktuas/images/thesis/oladeji.pdf</url>
+        <title status="complete" source="scholar.google.com">KEMI-TORNIO UNIVERSITY OF APPLIED SCIENCES</title>
+        <pdf>http://bit.tokem.fi/ktuas/images/thesis/oladeji.pdf</pdf>
+        <author status="complete" source="scholar.google.com">OO Sulaimon</author>
+        <proceeding status="complete" source="scholar.google.com">bit.tokem.fi</proceeding>
+        <snippet status="partial" source="scholar.google.com">Page 1. KEMI-TORNIO UNIVERSITY OF APPLIED SCIENCES E-mail Spam: Challenges andFiltering Techniques Oladeji Olawale Sulaimon Bachelor&#39;s thesis of the Degree Programme inBusiness Information Technology Bachelor of Business Administration (BBA) ...</snippet>
+        <relatedLink>http://scholar.google.com.sg/scholar?q=related:DM0iBqdTIxoJ:scholar.google.com/&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</relatedLink>
+        <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:DM0iBqdTIxoJ:scholar.google.com/&amp;hl=en&amp;num=1&amp;as_sdt=0,5&amp;sciodt=0,5</htmlLink>
+        <citedBy totalresults="0">
+        </citedBy>
+      </result>
+    </citedBy>
+  </result>
+  <result id="8">
+    <url>https://www.aclweb.org/anthology/W/W09/</url>
+    <title status="complete" source="scholar.google.com">Proceedings of SRSL 2009, the 2nd Workshop on Semantic Representation of Spoken Language</title>
+    <pdf>https://www.aclweb.org/anthology/W/W09/</pdf>
+    <author status="complete" source="scholar.google.com">OD Memory</author>
+    <proceeding status="complete" source="scholar.google.com">aclweb.org</proceeding>
+    <snippet status="partial" source="scholar.google.com">... W09-2008 [bib]: Nick Montfort Curveship: An Interactive Fiction System for InteractiveNarrating. W09-2009 [bib]: Candice Solis; Joan Tiffany Siy; Emerald Tabirao; EthelOng Planning Author and Character Goals for Story Generation. ...</snippet>
+    <numVersions>4</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=12639309265568372782&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="9">
+    <url>http://wing.comp.nus.edu.sg/~jeprab/publications/urop.pdf</url>
+    <title status="complete" source="scholar.google.com">PROJECT INFORMATION PAGE</title>
+    <pdf>http://wing.comp.nus.edu.sg/~jeprab/publications/urop.pdf</pdf>
+    <author status="complete" source="scholar.google.com">JP Gozali, K Min-Yen</author>
+    <year>2007</year>
+    <source>wing.comp.nus.edu.sg</source>
+    <snippet status="partial" source="scholar.google.com">... Project Area : Programming Languages, Algorithms, Theory Project Title : FOAM: Found ObjectAssemblage Mosaic Project Number : U066030 Student&#39;s Name : Jesse Prabawa Gozali ProjectAdvisor : A/P Tan Tiow Seng Date of Completion : April 2006 Deliverables : Report 1 ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:XYYxV8g_eDEJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:XYYxV8g_eDEJ:scholar.google.com/+author:+%22Jesse+Prabawa+Gozali%22&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <numVersions>4</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=3564669234752620125&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="10">
+    <url>http://www.springerlink.com/index/N5Q5N08853T06131.pdf</url>
+    <title status="complete" source="scholar.google.com">Perspectives on crowdsourcing annotations for natural language processing</title>
+    <pdf>http://dl.comp.nus.edu.sg/dspace/bitstream/1900.100/3266/1/TRB7-10.pdf</pdf>
+    <author status="complete" source="scholar.google.com">A Wang, CDV Hoang, MY Kan</author>
+    <proceeding status="complete" source="scholar.google.com">Language Resources and Evaluation</proceeding>
+    <year>2010</year>
+    <source>Springer</source>
+    <snippet status="partial" source="scholar.google.com">Page 1. ORIGINAL PAPER Perspectives on crowdsourcing annotations for naturallanguage processing Aobo Wang â¢ Cong Duy Vu Hoang â¢ Min-Yen Kan Ã SpringerScience+Business Media BV 2012 Abstract Crowdsourcing ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:YUhwnlhfnnUJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>26</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=8475316382977771617&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="11">
+    <url>http://scholarbank.nus.edu.sg/handle/10635/29951</url>
+    <title status="complete" source="scholar.google.com">Cost-sensitive web-based information acquisition for record matching</title>
+    <pdf>http://scholarbank.nus.edu.sg/bitstream/handle/10635/29951/TanYF.pdf?sequence=1</pdf>
+    <author status="complete" source="scholar.google.com">TANYEE FAN</author>
+    <year>2011</year>
+    <source>scholarbank.nus.edu.sg</source>
+    <snippet status="partial" source="scholar.google.com">... sylvania State University: Dongwon Lee for suggesting collaboration opportunities as well asfor providing me an annotated dataset for author name disambiguation; and Er- ... Ziheng Lin, JessePrabawa Gozali, Jun Ping Ng, Aobo Wang, Cong Duy Vu Hoang, ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:rfVYax4DoxcJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>7</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=1703208513261073837&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+</query>
+</results>
