@@ -1,5 +1,6 @@
 
-var main_id = "1";
+var main_id = getMainID();
+var cur_year = 2012;
 
 //
 //MAIN
@@ -55,6 +56,8 @@ function parseGroupXml(group_id){
 	var group = new Object(); //Aggregate citation info for the group
 	var group_cit_year = new Hashtable();
 	var group_cit_people = new Hashtable();
+	var group_cit_trend = new Array(); //citation trend of group
+	var group_cit_trend_count = new Array();
 	var group_total = [0];
 
 	var g_meta = getMetaConfig("data/config/config_"+group_id+".xml"); //Get meta data from Config.xml
@@ -66,6 +69,10 @@ function parseGroupXml(group_id){
 		{
 			var subGroup_result = parseGroupXml(mem.id);
 			aggregateCiation(group_cit_year, group_cit_people, subGroup_result.group.cit_year, subGroup_result.group.cit_people);
+			aggregateCitTrend(group_cit_trend,
+								group_cit_trend_count,
+								subGroup_result.group.group_cit_trend, 
+								subGroup_result.group.group_cit_trend_count);
 			if(typeof(subGroup_result.group.totalCit) != "undefined"){
 				group_total[0] += subGroup_result.group.totalCit;
 			}			
@@ -75,6 +82,10 @@ function parseGroupXml(group_id){
 		{
 			var person_result = parsePersonXml(mem.id, main_id, "no");			
 			aggregateCiation(group_cit_year, group_cit_people, person_result.author.cit_year,person_result.author.cit_people);
+			aggregateCitTrend(group_cit_trend,
+								group_cit_trend_count,
+								person_result.author.cit_trend,
+								null);
 			if(typeof(person_result.author.totalCit) != "undefined"){
 				group_total[0] += person_result.author.totalCit;
 			}
@@ -88,6 +99,15 @@ function parseGroupXml(group_id){
 	getAuthorCitation(group,group_cit_year,group_cit_people,group_total[0]);
 	
 	//Return group_result
+	group.group_cit_trend = group_cit_trend;
+	group.group_cit_trend_count = group_cit_trend_count;
+
+	var cit_trend = new Array();
+	for(var i = 0; i<group_cit_trend.length; i++){
+		cit_trend[i] = group_cit_trend[i] / group_cit_trend_count[i];
+	}
+	group.cit_trend = cit_trend;
+
 	group_result.group = group;
 	group_result.member_list = member_list;
 	group_result.citedBy = g_meta.citedBy;
@@ -99,7 +119,7 @@ function parseGroupXml(group_id){
 
 
 //
-//Aggregate person's citation into Group's citaion
+//Aggregate person's citation into Group's citation
 //
 //Input:
 //	group_cit_year: Hashtable
@@ -145,6 +165,46 @@ function aggregateCiation(group_cit_year, group_cit_people, person_cit_year,pers
 
 
 //
+//Aggregate author's citation trend for a group 
+//INPUT:
+//		group_cit_trend: Array (sum of cit_trend of all authors within group)
+//		cit_trend_count: Array (sum of cit_trend_count of all authors within group)
+//		person_cit_trend: Array (one person's cit_trend)
+//		person_cit_trend_count: Null or Array (if one author: null; if one subGroup: Array)
+//
+//RETURN:
+//		add into group_cit_trend and cit_trend_count
+//
+
+function aggregateCitTrend(group_cit_trend, cit_trend_count, person_cit_trend, person_cit_trend_count){
+			
+	for(var i  = 0; i < person_cit_trend.length; i++){
+
+		if(typeof(group_cit_trend[i]) == "undefined"){
+			group_cit_trend[i] = person_cit_trend[i];
+
+			if(person_cit_trend_count == null){ //one author
+				cit_trend_count[i] = 1;
+			}else{ //one group
+				cit_trend_count[i] = person_cit_trend_count[i];
+			}
+			
+		}
+		else{
+			group_cit_trend[i] += person_cit_trend[i];
+
+			if(person_cit_trend_count == null){
+				cit_trend_count[i]++;
+			}else{
+				cit_trend_count[i] += person_cit_trend_count[i];
+			}
+			
+		}
+	}
+
+}
+
+//
 //Parse Person information from pub_id.xml
 //	Input:
 //		person_id
@@ -153,9 +213,10 @@ function aggregateCiation(group_cit_year, group_cit_people, person_cit_year,pers
 //	Return:
 //		person_result: Object
 //				person_result.author: Object
-//						author.cit_year
-//						author.cit_people			
-//				person_result.article_list: Array
+//						author.cit_year: Array (citaion no. per year)
+//						author.cit_people: Array (citaion no. per citor)
+//						author.cit_trend: Arra (average citation no. per relative year)
+//				person_result.article_list: Array (ariticle)
 //						article: object
 //				person_result.citedBy
 //				person_result.showIdentifier
@@ -166,17 +227,23 @@ function parsePersonXml(person_id, main_id, needVerify){
 	var person_result = new Object();  //result object (.author, .article_list)
 	var p_meta;
 	
+	//Read meta config from config file
 	if(needVerify == "n" || needVerify == "no" || needVerify == "false") //Read main config
 	{
 		p_meta = getMetaConfig("data/config/config_"+main_id+".xml"); //Get meta data from Config.xml
 	}
-	else if(needVerify == "n" || needVerify == "yes" || needVerify == "true")  //Read person verified config
+	else if(needVerify == "y" || needVerify == "yes" || needVerify == "true")  //Read person verified config
 	{
 		p_meta = getMetaConfig("data/config/config_"+person_id+".xml"); //Get meta data from Config.xml
 	}
 	
-	var main_meta = getMetaConfig("data/config/config_"+main_id+".xml"); //Get meta data from Config.xml
+	if(main_id == null){
+		main_meta = p_meta;
+	}else{
+		main_meta = getMetaConfig("data/config/config_"+main_id+".xml"); //Get meta data from Config.xml
+	}
 	
+
 	//Update publication list
 	var need_update_flag = compareTime(p_meta.updateFreq);
 	if(need_update_flag) //if true, need update
@@ -246,6 +313,9 @@ function parsePersonXml(person_id, main_id, needVerify){
 			var author = new Object();
 			getAuthorCitation(author,hash_author_year,hash_author_people,author_total[0]);
 
+			//Average ciation trend for the author
+			getAuthorTrend(author,article_list,cur_year);
+
 			//Return person_result
 			person_result.author = author;			
 			person_result.article_list = article_list;
@@ -292,8 +362,10 @@ function parsePersonXml(person_id, main_id, needVerify){
 //			article.identifier
 //			article.numCite
 //			article.citeLink
-//			article.cit_year
-//			article.cit_people
+//			article.cit_trend; Array (ith value means the citation no. in the ith published year)
+//			article.cit_year : Array (citaion no. per year)
+//			article.cit_people: Array (citation no. per citor)
+//			
 //			
 //
 function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,author_total){
@@ -389,6 +461,12 @@ function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,a
 			article.identifier = ""; 
 		}		
 	}
+	
+	//Get cit_year, cit_people, cit_trend
+	var cit_trend = new Array();
+	var first_year = parseInt(article.year); //from the year of published
+	var period = cur_year - first_year +1;
+	
 	if(article.numCite > 0){
 	
 		var citeby = xx.getElementsByTagName("result");
@@ -433,9 +511,11 @@ function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,a
 				continue;
 			}
 			
-			//count citation for each year
+			//Count citation for each year
 			try{ //some article not have year
 				year = parseInt(citeby[i].getElementsByTagName("year")[0].firstChild.nodeValue);
+				
+				//FixGSError
 				if(main_meta.fixGSError){
 					if(year < parseInt(article.year)){ //remove uncorrect citation (citing year < published year of the article)
 						author_total[0]--;
@@ -467,9 +547,9 @@ function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,a
 			
 		} //for citeby
 		
-		//Sorting the citation info
-		if(hash_year.size() != 0){ //
-			//fill zero to missed year
+		//If hash_year has citation
+		if(hash_year != null && hash_year.size() != 0){
+			//Fill zero to missed year
 			var yy = hash_year.entries();
 			yy.sort();
 			var firstyear = yy[0][0];
@@ -480,14 +560,35 @@ function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,a
 				}
 			}
 			
+			//Get citation trend			
+			for(var j = 0; j< period; j++){
+				var citCount = hash_year.get(first_year + j); //the jst year's citation count
+				if(citCount == null){
+					cit_trend[j] = 0;
+				}else{
+					cit_trend[j] = citCount;
+				}
+			}
+			article.cit_trend = cit_trend;
+			
+			//Sorting the citation info
 			article.cit_year = hash_year.entries().sort(); //ascending by year
 			article.cit_people = hash_people.entries().sort(function(a,b){return b[1]-a[1]});  //descending by count
-		}else{
+		}		
+		else{
+			for(var j = 0; j< period; j++){
+				cit_trend[j] = 0;
+			}
+			article.cit_trend = cit_trend;
 			article.cit_year = null;
 			article.cit_people = null;
 		}
 	
 	}else{
+		for(var j = 0; j< period; j++){
+			cit_trend[j] = 0;
+		}
+		article.cit_trend = cit_trend;
 		article.cit_year = null;
 		article.cit_people = null;
 	}//if
@@ -535,6 +636,57 @@ function getAuthorCitation(_author,_hash_author_year,_hash_author_people,_author
 	
 
 }
+
+//
+//Calculate citation trend for each author
+//By averaging each each article's citation count in sequential year
+//
+//INPUT:
+//		author: Object
+//		article_list: Array
+//		cur_year: number (current year)
+//OUPUT:
+//		fill author with new element: author.cit_trend: Array
+//
+//
+function getAuthorTrend(author,article_list,cur_year){
+
+	if(!article_list.length > 0){ //if no article
+		author.cit_trend = {};
+		return;
+	}
+
+	//Method Start
+	var cit_trend = new Array();  //citation trend list: the number of citation / the number of citable articles in the ith year
+	var cit_trend_count = new Array(); //the number of citable artiles in the ith year
+
+	//Loop for each article
+	for(var i = 0; i< article_list.length; i++){
+
+		var article = article_list[i];
+		var a_cit_trend = article.cit_trend; //HashTable
+		
+		for(var j = 0; j < a_cit_trend.length; j++){ //loop for jth citation no.
+			if(typeof(cit_trend[j]) == "undefined"){  //first citation no. in jth year
+				cit_trend[j] = a_cit_trend[j];
+				cit_trend_count[j] = 1;
+			}else{
+				cit_trend[j] += a_cit_trend[j];
+				cit_trend_count[j]++;
+			}
+		
+		}
+		
+	}
+
+	//Calculate average citation count
+	for(var k = 0; k< cit_trend.length; k++){
+		cit_trend[k] = cit_trend[k] / cit_trend_count[k];
+	}
+	
+	author.cit_trend = cit_trend;
+}
+
 
 
 //
@@ -691,7 +843,7 @@ function exc_gsnap(){
 		}
 		else
 		{
-			document.write("Unkown ERROR!");
+//			document.write("Unkown ERROR!");
 			return false;
 		}		
 	}
@@ -769,4 +921,17 @@ function updateTime(time){
 	xmlhttp_t.open("POST","cgi-bin/update_time.cgi",false);
 	xmlhttp_t.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	xmlhttp_t.send("time=" + time);
+}
+
+function getMainID(){
+
+	var xmlhttp = createXMLHTTPRequest();
+	xmlhttp.open("GET","data/config/main_id.config",false);	
+	xmlhttp.send();
+	
+	if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+	{
+		var id = xmlhttp.responseText;
+		return id;
+	}
 }

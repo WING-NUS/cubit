@@ -2,19 +2,20 @@
 body
 {
 
-	width: 800px;
+	width: 1000px;
 	
 	padding:15px 10px 10px 50px;
 }
 
 #root_list{
-	width: 800px;
+	width: 1000px;
 	background-color: #F0F0F0;
 }
 
 .detail-label
 {
 	background-color:MediumSlateBlue;
+	cursor: hand;
 	color: white;
 }
 
@@ -42,10 +43,17 @@ body
 }
 .citator-div
 {
-	float: right;
+	float: left;
 	width: 25%;
 	height:160px;
 	padding-top:5px; 
+}
+
+.chart-trend-div
+{	
+	height: 200px ;
+	width: 90%;
+	padding-top:10px; 
 }
 
 a
@@ -77,27 +85,49 @@ li
 	width:95%;
 
 }	
-.author_citation_button{
+.author_div
+{	
+	width:95%;
+	background-color:white ;
+	outline-style:dotted;
+	outline-width:1px;
+	padding:15px 10px 10px 20px;
+}
+.author_citation_button
+{
 	color: white;
 	background-color:Green;
+	cursor: hand;
 	font-size: 14px;
 	padding:2px 1px 1px 2px;
 }
-.author_citor{
+.author_citor
+{
+	float: left;
 	width: 25%;
-	height:200px;
-	float:right;
+	height:160px;
+	padding-top:5px; 
 }
 
-.author_cit_div{
-	width: 75%;
-	height:200px;
-	float:left;
+.author_cit_div
+{
+	float: left;
+	width:75%; 
+	height:160px;
+	padding-top:5px; 
 }
-.author_cit_total{
+.author_cit_total
+{
 	font-size: 18px;
 	padding:2px 1px 1px 25px;
 	color: Purple;
+}
+.author_cit_trend_div
+{
+	height: 160px;
+	width: 95%;
+	padding-top:10px; 
+
 }
 .person_item{
 	color: RoyalBlue;

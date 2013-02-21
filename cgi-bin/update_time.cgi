@@ -1,11 +1,13 @@
-#!c:\perl\bin\perl.exe
+#!c:/perl/bin/perl
+
 use strict;
 use CGI;
 use warnings;
 use Fcntl qw(:flock);
 
 my $cgi = new CGI();
-print $cgi->header('text/html;charset=UTF8');
+print $cgi->header('text/html; charset=UTF-8');
+
 my $cur_time = $cgi->param('time');
 print "$cur_time";
 my $time_file = "../data/latest.time";  #file recording latest time
@@ -25,3 +27,4 @@ open(TIME, ">$time_file") || die "can not open $!";
 print TIME $cur_time;
 close(TIME);
 release_lock();
+

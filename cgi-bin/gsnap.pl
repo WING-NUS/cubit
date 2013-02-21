@@ -3,15 +3,17 @@ use strict;
 use warnings;
 use CGI;
 use XML::Simple;
-
-my $mainConfigPath = "../data/config/config_1.xml"; ##main config file!
-
 my $cgi = CGI -> new();
-print $cgi -> header();
+print $cgi -> header('text/html; charset=UTF-8');
+
+my $main_id = getMainConfigId();
+my $mainConfigPath = "../data/config/config_$main_id.xml"; ##main config file!
+
 open(STDERR,">>../data/gsnap_pl.log") || die "can't open $!"; #recording Log info
 my $xs = XML::Simple -> new();
 getPub($mainConfigPath);
 
+print "ready";
 
 #Main Method
 sub getPub
@@ -79,6 +81,8 @@ sub getPub
 	{
 		print STDERR "<config type> should be \"group\" or \"person\"\n";
 	}
+	
+	
 }
 
 
@@ -232,5 +236,13 @@ sub getCmd
 	return $cmd;
 }
 
-
+sub getMainConfigId
+{
+	if(open(MAINID,"<../data/config/main_id.config") || die "can't open $!")
+	{
+		my $id = <MAINID>;
+		return $id;
+	}	
+	
+}
 

@@ -33,7 +33,8 @@ function displayGroup(group_result,pa_index,cit_container,list_container){
 	//<!--Generate member list, bind onclick action-->
 	for(var i = 0; i<m_list.length; i++){
 		var keys = m_list[m_list.length-1-i][0].split("_"); //type_id_name
-		<!--If the member is a person-->
+
+		//<!--If the member is a person-->
 		if(keys[0] == "person"){
 			html_li = "<span class=person_item id=item_"+ pa_index + "_" + i +">" + keys[2] + "</span>"
 			$("<li id=li_"+pa_index+"_"+i + " expanded=false>"+html_li+"</li>").appendTo($(list_container));  //generate element li			
@@ -44,8 +45,9 @@ function displayGroup(group_result,pa_index,cit_container,list_container){
 			}
 			$("<div id=person_div_" + pa_index + "_"+i + " display=false class=person_div></div>").appendTo($("#li_"+pa_index+"_"+i));
 			$("#person_div_" + pa_index + "_"+i).hide();
-			$("#item_"+ pa_index + "_" + i).bind('click',{i:i, pa_index:pa_index, person_result:person_result},clickPerson);
+			$("#item_"+ pa_index + "_" + i).bind('click',{i:i, pa_index:pa_index, person_result:person_result, group_cit:group_cit},clickPerson);
 		}
+
 		//<!--If the member is a group-->
 		else if(keys[0] == "group"){			
 			html_li = "<span class=group_item id=item_"+ pa_index + "_" + i + ">" + keys[2] + "</span>"
@@ -59,7 +61,7 @@ function displayGroup(group_result,pa_index,cit_container,list_container){
 	
 	//<!--Generate group citation detail, bind onclick action-->
 	if(group_result.citedBy && typeof(group_cit.cit_year)!="undefined" && group_cit.cit_year.length > 0){ //if citedBy option is true
-		genAuthorCit(group_cit,cit_container,pa_index,"a"); //"a" to avoid duplicate id
+		genAuthorCit(group_cit,group_cit.cit_trend,cit_container,pa_index,"a"); //"a" to avoid duplicate id
 	}
 }
 
@@ -92,7 +94,8 @@ function clickGroup(event){
 
 
 function clickPerson(event){
-
+	
+	var group_cit = event.data.group_cit;
 	var person_result = event.data.person_result;
 	var pa_index = event.data.pa_index;
 	var i = event.data.i;
@@ -107,7 +110,12 @@ function clickPerson(event){
 			
 			$("<div id=authorDiv_" + pa_index + "_" + i + "></div>").appendTo($("#person_div_" + pa_index + "_"+i));
 			$("<ol id=articleDiv_" + pa_index + "_" + i  + "></ol>").appendTo($("#person_div_" + pa_index + "_"+i));	
-			displayPerson(person_result,"#authorDiv_" + pa_index+"_"+i,"#articleDiv_" + pa_index+"_"+i,pa_index,i);
+			displayPerson(person_result,
+							group_cit,
+							"#authorDiv_" + pa_index+"_"+i,
+							"#articleDiv_" + pa_index+"_"+i,
+							pa_index,
+							i);
 		}
 		
 	}
@@ -122,10 +130,25 @@ function clickPerson(event){
 
 
 
-function displayPerson(person_result,cit_container,list_container,pa_index,m_index){
+function displayPerson(person_result,group_cit,cit_container,list_container,pa_index,m_index){
 
-	var article_list = person_result.article_list;
-	var meta = person_result.meta;
+	var article_list, author_cit, meta;
+	
+	if(pa_index == null){ //if personal homepage
+		article_list = person_result.list.article_list;
+		author_cit = person_result.list.author;
+		meta = person_result.meta;
+
+	}else{ //if group homepage
+		article_list = person_result.article_list;
+		author_cit = person_result.author;
+		meta = new Object;
+		meta.citedBy = person_result.citedBy
+		meta.showIdentifier = person_result.showIdentifier
+		meta.fixGSError = person_result.fixGSError;		
+	}
+	var group_cit_trend = group_cit.cit_trend;
+
 
 	for(var index=0; index < article_list.length; index++){		
 		
@@ -170,26 +193,44 @@ function displayPerson(person_result,cit_container,list_container,pa_index,m_ind
 		//<!--generate detail onclick action-->
 		$("#detailDiv_"+pa_index+"_"+m_index+"_" + index).hide();		
 		$("#detailButton_"+pa_index+"_"+m_index+"_"+index).bind('click',{index:index,pa_index:pa_index,m_index:m_index,person_result:person_result},clicktoggle);
+	
 	} //for
-	var author_cit = person_result.author;
-	if(person_result.citedBy && typeof(author_cit.cit_year)!="undefined" && author_cit.cit_year.length > 0){ //if citedBy option is true
-		genAuthorCit(author_cit,cit_container,pa_index,m_index);
+
+	if(meta.citedBy && typeof(author_cit.cit_year)!="undefined" && author_cit.cit_year.length > 0){ //if citedBy option is true
+		genAuthorCit(author_cit,group_cit_trend,cit_container,pa_index,m_index);
 	}
 }
 
 //
 //onClick of details-button: 
 //		Display detail content
-//		Draw chart
+//		Draw cit_year chart
 //		Insert citors
+
+//		Draw cit_trend comparation chart
+//
 //
 function clicktoggle(event){
+
 	var i = event.data.index;
 	var pa_index = event.data.pa_index;
 	var m_index = event.data.m_index;
 	var person_result = event.data.person_result;
-	var article_list = person_result.article_list;
-
+	var article_list, meta;
+	if(pa_index == null){ //if personal homepage
+		article_list = person_result.list.article_list;
+		meta = person_result.meta;
+	}else{
+		article_list = person_result.article_list;
+		meta = new Object;
+		meta.citedBy = person_result.citedBy
+		meta.showIdentifier = person_result.showIdentifier
+		meta.fixGSError = person_result.fixGSError;		
+	}
+	
+	var author_cit_trend = person_result.author.cit_trend;
+	
+	
 	if ($("#detailDiv_"+pa_index+"_"+m_index+"_" + i).attr("display") == "false"){ //if not display
 	
 		$("#detailDiv_"+pa_index+"_"+m_index+"_" + i).show();
@@ -225,16 +266,16 @@ function clicktoggle(event){
 			$("<div class=detail-content>"+html_detail+"</div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
 			
 			//If citedBy option is true
-			if(person_result.citedBy){ 
+			if(meta.citedBy){ 
 			
-				//<!--generate citation-year-chart <div>, append to detail_<div> -->
+				//<!--Generate citation-year-chart <div>, append to detail_<div> -->
 				var cit_year = article.cit_year;
 				if (cit_year != null && cit_year.length>0){
 					$("<div class=chart-div id=chart_div_"+pa_index+"_"+m_index+"_" + i + "></div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
 					draw("chart_div_"+pa_index+"_"+m_index+"_" + i,cit_year);
 				}
 				
-				//<!--generate citer-count <div>, append to detail_<div> -->
+				//<!--Generate citer-count <div>, append to detail_<div> -->
 				var citator = "<ul class=citator-ul><b>Top Citators</b>";
 				var cit_people = article.cit_people;
 				if(cit_people != null){
@@ -249,7 +290,15 @@ function clicktoggle(event){
 					}
 					$("<div class=citator-div id=citator_div_"+pa_index+"_"+m_index+"_" + i+">" + citator +"</div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
 				}
+				$("<div class=clearfix></div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
 				
+				//<!--Generate citation-trend-chart <div>, append to detail_<div>-->
+				var cit_trend = article.cit_trend;
+				if (cit_trend != null && cit_trend.length>0 && author_cit_trend != null && author_cit_trend.length > 0){
+					$("<div class=chart-trend-div id=chart_trend_div_"+pa_index+"_"+m_index+"_" + i + "></div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
+					drawTrend("chart_trend_div_"+pa_index+"_"+m_index+"_" + i,cit_trend,author_cit_trend);
+				}
+				 
 			}
 			
 			//add div to clear float of chart-div and citator-div
@@ -266,10 +315,10 @@ function clicktoggle(event){
 //
 //onClick of Citation detail button: display the citation distribution of the author, display the top citators
 //
-function genAuthorCit(author_cit,cit_container,pa_index,index){
+function genAuthorCit(author_cit,group_cit_trend, cit_container,pa_index,index){
 	//<!--citation-button-->
 	$("<button id=author_cit_"+pa_index+"_"+index+" class=author_citation_button>citation-detail</button>").appendTo($(cit_container));
-	$("<div id=author_div_"+pa_index+"_"+index+"><div>").appendTo($(cit_container));
+	$("<div id=author_div_"+pa_index+"_"+index+" class=author_div><div>").appendTo($(cit_container));
 	$("#author_div_"+pa_index+"_"+index).hide();
 	
 	$("#author_cit_"+pa_index+"_"+index).click(function(){
@@ -280,7 +329,7 @@ function genAuthorCit(author_cit,cit_container,pa_index,index){
 	$("#author_cit_total_"+pa_index+"_"+index).html("<b>Total citation: "+author_cit.totalCit +"</b>");
 	
 	//<!--citation-year-chart-->
-	$("<div id=author_cit_div_"+pa_index+"_"+index+" class=author_cit_div></div>").appendTo($("#author_div_"+pa_index+"_"+index));
+	$("<div id=author_cit_div_"+pa_index+"_"+index+" class=chart-div></div>").appendTo($("#author_div_"+pa_index+"_"+index));
 	draw("author_cit_div_"+pa_index+"_"+index,author_cit.cit_year);
 	
 	//<!--citor no.-->
@@ -296,8 +345,15 @@ function genAuthorCit(author_cit,cit_container,pa_index,index){
 			}//for
 		}
 	}
-	$("<div class=author_citor><b>Top Citators</b><br\>"+citator+"</div>").appendTo($("#author_div_"+pa_index+"_"+index));
+	$("<div class=citator-div><b>Top Citators</b><br\>"+citator+"</div>").appendTo($("#author_div_"+pa_index+"_"+index));
 	
+	//add div to clear float of chart-div and citator-div
+	$("<div class=clearfix></div>").appendTo($("#author_div_"+pa_index+"_"+index));
+
+	//<!--citation-trend-chart-->
+	$("<div id=author_cit_trend_div_"+pa_index+"_"+index+" class=chart-trend-div></div>").appendTo($("#author_div_"+pa_index+"_"+index));
+	drawAuthorTrend("author_cit_trend_div_"+pa_index+"_"+index,author_cit.cit_trend,group_cit_trend);
+
 	//add div to clear float of chart-div and citator-div
 	$("<div class=clearfix></div>").appendTo($("#author_div_"+pa_index+"_"+index));
 	
