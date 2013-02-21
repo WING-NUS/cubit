@@ -93,7 +93,7 @@ function draw(container,array){
 		i++;
 	}
 
-	var showEvery = Math.ceil(author_cit_trend.length/10);
+	var showEvery = Math.ceil(group_cit_trend.length/10);
 
 	var options = {   //set options
 		title: 'Citation Life Circle',

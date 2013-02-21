@@ -20,16 +20,17 @@ $(document).ready(function(){
 	else if(meta.type == "group")
 	{
 		$("<ul id=ul_1 class=groupMList></ul>").appendTo($("#root_list"));
-		displayGroup(main_result.list,"0","#header","#ul_1");
+		displayGroup(main_result.list,null,"0","#header","#ul_1");
 	}
 });
 
 
-function displayGroup(group_result,pa_index,cit_container,list_container){
+function displayGroup(group_result,pa_group_result,pa_index,cit_container,list_container){
 	
 	var m_list = group_result.member_list.entries(); //Hashtable
 	var group_cit = group_result.group;
 	var html_li = "";
+	
 	//<!--Generate member list, bind onclick action-->
 	for(var i = 0; i<m_list.length; i++){
 		var keys = m_list[m_list.length-1-i][0].split("_"); //type_id_name
@@ -52,23 +53,28 @@ function displayGroup(group_result,pa_index,cit_container,list_container){
 		else if(keys[0] == "group"){			
 			html_li = "<span class=group_item id=item_"+ pa_index + "_" + i + ">" + keys[2] + "</span>"
 			$("<li id=li_"+pa_index+"_"+i + " expanded=false>"+html_li+"</li>").appendTo($(list_container));  //generate element li			
-			var group_result = m_list[m_list.length-1-i][1];	
+			var sub_group_result = m_list[m_list.length-1-i][1];	
 			$("<div id=group_div_"+pa_index+"_"+i + " display=false class=group_div></div>").appendTo($("#li_"+pa_index+"_"+i));
 			$("#group_div_"+pa_index+"_"+i).hide();			
-			$("#item_"+ pa_index + "_" + i).bind('click',{i:i,pa_index:pa_index, group_result:group_result},clickGroup);
+			$("#item_"+ pa_index + "_" + i).bind('click',{i:i,pa_index:pa_index, sub_group_result:sub_group_result,group_result:group_result},clickGroup);
 		}
 	}
 	
 	//<!--Generate group citation detail, bind onclick action-->
 	if(group_result.citedBy && typeof(group_cit.cit_year)!="undefined" && group_cit.cit_year.length > 0){ //if citedBy option is true
-		genAuthorCit(group_cit,group_cit.cit_trend,cit_container,pa_index,"a"); //"a" to avoid duplicate id
+		if(pa_group_result == null){
+			genAuthorCit(group_cit,group_cit.cit_trend,cit_container,pa_index,"a"); //"a" to avoid duplicate id
+		}else{
+			genAuthorCit(group_cit,pa_group_result.group.cit_trend,cit_container,pa_index,"a"); //"a" to avoid duplicate id
+		}
+		
 	}
 }
 
 
 function clickGroup(event){
-
-	var group_result = event.data.group_result;
+	var group_result = event.data.sub_group_result;
+	var pa_group_result = event.data.group_result;
 	var pa_index = event.data.pa_index;
 	var i = event.data.i;
 	
@@ -82,7 +88,7 @@ function clickGroup(event){
 			$("#li_"+pa_index+"_"+i).attr("expanded","true");
 			$("<div id=groupDiv_"+pa_index+"_"+i+"></div>").appendTo($("#group_div_"+pa_index+"_"+i));
 			$("<ul id=memberDiv_"+pa_index+"_"+i+" class=groupMList></ul>").appendTo($("#group_div_"+pa_index+"_"+i));
-			displayGroup(group_result,nextPa_index,"#groupDiv_"+pa_index+"_"+i,"#memberDiv_"+pa_index+"_"+i);
+			displayGroup(group_result,pa_group_result,nextPa_index,"#groupDiv_"+pa_index+"_"+i,"#memberDiv_"+pa_index+"_"+i);
 		}
 		
 	}

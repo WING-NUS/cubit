@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding='UTF-8'?>
+
+<config id="0" name="SOC" type="group" perl_src="c:/perl/bin/perl.exe" mthd="-T" 
+			gsnap_src="gsnap/bin/query_gscholar.pl">
+
+	<dir>./gsnap/cache/gs/</dir>
+	<n>all</n>	
+	<update_frequency>5</update_frequency>
+	
+	<members>
+		<member id="00106" type="person" affiliation="NUS" name="Aobo Wang" needVerify="false"></member>
+		<member id="00103" type="person" affiliation="NUS" name="Jin Zhao" needVerify="false"></member>
+		<member id="00105" type="person" affiliation="NUS" name="Jun Ping Ng" needVerify="false"></member>
+		
+	</members>
+	
+	<showIndentifier>yes</showIndentifier>
+	<citedBy>all</citedBy>
+	<fixGSError>yes</fixGSError>	
+	<fromYear></fromYear>
+	<toYear></toYear>
+
+</config>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding='UTF-8'?>
 
-<config id="1" name="SOC" type="group" perl_src="c:/perl/bin/perl.exe" mthd="-T" 
+<config id="03" name="SOCE" type="group" perl_src="c:/perl/bin/perl.exe" mthd="-T" 
 			gsnap_src="gsnap/bin/query_gscholar.pl">
 
 	<dir>./gsnap/cache/gs/</dir>
@@ -8,15 +8,12 @@
 	<update_frequency>5</update_frequency>
 	
 	<members>
-		<member id="01" type="group" name="SOCAI"></member>
-		<member id="02" type="group" name="SOCM"></member>
-		<member id="03" type="group" name="SOCE"></member>
-		
+		<member id="01028" type="person" affiliation="NUS" name="Hamed Kiani"></member>
 	</members>
 	
 	<showIndentifier>yes</showIndentifier>
 	<citedBy>all</citedBy>
-	<fixGSError>yes</fixGSError>	
+	<fixGSError></fixGSError>	
 	<fromYear></fromYear>
 	<toYear></toYear>
 

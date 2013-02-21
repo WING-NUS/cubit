@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding='UTF-8'?>
 
-<config id="00118" name="Dongyuan Lu" type="person" affiliation="ia" perl_src="c:/perl/bin/perl.exe" 
+<config id="00117" name="Yun Huang" type="person" affiliation="ia" perl_src="c:/perl/bin/perl.exe" 
 			mthd="-T" gsnap_src="gsnap/bin/query_gscholar.pl">
 
 	<dir>./gsnap/cache/gs/</dir>
@@ -9,18 +9,19 @@
 	<update_frequency>5</update_frequency>
 	
 	<query>
-		<author>Dongyuan Lu</author>
+		<author>Yun Huang</author>
 		<titles>
-			<title>A graph-based action network framework to identify prestigious members through member's prestige evolution</title>	
+			<title></title>	
 		</titles>		
 	</query>
 	<exclude>
-		<g_identifier></g_identifier>
+		<g_identifier>13563040161037443048</g_identifier>
+		<g_identifier>134288197530189692</g_identifier>
 	</exclude>
 	
 	<showIndentifier>yes</showIndentifier>
 	<citedBy>all</citedBy>
-	<fixGSError>no</fixGSError>	
+	<fixGSError>y</fixGSError>	
 	<fromYear>1990</fromYear>
 	<toYear>2013</toYear>
 
