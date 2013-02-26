@@ -19,10 +19,10 @@ function draw(container,array){
 
 		var options = {   //set options
 			title: 'Citation Distribution by year',
-			hAxis: {title: 'Year', titleTextStyle: {color: 'red'}},
-			bar: {groupWidth: "20%"},
-			hAxis: {showTextEvery:showEvery},			
-			legend: {position: 'bottom', textStyle: {color: 'black', fontSize: 12}}
+			hAxis: {title: 'Year', titleTextStyle: {color: 'black'},showTextEvery:showEvery},
+			vAxis: {title: '#Citation'},
+			bar: {groupWidth: "20%"},		
+			legend: {position: 'in',alignment: 'end',  textStyle: {color: 'black', fontSize: 12}}
 		};
 
 		var chart = new google.visualization.ColumnChart(document.getElementById(container));
@@ -56,13 +56,14 @@ function draw(container,array){
 		i++;
 	}
 
-	var showEvery = Math.ceil(author_cit_trend.length/15);
+	var showEvery = Math.ceil(author_cit_trend.length/10);
 
 	var options = {   //set options
-		title: 'Citation Life Circle',
-		hAxis: {title: 'n-st Year', titleTextStyle: {color: 'red'}},
-		hAxis: {showTextEvery:showEvery},			
-		legend: {position: 'bottom', textStyle: {color: 'black', fontSize: 12}}
+		title: 'Citation Life Cycle',
+		hAxis: {title: 'n-st Year', titleTextStyle: {color: 'black'},showTextEvery:showEvery},		
+		vAxis: {title: '#Average Citation'},
+		legend: {position: 'in', alignment: 'end', textStyle: {color: 'black', fontSize: 12}},
+		
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById(container));
@@ -76,7 +77,7 @@ function draw(container,array){
  function drawAuthorTrend(container, author_cit_trend, group_cit_trend){
 	var data = new google.visualization.DataTable();
 	data.addColumn('string','n-st Year');
-	data.addColumn('number','Current Author');
+	data.addColumn('number','Author');
 	data.addColumn('number','Group');
 	var k;
 	for(var i = 0 ; i < author_cit_trend.length; i++){
@@ -95,11 +96,11 @@ function draw(container,array){
 
 	var showEvery = Math.ceil(group_cit_trend.length/10);
 
-	var options = {   //set options
-		title: 'Citation Life Circle',
-		hAxis: {title: 'n-st Year', titleTextStyle: {color: 'red'}},
-		hAxis: {showTextEvery:showEvery},			
-		legend: {position: 'bottom', textStyle: {color: 'black', fontSize: 12}}
+	var options = {   //set options 
+		title: 'Citation Life Cycle',
+		hAxis: {title: 'n-st Year', titleTextStyle: {color: 'black'},showTextEvery:showEvery},		
+		vAxis: {title: '#Average Citation'},
+		legend: {position: 'in', alignment: 'start', textStyle: {color: 'black', fontSize: 12}},
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById(container));

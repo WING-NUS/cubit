@@ -15,11 +15,11 @@ $(document).ready(function(){
 	if(meta.type == "person")
 	{	
 		$("<ol id=ol_1></ol>").appendTo($("#root_list"));			
-		displayPerson(main_result,"#header","#ol_1");
+		displayPerson(main_result,main_result.list.author,"#header","#ol_1",null,null);
 	}
 	else if(meta.type == "group")
 	{
-		$("<ul id=ul_1 class=groupMList></ul>").appendTo($("#root_list"));
+		$("<table class='table'><tbody id=ul_1></tbody></table>").appendTo($("#root_list"));
 		displayGroup(main_result.list,null,"0","#header","#ul_1");
 	}
 });
@@ -37,24 +37,34 @@ function displayGroup(group_result,pa_group_result,pa_index,cit_container,list_c
 
 		//<!--If the member is a person-->
 		if(keys[0] == "person"){
-			html_li = "<span class=person_item id=item_"+ pa_index + "_" + i +">" + keys[2] + "</span>"
-			$("<li id=li_"+pa_index+"_"+i + " expanded=false>"+html_li+"</li>").appendTo($(list_container));  //generate element li			
+		
+			html_li = "<td width=20%><span class=person_item>" + keys[2] + "</span></td> ";
+			html_li += "<td width='10px'><button class='btn btn-mini' id=item_"+ pa_index + "_" + i +"><i class=icon-plus-sign></i></button></td>";
+			
+			$("<tr id=li_"+pa_index+"_"+i + " expanded=false>"+html_li+"</tr>").appendTo($(list_container));  //generate element li		
+			
 			var person_result = m_list[m_list.length-1-i][1];
 			if( typeof(person_result.article_list) == "undefined" || person_result.article_list.length == 0){
 				$("#item_"+ pa_index + "_" + i).attr("class","person_item_none");
 				continue;
 			}
-			$("<div id=person_div_" + pa_index + "_"+i + " display=false class=person_div></div>").appendTo($("#li_"+pa_index+"_"+i));
+			
+			$("<td id=person_div_" + pa_index + "_"+i + " display=false></td>").appendTo($("#li_"+pa_index+"_"+i));
 			$("#person_div_" + pa_index + "_"+i).hide();
 			$("#item_"+ pa_index + "_" + i).bind('click',{i:i, pa_index:pa_index, person_result:person_result, group_cit:group_cit},clickPerson);
 		}
 
 		//<!--If the member is a group-->
-		else if(keys[0] == "group"){			
-			html_li = "<span class=group_item id=item_"+ pa_index + "_" + i + ">" + keys[2] + "</span>"
-			$("<li id=li_"+pa_index+"_"+i + " expanded=false>"+html_li+"</li>").appendTo($(list_container));  //generate element li			
-			var sub_group_result = m_list[m_list.length-1-i][1];	
-			$("<div id=group_div_"+pa_index+"_"+i + " display=false class=group_div></div>").appendTo($("#li_"+pa_index+"_"+i));
+		else if(keys[0] == "group"){	
+		
+			html_li = "<td width=10%><span class=group_item>" + keys[2] + "</span></td>";
+			html_li += "<td width='10px'><button class='btn btn-mini' id=item_"+ pa_index + "_" + i +"><i class=icon-plus-sign></i></button></td>";
+			
+			$("<tr id=li_"+pa_index+"_"+i + " expanded=false>"+html_li+"</tr>").appendTo($(list_container));  //generate element li			
+			
+			var sub_group_result = m_list[m_list.length-1-i][1];
+			
+			$("<td id=group_div_"+pa_index+"_"+i + " display=false></td>").appendTo($("#li_"+pa_index+"_"+i));
 			$("#group_div_"+pa_index+"_"+i).hide();			
 			$("#item_"+ pa_index + "_" + i).bind('click',{i:i,pa_index:pa_index, sub_group_result:sub_group_result,group_result:group_result},clickGroup);
 		}
@@ -81,19 +91,25 @@ function clickGroup(event){
 	if($("#group_div_"+pa_index+"_"+i).attr("display") == "false"){
 	
 		$("#group_div_"+pa_index+"_"+i).show();
+		$("#item_"+ pa_index + "_" + i).html("<i class=icon-minus-sign></i>");
 		$("#group_div_"+pa_index+"_"+i).attr("display","true");
 		
 		if($("#li_"+pa_index+"_"+i).attr("expanded") == "false"){
+		
 			nextPa_index = pa_index + "_" + i;
 			$("#li_"+pa_index+"_"+i).attr("expanded","true");
+			
 			$("<div id=groupDiv_"+pa_index+"_"+i+"></div>").appendTo($("#group_div_"+pa_index+"_"+i));
-			$("<ul id=memberDiv_"+pa_index+"_"+i+" class=groupMList></ul>").appendTo($("#group_div_"+pa_index+"_"+i));
+			$("<br/><p class=lead><b>Member List:</b></p>").appendTo($("#group_div_"+pa_index+"_"+i));
+			$("<table id=memberDiv_"+pa_index+"_"+i+" class='table'></table>").appendTo($("#group_div_"+pa_index+"_"+i));
+			
 			displayGroup(group_result,pa_group_result,nextPa_index,"#groupDiv_"+pa_index+"_"+i,"#memberDiv_"+pa_index+"_"+i);
 		}
 		
 	}
 	else{
 		$("#group_div_"+pa_index+"_"+i).hide();
+		$("#item_"+ pa_index + "_" + i).html("<i class=icon-plus-sign></i>");
 		$("#group_div_"+pa_index+"_"+i).attr("display","false");
 	}
 }
@@ -110,11 +126,13 @@ function clickPerson(event){
 	
 		$("#person_div_" + pa_index + "_"+i).attr("display","true");
 		$("#person_div_" + pa_index + "_"+i).show();
+		$("#item_"+ pa_index + "_" + i).html("<i class=icon-minus-sign></i>");
 		
 		if($("#li_"+pa_index+"_"+i).attr("expanded") == "false"){
 			$("#li_"+pa_index+"_"+i).attr("expanded","true");
 			
 			$("<div id=authorDiv_" + pa_index + "_" + i + "></div>").appendTo($("#person_div_" + pa_index + "_"+i));
+			$("<br/><p><strong>Publication List:</strong></p>").appendTo($("#person_div_" + pa_index + "_"+i));
 			$("<ol id=articleDiv_" + pa_index + "_" + i  + "></ol>").appendTo($("#person_div_" + pa_index + "_"+i));	
 			displayPerson(person_result,
 							group_cit,
@@ -127,6 +145,7 @@ function clickPerson(event){
 	}
 	else{
 		$("#person_div_" + pa_index + "_"+i).hide();
+		$("#item_"+ pa_index + "_" + i).html("<i class=icon-plus-sign></i>");
 		$("#person_div_" + pa_index + "_"+i).attr("display","false");
 	}
 	
@@ -144,6 +163,7 @@ function displayPerson(person_result,group_cit,cit_container,list_container,pa_i
 		article_list = person_result.list.article_list;
 		author_cit = person_result.list.author;
 		meta = person_result.meta;
+
 
 	}else{ //if group homepage
 		article_list = person_result.article_list;
@@ -191,7 +211,7 @@ function displayPerson(person_result,group_cit,cit_container,list_container,pa_i
 		
 		//<!--generate detail button for each <li>-->
 		//<!--Id=detailButton_pa_index_mIndex_pIndex-->
-		$("<span class=detail-label id=detailButton_"+pa_index+"_"+m_index+"_"+index+ ">>>details</span>").appendTo($("#li_"+pa_index+"_"+m_index+"_"+index));
+		$("<span class='btn btn-mini' id=detailButton_"+pa_index+"_"+m_index+"_"+index+ ">>>details</span>").appendTo($("#li_"+pa_index+"_"+m_index+"_"+index));
 		
 		//<!--generate detail_<div>, append to <li> -->
 		$("<div class=detail-div id=detailDiv_"+pa_index+"_"+m_index+"_" + index + " display=false drawopt=false></div>").appendTo($("#li_"+pa_index+"_"+m_index+"_"+index));				
@@ -223,18 +243,19 @@ function clicktoggle(event){
 	var m_index = event.data.m_index;
 	var person_result = event.data.person_result;
 	var article_list, meta;
+	var author_cit_trend;
 	if(pa_index == null){ //if personal homepage
 		article_list = person_result.list.article_list;
 		meta = person_result.meta;
+		author_cit_trend = person_result.list.author.cit_trend;
 	}else{
 		article_list = person_result.article_list;
 		meta = new Object;
 		meta.citedBy = person_result.citedBy
 		meta.showIdentifier = person_result.showIdentifier
 		meta.fixGSError = person_result.fixGSError;		
+		author_cit_trend = person_result.author.cit_trend;
 	}
-	
-	var author_cit_trend = person_result.author.cit_trend;
 	
 	
 	if ($("#detailDiv_"+pa_index+"_"+m_index+"_" + i).attr("display") == "false"){ //if not display
@@ -265,7 +286,7 @@ function clicktoggle(event){
 				html_detail += "<br/><span class=abstract_title>Abstract: </span>" 
 						+"<span class=abstract_content>" +article.snippet +"</span>";
 			}									
-			if((person_result.showIdentifier == "yes" || person_result.showIdentifier == "y") && article.identifier.length > 0){
+			if((meta.showIdentifier == "yes" || meta.showIdentifier == "y") && article.identifier.length > 0){
 				html_detail += "<br/><b>G-identifier:</b> <span class=identifier>" +article.identifier +"</span>";
 			}
 			
@@ -274,15 +295,8 @@ function clicktoggle(event){
 			//If citedBy option is true
 			if(meta.citedBy){ 
 			
-				//<!--Generate citation-year-chart <div>, append to detail_<div> -->
-				var cit_year = article.cit_year;
-				if (cit_year != null && cit_year.length>0){
-					$("<div class=chart-div id=chart_div_"+pa_index+"_"+m_index+"_" + i + "></div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
-					draw("chart_div_"+pa_index+"_"+m_index+"_" + i,cit_year);
-				}
-				
 				//<!--Generate citer-count <div>, append to detail_<div> -->
-				var citator = "<ul class=citator-ul><b>Top Citators</b>";
+				var citator = "<b>Top Citers:</b><ul class=citator-ul>";
 				var cit_people = article.cit_people;
 				if(cit_people != null){
 					if(cit_people.length > TOPCITATOR){
@@ -294,10 +308,18 @@ function clicktoggle(event){
 							citator += "<li>" + cit_people[k][0]+": "+cit_people[k][1] +"</li>";
 						}//for
 					}
-					$("<div class=citator-div id=citator_div_"+pa_index+"_"+m_index+"_" + i+">" + citator +"</div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
+					$("<div class=citator-div id=citator_div_"+pa_index+"_"+m_index+"_" + i+">" + citator +"</ul></div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
 				}
-				$("<div class=clearfix></div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
 				
+				$("<div class=clearfix></div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
+								
+				//<!--Generate citation-year-chart <div>, append to detail_<div> -->
+				var cit_year = article.cit_year;
+				if (cit_year != null && cit_year.length>0){
+					$("<div class=chart-div id=chart_div_"+pa_index+"_"+m_index+"_" + i + "></div>").appendTo($("#detailDiv_"+pa_index+"_"+m_index+"_" + i));
+					draw("chart_div_"+pa_index+"_"+m_index+"_" + i,cit_year);
+				}
+							
 				//<!--Generate citation-trend-chart <div>, append to detail_<div>-->
 				var cit_trend = article.cit_trend;
 				if (cit_trend != null && cit_trend.length>0 && author_cit_trend != null && author_cit_trend.length > 0){
@@ -318,28 +340,99 @@ function clicktoggle(event){
 	
 }
 
+function genAuthorCit(author_cit,group_cit_trend, cit_container,pa_index,index){
+	
+	//Button & Click Action
+	$("<button id=author_cit_"+pa_index+"_"+index+" class='btn btn-primary btn-small' display=false drawopt=false><i class=icon-chevron-down></i> citation-detail</button>").appendTo($(cit_container));
+	$("<div id=author_div_"+pa_index+"_"+index+" class=detail-div ></div>").appendTo($(cit_container));
+	$("#author_div_"+pa_index+"_"+index).hide();
+	
+	$("#author_cit_"+pa_index+"_"+index).click(function(){
+	
+		if($("#author_cit_"+pa_index+"_"+index).attr("display")=="false"){
+			$("#author_div_"+pa_index+"_"+index).show();
+			$("#author_cit_"+pa_index+"_"+index).html("<i class=icon-chevron-up></i> citation-detail");
+			$("#author_cit_"+pa_index+"_"+index).attr("display","true");				
+		}
+		else{
+			$("#author_div_"+pa_index+"_"+index).hide();
+			$("#author_cit_"+pa_index+"_"+index).html("<i class=icon-chevron-down></i> citation-detail");
+			$("#author_cit_"+pa_index+"_"+index).attr("display","false");
+		}
+		
+		if($("#author_cit_"+pa_index+"_"+index).attr("drawopt") == "false"){
+		
+			$("#author_cit_"+pa_index+"_"+index).attr("drawopt","true");
+		
+			//<!--Citation-Total-->
+			var html_detail = "<i class=icon-asterisk></i><b>Total Citation No.: "+author_cit.totalCit +"</b>";
+			$("<div>"+html_detail+"</div>").appendTo($("#author_div_"+pa_index+"_"+index));
+			
+			//<!--Citer No.-->
+			var citator = "<div class=citator-div><i class=icon-asterisk></i><b>Top Citers:</b><ul>";
+			if(author_cit.cit_people.length != 0){
+				if(author_cit.cit_people.length > TOPCITATOR){
+					for(var k =0; k<TOPCITATOR; k++){
+						citator += "<li>" + author_cit.cit_people[k][0]+": "+author_cit.cit_people[k][1] +"</li>";
+					}//for
+				}else{
+					for(var k =0; k<author_cit.cit_people.length; k++){
+						citator += "<li>" + author_cit.cit_people[k][0]+": "+author_cit.cit_people[k][1] +"</li>";
+					}//for
+				}
+			}
+			var citer_div = citator+"</ul></div>";
+			$(citer_div).appendTo($("#author_div_"+pa_index+"_"+index));
+			
+			//<!--Citation-Year-Chart-->
+			var author_cit_div = "<i class=icon-asterisk></i><b>Citation Distribution by Year:</b><div id=author_cit_div_"+pa_index+"_"+index+" class=chart-div></div>";
+			$(author_cit_div).appendTo($("#author_div_"+pa_index+"_"+index));
+			draw("author_cit_div_"+pa_index+"_"+index,author_cit.cit_year);
+			
+			
+			//Add div to clear float of chart-div and citator-div
+			$("<div class=clearfix></div>").appendTo($("#author_div_"+pa_index+"_"+index));
+			
+			//<!--Citation-Trend-Chart-->
+			var author_trend_cit_div = "<i class=icon-asterisk></i><b>Citation Life Cycle:</b><div class=chart-trend-div id=author_cit_trend_div_"+pa_index+"_"+index+"></div>";
+			$(author_trend_cit_div).appendTo($("#author_div_"+pa_index+"_"+index));
+			drawAuthorTrend("author_cit_trend_div_"+pa_index+"_"+index,author_cit.cit_trend,group_cit_trend);
+			//Add div to clear float of chart-div and citator-div
+			$("<div class=clearfix></div>").appendTo($("#author_div_"+pa_index+"_"+index));	
+			
+		}//end if drawopt
+		
+
+	
+	});
+	
+	
+}
+
+
+/*
 //
-//onClick of Citation detail button: display the citation distribution of the author, display the top citators
+//onClick of Citation detail button: display the citation distribution of the author, display the top citers
 //
 function genAuthorCit(author_cit,group_cit_trend, cit_container,pa_index,index){
 	//<!--citation-button-->
-	$("<button id=author_cit_"+pa_index+"_"+index+" class=author_citation_button>citation-detail</button>").appendTo($(cit_container));
-	$("<div id=author_div_"+pa_index+"_"+index+" class=author_div><div>").appendTo($(cit_container));
+	$("<button id=author_cit_"+pa_index+"_"+index+" class='btn btn-primary btn-small'>citation-detail</button>").appendTo($(cit_container));
+	$("<div id=author_div_"+pa_index+"_"+index+"><div>").appendTo($(cit_container));
 	$("#author_div_"+pa_index+"_"+index).hide();
 	
 	$("#author_cit_"+pa_index+"_"+index).click(function(){
 		$("#author_div_"+pa_index+"_"+index).toggle();
 	});
 	//<!--citation-total-->
-	$("<div id=author_cit_total_"+pa_index+"_"+index+" class=author_cit_total></div>").appendTo($("#author_div_"+pa_index+"_"+index));
+	$("<div class=row><div id=author_cit_total_"+pa_index+"_"+index+" class=span8></div></div>").appendTo($("#author_div_"+pa_index+"_"+index));
 	$("#author_cit_total_"+pa_index+"_"+index).html("<b>Total citation: "+author_cit.totalCit +"</b>");
 	
 	//<!--citation-year-chart-->
-	$("<div id=author_cit_div_"+pa_index+"_"+index+" class=chart-div></div>").appendTo($("#author_div_"+pa_index+"_"+index));
-	draw("author_cit_div_"+pa_index+"_"+index,author_cit.cit_year);
 	
-	//<!--citor no.-->
-	var citator = "<ul class=citator-ul>";
+	var author_cit_vid = "<div id=author_cit_div_"+pa_index+"_"+index+" class=span7></div>";
+	
+	//<!--citer no.-->
+	var citator = "<ul>";
 	if(author_cit.cit_people.length != 0){
 		if(author_cit.cit_people.length > TOPCITATOR){
 			for(var k =0; k<TOPCITATOR; k++){
@@ -351,16 +444,14 @@ function genAuthorCit(author_cit,group_cit_trend, cit_container,pa_index,index){
 			}//for
 		}
 	}
-	$("<div class=citator-div><b>Top Citators</b><br\>"+citator+"</div>").appendTo($("#author_div_"+pa_index+"_"+index));
-	
-	//add div to clear float of chart-div and citator-div
-	$("<div class=clearfix></div>").appendTo($("#author_div_"+pa_index+"_"+index));
+	var citer_div = "<div class=span3><b>Top Citers:</b><br\>"+citator+"</div>";
+
+	$("<div class=row>"+author_cit_vid+citer_div+"</div>").appendTo($("#author_div_"+pa_index+"_"+index));
+	draw("author_cit_div_"+pa_index+"_"+index,author_cit.cit_year);
 
 	//<!--citation-trend-chart-->
-	$("<div id=author_cit_trend_div_"+pa_index+"_"+index+" class=chart-trend-div></div>").appendTo($("#author_div_"+pa_index+"_"+index));
+	$("<div class=row><div id=author_cit_trend_div_"+pa_index+"_"+index+" class=span7></div></div>").appendTo($("#author_div_"+pa_index+"_"+index));
 	drawAuthorTrend("author_cit_trend_div_"+pa_index+"_"+index,author_cit.cit_trend,group_cit_trend);
-
-	//add div to clear float of chart-div and citator-div
-	$("<div class=clearfix></div>").appendTo($("#author_div_"+pa_index+"_"+index));
 	
 }
+*/
