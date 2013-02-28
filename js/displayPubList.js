@@ -103,7 +103,11 @@ function clickGroup(event){
 			$("<br/><p class=lead><b>Member List:</b></p>").appendTo($("#group_div_"+pa_index+"_"+i));
 			$("<table id=memberDiv_"+pa_index+"_"+i+" class='table'></table>").appendTo($("#group_div_"+pa_index+"_"+i));
 			
-			displayGroup(group_result,pa_group_result,nextPa_index,"#groupDiv_"+pa_index+"_"+i,"#memberDiv_"+pa_index+"_"+i);
+			displayGroup(group_result,
+						pa_group_result,
+						nextPa_index,
+						"#groupDiv_"+pa_index+"_"+i,
+						"#memberDiv_"+pa_index+"_"+i);
 		}
 		
 	}

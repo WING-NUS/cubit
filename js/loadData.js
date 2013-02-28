@@ -1,127 +1,147 @@
-
-var main_id = getMainID();
 var cur_year = 2012;
 
-//
-//MAIN
-//Return:
-//		main_result: Object
-//			main_result.meta
-//			main_result.list
-//					if meta.type==person, person_result
-//					if meta.type==group, group_result 
-//
-function parseMainXml(){
-	var main_result = new Object();
+
+var authorTable = new Hashtable(); //<id,item>
+var mainTable = new Hashtable();
+
+
+function getMainID(){
+
+	var xmlhttp = createXMLHTTPRequest();
+	xmlhttp.open("GET","data/config/main_id.config",false);
+	xmlhttp.send();
 	
-	var main_meta = getMetaConfig("data/config/config_" + main_id +".xml");
-	main_result.meta = main_meta;
-	
-	if(main_meta.type == "person")
+	if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
 	{
-		main_result.list = parsePersonXml(main_meta.id, null, "yes");
-	}
-	else if(main_meta.type == "group")
-	{
-		main_result.list = parseGroupXml(main_meta.id);
+		var id = xmlhttp.responseText;
+		return id;
 	}
 
-	return main_result;
+	
 }
 
-//Parse Group information
-//	Input: 
-//		group_id
+
 //
-//	Return: 
-//		group_result: Object 
-//			group_result.group: Object
-//					group.cit_year: Array
-//					group.cit_people: Array
-//			group_result.member_list: Hashtable
-//					key: type_id_name
-//					value: 
-//						if type==person, person_result
-//						if type==group, group_result
-//			group_result.citedBy
-//			group_result.showIdentifier
-//			group_result.fixGSError
-//				
+//Fill parent_item
 //
-function parseGroupXml(group_id){
+//INPUT:
+//	parent_item (already with:)
+//			.id
+//			.name
+//			.type
+//			.updateFreq
+//			.citeBy (boolean)
+//			.showIdentifier  (boolean)
+//			.fixGSError : (boolean)
+//			.memberList: Array() --> member: Object
+//
+//RETURN:
+//	fill parent_item with:
+//			.cit_year
+//			.cit_people
+//			.cit_trend
+//			.totalCit
+//
+function getParentItem(parent_item, main_item){
+
+	//Check whether parent_item already exist in authorTable
+	var item = authorTable.get(parent_item.id);
+	if(item != null){
+		return item;
+	}
 	
-	var group_result = new Object();
+	//If parent_item not exist
 	
-	var member_list = new Hashtable(); //Recording information of all the members
-	var group = new Object(); //Aggregate citation info for the group
 	var group_cit_year = new Hashtable();
 	var group_cit_people = new Hashtable();
 	var group_cit_trend = new Array(); //citation trend of group
 	var group_cit_trend_count = new Array();
 	var group_total = [0];
-
-	var g_meta = getMetaConfig("data/config/config_"+group_id+".xml"); //Get meta data from Config.xml
 	
-	//Get member list in group config file
-	for(var i = 0; i<g_meta.memberList.length; i++){
-		var mem = g_meta.memberList[i];
+	//Loop for each memeber to aggregate
+	for(var i = 0; i<parent_item.memberList.length; i++){
+	
+		var mem = parent_item.memberList[i];
+		
 		if(mem.type == "group")
 		{
-			var subGroup_result = parseGroupXml(mem.id);
-			aggregateCiation(group_cit_year, 
+			var memberItem = authorTable.get(mem.id);  //Check whether already exist
+			if(memberItem == null){
+				memberItem = getMetaConfig(mem.id); //Get item data from Config.xml
+				memberItem = getParentItem(memberItem, main_item);
+			}
+
+			aggregateCiation(
+							group_cit_year, 
 							group_cit_people, 
-							subGroup_result.group.cit_year, 
-							subGroup_result.group.cit_people);
-			aggregateCitTrend(group_cit_trend,
+							memberItem.cit_year, 
+							memberItem.cit_people);
+			aggregateCitTrend(
+								group_cit_trend,
 								group_cit_trend_count,
-								subGroup_result.group.group_cit_trend, 
-								subGroup_result.group.group_cit_trend_count);
-			if(typeof(subGroup_result.group.totalCit) != "undefined"){
-				group_total[0] += subGroup_result.group.totalCit;
+								memberItem.group_cit_trend, 
+								memberItem.group_cit_trend_count);
+			if(typeof(memberItem.totalCit) != "undefined"){
+				group_total[0] += memberItem.totalCit;
 			}			
-			member_list.put("group_" + mem.id + "_" + mem.name, subGroup_result);
+			authorTable.put(mem.id, memberItem);
 		}
 		else if(mem.type == "person")
 		{
-			var person_result = parsePersonXml(mem.id, main_id, "no");			
-			aggregateCiation(group_cit_year, 
+			var personItem = authorTable.get(mem.id);  //Check whether already exist
+			if(personItem == null){
+				personItem = getPersonItem(mem.id, main_item, mem.needVerify);	
+			}
+		
+			aggregateCiation(
+							group_cit_year, 
 							group_cit_people, 
-							person_result.author.cit_year,
-							person_result.author.cit_people);
-			aggregateCitTrend(group_cit_trend,
+							personItem.cit_year,
+							personItem.cit_people);
+			aggregateCitTrend(
+								group_cit_trend,
 								group_cit_trend_count,
-								person_result.author.cit_trend,
+								personItem.cit_trend,
 								null);
-			if(typeof(person_result.author.totalCit) != "undefined"){
-				group_total[0] += person_result.author.totalCit;
+			if(typeof(personItem.totalCit) != "undefined"){
+				group_total[0] += personItem.totalCit;
 			}
 			
-			member_list.put("person_" + mem.id + "_" + mem.name, person_result);
+			authorTable.put(mem.id, personItem);
 			
 		}
 	}//Loop for group member end
 	
-	//Fill zero in missed year, sort count by descent
-	getAuthorCitation(group,group_cit_year,group_cit_people,group_total[0]);
 	
-	//Return group_result
-	group.group_cit_trend = group_cit_trend;
-	group.group_cit_trend_count = group_cit_trend_count;
-
+	//Fill parent_item with:
+	//		.cit_year
+	//		.cit_people
+	//		.totalCit
+	getAuthorCitation(
+						parent_item,
+						group_cit_year,
+						group_cit_people,
+						group_total[0]);
+	
+	//Add group_result
+	parent_item.group_cit_trend = group_cit_trend;
+	parent_item.group_cit_trend_count = group_cit_trend_count;
+	
+	//Fill parent_item with:
+	//		.cit_trend
 	var cit_trend = new Array();
 	for(var i = 0; i<group_cit_trend.length; i++){
 		cit_trend[i] = group_cit_trend[i] / group_cit_trend_count[i];
 	}
-	group.cit_trend = cit_trend;
+	parent_item.cit_trend = cit_trend;
 
-	group_result.group = group;
-	group_result.member_list = member_list;
-	group_result.citedBy = g_meta.citedBy;
-	group_result.showIdentifier=g_meta.showIdentifier;
-	group_result.fixGSError = g_meta.fixGSError;
+	//Add into authorTable
+	authorTable.put(parent_item.id, parent_item);
 	
-	return group_result;
+	return parent_item;
+	
 }
+
 
 
 //
@@ -210,55 +230,67 @@ function aggregateCitTrend(group_cit_trend, cit_trend_count, person_cit_trend, p
 
 }
 
+
+
+
 //
-//Parse Person information from pub_id.xml
+//Get Person Item from pub_id.xml
 //	Input:
 //		person_id
 //		main_id
-//		needVerify: (a flag)
+//		needVerify: (boolean)
 //	Return:
-//		person_result: Object
-//				person_result.author: Object
-//						author.cit_year: Array (citaion no. per year)
-//						author.cit_people: Array (citaion no. per citor)
-//						author.cit_trend: Arra (average citation no. per relative year)
-//				person_result.article_list: Array (ariticle)
-//						article: object
-//				person_result.citedBy
-//				person_result.showIdentifier
-//				person_result.fixGSError
+//		person_item: Object
+//				.cit_year: Array (citaion no. per year)
+//				.cit_people: Array (citaion no. per citor)
+//				.cit_trend: Arra (average citation no. per relative year)
+//				.totalCit: Int
+//				.article_list: Array (ariticle: object)
+//				.citedBy
+//				.showIdentifier
+//				.fixGSError
 //		
 //
-function parsePersonXml(person_id, main_id, needVerify){
-	var person_result = new Object();  //result object (.author, .article_list)
-	var p_meta;
+function getPersonItem(person_id, main_item, needVerify){
 	
-	//Read meta config from config file
-	if(needVerify == "n" || needVerify == "no" || needVerify == "false") //Read main config
-	{
-		p_meta = getMetaConfig("data/config/config_"+main_id+".xml"); //Get meta data from Config.xml
-	}
-	else if(needVerify == "y" || needVerify == "yes" || needVerify == "true")  //Read person verified config
-	{
-		p_meta = getMetaConfig("data/config/config_"+person_id+".xml"); //Get meta data from Config.xml
+	//Check whether person_item already exist in authorTable
+	var item = authorTable.get(person_id);
+	if( item != null){		
+		return item;
 	}
 	
-	if(main_id == null){
-		main_meta = p_meta;
-	}else{
-		main_meta = getMetaConfig("data/config/config_"+main_id+".xml"); //Get meta data from Config.xml
+	//If person_item not exist
+	var person_item = new Object();  //
+	
+	//Get meta config
+	if(!needVerify) //Read main config
+	{
+		person_item.updateFreq = main_item.updateFreq;  //Get meta data from main_item
+		person_item.citedBy = main_item.citedBy;
+		person_item.showIdentifier = main_item.showIdentifier;
+		person_item.fixGSError = main_item.fixGSError;
+	}
+	else   //Read person verified config
+	{
+		var p_meta = getMetaConfig(person_id); //Get meta data from Config.xml
+		person_item.updateFreq = p_meta.updateFreq;  //Get meta data from main_item
+		person_item.citedBy = p_meta.citedBy;
+		person_item.showIdentifier = p_meta.showIdentifier;
+		person_item.fixGSError = p_meta.fixGSError;
+		person_item.excludeList = p_meta.excludeList;
 	}
 	
 
 	//Update publication list
-	var need_update_flag = compareTime(p_meta.updateFreq);
+	var need_update_flag = compareTime(person_item.updateFreq);
 	if(need_update_flag) //if true, need update
 	{ 
 		exc_gsnap();
 	}
 	
+	
 	//Get publication list
-	var pub_content; //result list
+
 	var query_result, result;
 	var article_list = new Array();  //article list
 	
@@ -267,78 +299,83 @@ function parsePersonXml(person_id, main_id, needVerify){
 	var url_pub = "data/publication/pub_" + person_id + ".xml?number=" + Math.random();
 	xmlhttp_p.open("GET",url_pub,false);
 	xmlhttp_p.send();
-	
+//	xmlhttp_p.onreadystatechange = function(){
 	if(xmlhttp_p.readyState == 4)
-	{
-		if(xmlhttp_p.status == 200) //if file exist
-		{ 	
-			var hash_author_year = new Hashtable();
-			var hash_author_people = new Hashtable();
-			var author_total = [0];
-			
-			//Parse publication XML
-			query_result = xmlhttp_p.responseXML.documentElement.getElementsByTagName("query")[0];
-			
-			var i = 0; 
-			while(query_result != null) //loop for the articles in pub_id.xml
-			{
-				var query_str = query_result.attributes.content.nodeValue;
-				 //if query author name, get all the results
-				if(query_str.indexOf("author") == 0)
-				{
-					result = query_result.getElementsByTagName("result")[0];		
+		{
+			if(xmlhttp_p.status == 200) //if file exist
+			{ 	
+				var hash_author_year = new Hashtable();
+				var hash_author_people = new Hashtable();
+				var author_total = [0];
 				
-					while(result != null)
-					{	
-						var article = parsePubXML(result,hash_author_year,hash_author_people,p_meta,main_meta,author_total);
-						if(article != null){ //not in the exclude list
-							article_list[i] = article;  //add into article list		
-							i++;							
-						}
-						result = result.nextElementSibling;
-												
-					}
-				}
-				 //if query title, get first result
-				else if(query_str.indexOf("allintitle") == 0)
+				//Parse publication XML
+				query_result = xmlhttp_p.responseXML.documentElement.getElementsByTagName("query")[0];
+				
+				var i = 0; 
+				while(query_result != null) //loop for the articles in pub_id.xml
 				{
-					result = query_result.getElementsByTagName("result")[0];
-					var article = parsePubXML(result,hash_author_year,hash_author_people,p_meta,main_meta,author_total);
-					if(article != null){ //not in the exclude list
-						article_list[i] = article;  //add into article list
-						i++;
+					var query_str = query_result.attributes.content.nodeValue;
+					 //if query author name, get all the results
+					if(query_str.indexOf("author") == 0)
+					{
+						result = query_result.getElementsByTagName("result")[0];		
+					
+						while(result != null)
+						{	
+							var article = parsePubXML(result,hash_author_year,hash_author_people,person_item,author_total);
+							if(article != null){ //not in the exclude list
+								article_list[i] = article;  //add into article list		
+								i++;							
+							}
+							result = result.nextElementSibling;
+													
+						}
+					}
+					 //if query title, get first result
+					else if(query_str.indexOf("allintitle") == 0)
+					{
+						result = query_result.getElementsByTagName("result")[0];
+						var article = parsePubXML(result,hash_author_year,hash_author_people,p_meta,author_total);
+						if(article != null){ //not in the exclude list
+							article_list[i] = article;  //add into article list
+							i++;
+						}
+						
 					}
 					
-				}
+					query_result = query_result.nextElementSibling; //get next <query...>
+
+				} //processed all articles
 				
-				query_result = query_result.nextElementSibling; //get next <query...>
+				//Aggregate citation info for the author
 
-			} //processed all articles
-			
-			//Aggregate citation info for the author
-			var author = new Object();
-			getAuthorCitation(author,hash_author_year,hash_author_people,author_total[0]);
+				getAuthorCitation(person_item,hash_author_year,hash_author_people,author_total[0]);
 
-			//Average ciation trend for the author
-			getAuthorTrend(author,article_list,cur_year);
+				//Average ciation trend for the author
+				person_item.cit_trend = getAuthorTrend(article_list,cur_year);
+				
+				person_item.article_list = article_list;
+				
+				//Add into AuthorTable, Return person_item
+				authorTable.put(person_id, person_item);
+				return person_item;
+				
+			}//200 end
+			else if (xmlhttp_p.status == 404) //if not exist
+			{ 
+				if(exc_gsnap())
+					return getPersonItem(person_id, main_item, needVerify);						
+			}//404 end
+		}//readyState == 4 end
+	
+//	}
+	
+	
 
-			//Return person_result
-			person_result.author = author;			
-			person_result.article_list = article_list;
-			person_result.citedBy = p_meta.citedBy;
-			person_result.showIdentifier=p_meta.showIdentifier;
-			person_result.fixGSError = p_meta.fixGSError;
-			return person_result;
-		}
-		else if (xmlhttp_p.status == 404) //if not exist
-		{ 
-			if(exc_gsnap())
-			{
-				return parsePersonXml();
-			}			
-		}
-	}
+	
 }
+
+
 
 
 //
@@ -374,7 +411,7 @@ function parsePersonXml(person_id, main_id, needVerify){
 //			
 //			
 //
-function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,author_total){
+function parsePubXML(xx,_hash_author_year,_hash_author_people,person_item,author_total){
 
 	var article = new Object(); //one article
 	try{
@@ -441,7 +478,7 @@ function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,a
 		article.versionLink = xx.getElementsByTagName("versionLink")[0].firstChild.nodeValue;
 		var regex = /cluster=([\w]*)&/;
 		article.identifier = article.versionLink.match(regex)[1];
-		if(checkExcludeId(article.identifier,p_meta)){ //true: in the exclude list
+		if(checkExcludeId(article.identifier,person_item)){ //true: in the exclude list
 			return null;
 		}
 	}catch(er){
@@ -458,7 +495,7 @@ function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,a
 		article.citeLink = xx.getElementsByTagName("citeLink")[0].firstChild.nodeValue;
 		var regex = /cites=([\w]*)&/;
 		article.identifier = article.citeLink.match(regex)[1];
-		if(checkExcludeId(article.identifier,p_meta)){ //true: in the exclude list
+		if(checkExcludeId(article.identifier,person_item)){ //true: in the exclude list
 			return null;
 		}
 	}catch(er){
@@ -522,7 +559,7 @@ function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,a
 				year = parseInt(citeby[i].getElementsByTagName("year")[0].firstChild.nodeValue);
 				
 				//FixGSError
-				if(main_meta.fixGSError){
+				if(person_item.fixGSError){
 					if(year < parseInt(article.year)){ //remove uncorrect citation (citing year < published year of the article)
 						author_total[0]--;
 						continue; 
@@ -603,19 +640,26 @@ function parsePubXML(xx,_hash_author_year,_hash_author_people,p_meta,main_meta,a
 }
 
 
+
+
+
 //
 //Aggregate citation info for the author
 //
 //	Input:
-//		_author: (object)
+//		person_item: (object)
 //		_hash_author_year
 //		_hash_author_people
+//		_author_total
 //
 //	Return:
-//		_author
+//		person_item filled with:
+//				.cit_year
+//				.cit_people
+//				.totalCit
 //
 //
-function getAuthorCitation(_author,_hash_author_year,_hash_author_people,_author_total){
+function getAuthorCitation(person_item,_hash_author_year,_hash_author_people,_author_total){
 
 	//fill zero to unoccured year
 	if(_hash_author_year.size()!=0){
@@ -632,34 +676,36 @@ function getAuthorCitation(_author,_hash_author_year,_hash_author_people,_author
 			}
 		}
 		
-		_author.cit_year = _hash_author_year.entries().sort(); //ascending by year
+		person_item.cit_year = _hash_author_year.entries().sort(); //ascending by year
 		
-		_author.cit_people = _hash_author_people.entries().sort(function(a,b){return b[1]-a[1]});  //descending by count
+		person_item.cit_people = _hash_author_people.entries().sort(function(a,b){return b[1]-a[1]});  //descending by count
 		
-		_author.totalCit = _author_total;
-		return _author;
+		person_item.totalCit = _author_total;
+		return person_item;
 	}
 	
 
 }
+
+
 
 //
 //Calculate citation trend for each author
 //By averaging each each article's citation count in sequential year
 //
 //INPUT:
-//		author: Object
+
 //		article_list: Array
 //		cur_year: number (current year)
 //OUPUT:
-//		fill author with new element: author.cit_trend: Array
+//		cit_trend: Array
 //
 //
-function getAuthorTrend(author,article_list,cur_year){
+function getAuthorTrend(article_list,cur_year){
 
 	if(!article_list.length > 0){ //if no article
-		author.cit_trend = {};
-		return;
+		var cit_trend = {};
+		return cit_trend;
 	}
 
 	//Method Start
@@ -690,13 +736,15 @@ function getAuthorTrend(author,article_list,cur_year){
 		cit_trend[k] = cit_trend[k] / cit_trend_count[k];
 	}
 	
-	author.cit_trend = cit_trend;
+	return cit_trend;
 }
 
 
 
+
+
 //
-//Get meta data from main config file
+//Get meta data from Config file
 //
 //Input:
 //	Config_file_path
@@ -707,25 +755,26 @@ function getAuthorTrend(author,article_list,cur_year){
 //		metaOpt.name
 //		metaOpt.type
 //		metaOpt.updateFreq
-//		metaOpt.citeBy
-//		metaOpt.showIdentifier
-//		metaOpt.fixGSError : boolean
+//		metaOpt.citeBy (boolean)
+//		metaOpt.showIdentifier  (boolean)
+//		metaOpt.fixGSError : (boolean)
 //		metaOpt.memberList: Array() --> member: Object
 //											member.id
 //											member.type
 //											member.name
+//											member.needVerify (boolean)
 //		metaOpt.excludeList: Hashtable() --> {g-identifier, i}
 //
 //
-function getMetaConfig(config_path){
+function getMetaConfig(id){
 	
 	var xmlhttp = createXMLHTTPRequest();
-	xmlhttp.open("GET",config_path + "?number=" + Math.random(),false);
+	xmlhttp.open("GET","data/config/config_" + id + ".xml?number=" + Math.random(),false);
 	xmlhttp.setRequestHeader("Content-type","application/xml");
+	
 	xmlhttp.send();
-	
 	var metaOpt = new Object();
-	
+//	xmlhttp.ready
 	if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
 	{
 		var xx = xmlhttp.responseXML.documentElement;
@@ -752,9 +801,14 @@ function getMetaConfig(config_path){
 		}		
 		//Get showIdentifier option
 		if(xx.getElementsByTagName("showIndentifier")[0].firstChild != null){
-			metaOpt.showIdentifier = xx.getElementsByTagName("showIndentifier")[0].firstChild.nodeValue;
+			var show = xx.getElementsByTagName("showIndentifier")[0].firstChild.nodeValue;
+			if(show == "yes" || show == "y" || show == "true"){
+				metaOpt.showIdentifier = true;
+			}else{
+				metaOpt.showIdentifier = false;
+			}
 		}else{
-			metaOpt.showIdentifier = "no";
+			metaOpt.showIdentifier = false;
 		}
 		
 		//Get fixGSError option
@@ -782,6 +836,16 @@ function getMetaConfig(config_path){
 				mem.id = m_list[k].attributes.id.nodeValue;
 				mem.type = m_list[k].attributes.type.nodeValue;
 				mem.name = m_list[k].attributes.name.nodeValue;
+				if(typeof(m_list[k].attributes.needVerify) == "undefined"){
+					mem.needVerify = false;
+				}else{
+					var needed = m_list[k].attributes.needVerify.nodeValue
+					if(needed == "yes" || needed == "true" || needed == "y"){
+						mem.needVerify = true;
+					}else{
+						mem.needVerify = false;
+					}
+				} 
 				memberList[k] = mem;
 			}
 			metaOpt.memberList = memberList;			
@@ -809,7 +873,6 @@ function getMetaConfig(config_path){
 }
 
 
-
 //
 //Given citedLink or versionLink, check whether article in exclude list
 //
@@ -821,6 +884,28 @@ function checkExcludeId(identifier,p_meta){
 	}else{
 		return false;
 	}
+}
+
+
+//
+//Get XMLHttpRequest
+//
+function createXMLHTTPRequest(){
+	var xhr_object = null;
+	if(window.XMLHttpRequest)
+	{
+		xhr_object = new XMLHttpRequest();
+	}
+	else if(window.ActiveXOject)
+	{
+		xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	else
+	{
+		alert("Your browser doesn't provide XMLHttpRequest functionality");
+		return;
+	}
+	return xhr_object;
 }
 
 
@@ -853,27 +938,6 @@ function exc_gsnap(){
 			return false;
 		}		
 	}
-}
-
-//
-//Get XMLHttpRequest
-//
-function createXMLHTTPRequest(){
-	var xhr_object = null;
-	if(window.XMLHttpRequest)
-	{
-		xhr_object = new XMLHttpRequest();
-	}
-	else if(window.ActiveXOject)
-	{
-		xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
-	}
-	else
-	{
-		alert("Your browser doesn't provide XMLHttpRequest functionality");
-		return;
-	}
-	return xhr_object;
 }
 
 
@@ -915,29 +979,5 @@ function compareTime(FREQ){
 	{
 		updateTime(current_date.toUTCString());
 		return true;
-	}
-}
-
-//
-//Update recorded time
-//
-function updateTime(time){
-	
-	var xmlhttp_t = createXMLHTTPRequest();
-	xmlhttp_t.open("POST","cgi-bin/update_time.cgi",false);
-	xmlhttp_t.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-	xmlhttp_t.send("time=" + time);
-}
-
-function getMainID(){
-
-	var xmlhttp = createXMLHTTPRequest();
-	xmlhttp.open("GET","data/config/main_id.config",false);	
-	xmlhttp.send();
-	
-	if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
-	{
-		var id = xmlhttp.responseText;
-		return id;
 	}
 }
