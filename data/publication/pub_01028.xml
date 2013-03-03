@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<results algorithmName="GS" algorithmVersion="101001" time="9:00" date="2013">
+<query content="author:&quot;Hamed Kiani&quot; NUS" label="" count="4" totalresults="4">
+  <result id="0">
+    <url>http://dl.acm.org/citation.cfm?id=2396354</url>
+    <title status="complete" source="scholar.google.com">Face photo retrieval by sketch example</title>
+    <author status="complete" source="scholar.google.com">H Kiani Galoogahi, T Sim</author>
+    <proceeding status="partial" source="scholar.google.com">Proceedings of the 20th ACM international &#8230;</proceeding>
+    <year>2012</year>
+    <source>dl.acm.org</source>
+    <snippet status="partial" source="scholar.google.com">... Hamed Kiani Galoogahi School of Computing National University of Singapore Singapore,117417 hkiani@comp.nus.edu.sg Terence Sim School of Computing National Universityof Singapore Singapore, 117417 tsim@comp.nus.edu .sg ...</snippet>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="1">
+    <url>http://www.comp.nus.edu.sg/~hkiani/ACMMM12_GaborShape.pdf</url>
+    <title status="complete" source="scholar.google.com">Face Photo Retrieval by Sketch Example</title>
+    <pdf>http://www.comp.nus.edu.sg/~hkiani/ACMMM12_GaborShape.pdf</pdf>
+    <author status="complete" source="scholar.google.com">HK Galoogahi, T Sim</author>
+    <year>2012</year>
+    <source>comp.nus.edu.sg</source>
+    <snippet status="partial" source="scholar.google.com">... Hamed Kiani Galoogahi School of Computing National University of Singapore Singapore,117417 hkiani@comp.nus.edu.sg Terence Sim School of Computing National Universityof Singapore Singapore, 117417 tsim@comp.nus.edu .sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:VAAxLKyYPwIJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:VAAxLKyYPwIJ:scholar.google.com/+author:%22Hamed+Kiani%22+NUS&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="2">
+    <url>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6298402</url>
+    <title status="complete" source="scholar.google.com">Inter-modality Face Sketch Recognition</title>
+    <pdf>http://www.cmlab.csie.ntu.edu.tw/~zenic/Download/ICME2012/Conference/data/4711a224.pdf</pdf>
+    <author status="complete" source="scholar.google.com">HK Galoogahi, T Sim</author>
+    <proceeding status="partial" source="scholar.google.com">Multimedia and Expo (ICME), 2012 IEEE &#8230;</proceeding>
+    <year>2012</year>
+    <source>ieeexplore.ieee.org</source>
+    <snippet status="partial" source="scholar.google.com">Page 1. Inter-modality Face Sketch Recognition Hamed Kiani Galoogahi School of ComputingNational University of Singapore Singapore hkiani@comp.nus.edu.sg Terence Sim School ofComputing National University of Singapore Singapore tsim@comp.nus.edu.sg ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:qd9OJAgkXl8J:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <numVersions>4</numVersions>
+    <versionLink>http://scholar.google.com.sg/scholar?cluster=6871969698801442729&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</versionLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+  <result id="3">
+    <url>http://www.comp.nus.edu.sg/~hkiani/ICIP12_LRBP.pdf</url>
+    <title status="complete" source="scholar.google.com">FACE SKETCH RECOGNITION BY LOCAL RADON BINARY PATTERN: LRBP</title>
+    <pdf>http://www.comp.nus.edu.sg/~hkiani/ICIP12_LRBP.pdf</pdf>
+    <author status="complete" source="scholar.google.com">HK Galoogahi, T Sim</author>
+    <proceeding status="complete" source="scholar.google.com">comp.nus.edu.sg</proceeding>
+    <snippet status="partial" source="scholar.google.com">Page 1. FACE SKETCH RECOGNITION BY LOCAL RADON BINARY PATTERN: LRBP HamedKiani Galoogahi and Terence Sim ... 5. AKNOWLEDGMENT We acknowledge the generous supportof NUS grant # R -252 -000-451-112 for this work. 6. REFERENCES ...</snippet>
+    <relatedLink>http://scholar.google.com.sg/scholar?q=related:udduzQdYp-gJ:scholar.google.com/&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</relatedLink>
+    <htmlLink>http://scholar.googleusercontent.com/scholar?q=cache:udduzQdYp-gJ:scholar.google.com/+author:%22Hamed+Kiani%22+NUS&amp;hl=en&amp;num=100&amp;as_sdt=1,5&amp;as_vis=1</htmlLink>
+    <citedBy totalresults="0">
+    </citedBy>
+  </result>
+</query>
+</results>

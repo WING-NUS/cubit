@@ -75,7 +75,7 @@ function displayOutline(id, type, container, index, needVerify, main_item, paren
 			}
 				
 			displayCitationInfo(index,"#citationDiv_"+index,item, parent_item);
-		},1);
+		},100);
 		
 	});
 	
@@ -185,73 +185,29 @@ function clickArticle(event){
 		if ($("#detailDiv_"+article_i).attr("drawopt") == "false"){ //if never add chart, then draw, and set drawopt=true;
 		
 			$("#detailDiv_"+article_i).attr("drawopt","true");			
-	
 			
-			//<!--generate detail-content <div>, append to detail_<div> -->
-			var html_detail = "&nbsp;&nbsp;";
-			if(article.citeLink.length > 0){
-				html_detail += "<a href=\"" + article.citeLink + "\">"
-					+"<span class=cite_by>Cited by " + article.numCite + "</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-			}
-			if(article.relatedLink.length > 0){
-				html_detail += "<a href=\"" + article.relatedLink + "\">"
-						+"<span class=relate_a>Related Articles</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-			}
-			if(article.versionLink.length > 0){
-				html_detail += "<a href=\"" + article.versionLink + "\">" 
-						+"<span class=version_no>All " + article.numVersions + " Versions</span></a>";
-			}
-			if(article.snippet.length > 0){
-				html_detail += "<br/><span class=abstract_title>Abstract: </span>" 
-						+"<span class=abstract_content>" +article.snippet +"</span>";
-			}									
-			if(item.showIdentifier && article.identifier.length > 0){
-				html_detail += "<br/><b>G-identifier:</b> <span class=identifier>" +article.identifier +"</span>";
-			}
+			var exSelf_a_btn = "<div class=row><div class='span3 offset5'>"
+								+"<button class='btn btn-mini' "
+								+"id=exSelf_a_btn_"+article_i+" exclude=false>"
+								+"To Exclude Self-citation</button></div></div>";
+			$(exSelf_a_btn).appendTo($("#detailDiv_"+article_i));
 			
-			$("<div class=detail-content>"+html_detail+"</div>").appendTo($("#detailDiv_"+article_i));
+			var exDetailDiv = "<div id=exDetailDiv_"+article_i+"></div>";
+			$(exDetailDiv).appendTo($("#detailDiv_"+article_i));
 			
-			//If citedBy option is true
-			if(item.citedBy){ 
-			
-				//<!--Generate citer-count <div>, append to detail_<div> -->
-				var citer = "<b>Top Citers:</b><ul class=citator-ul>";
-				var cit_people = article.cit_people;
-				if(cit_people != null){
-					if(cit_people.length > TOPCITATOR){
-						for(var k =0; k<TOPCITATOR; k++){
-							citer += "<li>" + cit_people[k][0]+": "+cit_people[k][1] +"</li>";
-						}//for
-					}else{
-						for(var k =0; k < cit_people.length; k++){
-							citer += "<li>" + cit_people[k][0]+": "+cit_people[k][1] +"</li>";
-						}//for
-					}
-					var citator_div = "<div class=citator-div id=citator_div_"+article_i+">" + citer +"</ul></div>";
-					$(citator_div).appendTo($("#detailDiv_"+article_i));
-				}
-				
-				$("<div class=clearfix></div>").appendTo($("#detailDiv_" + article_i));
-								
-				//<!--Generate citation-year-chart <div>, append to detail_<div> -->
-				var cit_year = article.cit_year;
-				if (cit_year != null && cit_year.length>0){
-					$("<div class=chart-div id=chart_div_" + article_i + "></div>").appendTo($("#detailDiv_"+ article_i));
-					draw("chart_div_"+ article_i,cit_year);
-				}
-							
-				//<!--Generate citation-trend-chart <div>, append to detail_<div>-->
-				var cit_trend = article.cit_trend;
-				var author_cit_trend = item.cit_trend;
-				if (cit_trend != null && cit_trend.length>0 && author_cit_trend != null && author_cit_trend.length > 0){
-					$("<div class=chart-trend-div id=chart_trend_div_" + article_i + "></div>").appendTo($("#detailDiv_" + article_i));
-					drawTrend("chart_trend_div_" +article_i,cit_trend,author_cit_trend);
-				}
-				 
-			}
-			
-			//add div to clear float of chart-div and citer-div
-			$("<div class=clearfix></div>").appendTo($("#detailDiv_" + article_i));
+			displayArticleDetail(
+								article_i,
+								article, 
+								article.numCite,
+								article.cit_year, 
+								article.cit_people, 
+								article.cit_trend, 
+								item, 
+								item.cit_trend
+								);			
+			$("#exSelf_a_btn_"+article_i).bind('click',
+												{article_i:article_i,article:article,item:item},
+												clickArticleExSelf);
 		}//end if
 				
 	}else{
@@ -261,6 +217,120 @@ function clickArticle(event){
 
 
 }
+
+
+function clickArticleExSelf(event){
+
+	article_i = event.data.article_i;
+	article = event.data.article;
+	item = event.data.item;
+	
+	if($("#exSelf_a_btn_"+article_i).attr("exclude") == "false"){ //need to exclude
+		displayArticleDetail(
+							article_i, 
+							article, 
+							article.exSelf_totalCit,
+							article.exSelf_cit_year, 
+							article.exSelf_cit_people, 
+							article.exSelf_cit_trend, 
+							item, 
+							item.exSelf_cit_trend
+							);
+		$("#exSelf_a_btn_"+article_i).attr("exclude","true");
+		$("#exSelf_a_btn_"+article_i).html("To Exclude Self-citation");
+	}
+	
+	else if($("#exSelf_a_btn_"+article_i).attr("exclude") == "true"){ //need to exclude
+		displayArticleDetail(
+							article_i, 
+							article, 
+							article.numCite,
+							article.cit_year, 
+							article.cit_people, 
+							article.cit_trend, 
+							item, 
+							item.cit_trend
+							);
+		$("#exSelf_a_btn_"+article_i).attr("exclude","false");
+		$("#exSelf_a_btn_"+article_i).html("To Include Self-citation");
+	}
+}
+
+
+
+function displayArticleDetail(article_i, article, numCite, cit_year, cit_people, cit_trend, item, author_cit_trend){
+
+	$("#exDetailDiv_"+article_i).html("");
+
+//<!--generate detail-content <div>, append to detail_<div> -->
+	var html_detail = "&nbsp;&nbsp;";
+	if(article.citeLink.length > 0){
+		html_detail += "<a href=\"" + article.citeLink + "\">"
+			+"<span class=cite_by>Cited by " + numCite + "</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+	}
+	if(article.relatedLink.length > 0){
+		html_detail += "<a href=\"" + article.relatedLink + "\">"
+				+"<span class=relate_a>Related Articles</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+	}
+	if(article.versionLink.length > 0){
+		html_detail += "<a href=\"" + article.versionLink + "\">" 
+				+"<span class=version_no>All " + article.numVersions + " Versions</span></a>";
+	}
+	if(article.snippet.length > 0){
+		html_detail += "<br/><span class=abstract_title>Abstract: </span>" 
+				+"<span class=abstract_content>" +article.snippet +"</span>";
+	}									
+	if(item.showIdentifier && article.identifier.length > 0){
+		html_detail += "<br/><b>G-identifier:</b> <span class=identifier>" +article.identifier +"</span>";
+	}
+	
+	$("<div class=detail-content>"+html_detail+"</div>").appendTo($("#exDetailDiv_"+article_i));
+	
+	//If citedBy option is true
+	if(item.citedBy){ 
+	
+		//<!--Generate citer-count <div>, append to detail_<div> -->
+		var citer = "<b>Top Citers:</b><ul class=citator-ul>";
+
+		if(cit_people != null){
+			if(cit_people.length > TOPCITATOR){
+				for(var k =0; k<TOPCITATOR; k++){
+					citer += "<li>" + cit_people[k][0]+": "+cit_people[k][1] +"</li>";
+				}//for
+			}else{
+				for(var k =0; k < cit_people.length; k++){
+					citer += "<li>" + cit_people[k][0]+": "+cit_people[k][1] +"</li>";
+				}//for
+			}
+			var citator_div = "<div class=citator-div id=citator_div_"+article_i+">" + citer +"</ul></div>";
+			$(citator_div).appendTo($("#exDetailDiv_"+article_i));
+		}
+		
+		$("<div class=clearfix></div>").appendTo($("#exDetailDiv_" + article_i));
+						
+		//<!--Generate citation-year-chart <div>, append to detail_<div> -->
+
+		if (cit_year != null && cit_year.length>0){
+			$("<div class=chart-div id=chart_div_" + article_i + "></div>").appendTo($("#exDetailDiv_"+ article_i));
+			draw("chart_div_"+ article_i,cit_year);
+		}
+					
+		//<!--Generate citation-trend-chart <div>, append to detail_<div>-->
+		
+		if (cit_trend != null && cit_trend.length>0 && author_cit_trend != null && author_cit_trend.length > 0){
+			$("<div class=chart-trend-div id=chart_trend_div_" + article_i + "></div>").appendTo($("#exDetailDiv_" + article_i));
+			drawTrend("chart_trend_div_" +article_i,cit_trend,author_cit_trend);
+		}
+		 
+	}
+	
+	//add div to clear float of chart-div and citer-div
+	$("<div class=clearfix></div>").appendTo($("#exDetailDiv_" + article_i));
+
+
+}
+
+
 
 function getHtmlArticle(article){
 	var html_li = "";
@@ -323,57 +393,125 @@ function displayCitationInfo(index,citation_container,item, parent_item){
 			return;
 		}
 		
+		//<!--exSelf-button>
+		var exSelf_btn = "<div class=row><div class='span3 offset5'>"
+					+"<button id=exSelf_btn"+index 
+					+" class='btn btn-small'"
+					+" exclude=false>"
+					+"To Exclude Self-citation</button></div></div>";
+		$(exSelf_btn).appendTo($("#citToggleDiv_"+index));
 		
-		//<!--Citation-Total-->
-		var html_detail = "<div><i class=icon-asterisk></i>"
-							+"<b>Total Citation No.: "+item.totalCit +"</b></div>";
-		$(html_detail).appendTo($("#citToggleDiv_"+index));
+		//<!--citDetailDiv-->
 		
+		var citDetailDiv = "<div id=citDetailDiv_"+index+"></div>";
+		$(citDetailDiv).appendTo($("#citToggleDiv_"+index));
 		
-		//<!--Citer No.-->
-		var citer = "<div class=citator-div><i class=icon-asterisk></i><b>Top Citers:</b><ul>";
-		if(item.cit_people.length != 0){
-			if(item.cit_people.length > TOPCITATOR){
-				for(var k =0; k<TOPCITATOR; k++){
-					citer += "<li>" + item.cit_people[k][0]+": "+item.cit_people[k][1] +"</li>";
-				}//for
-			}else{
-				for(var k =0; k<item.cit_people.length; k++){
-					citer += "<li>" + item.cit_people[k][0]+": "+item.cit_people[k][1] +"</li>";
-				}//for
-			}
-			var citer_div = citer+"</ul></div>";
-			$(citer_div).appendTo($("#citToggleDiv_"+index));
-		}
-			
+		//Display
+		displayCitDetial(
+				index, 
+				item.totalCit, 
+				item.cit_year, 
+				item.cit_people, 
+				item.cit_trend, 
+				parent_item.cit_trend
+				);
 		
-		//<!--Citation-Year-Chart-->
-		var author_cit_div = "<i class=icon-asterisk></i>"
-								+"<b>Citation Distribution by Year:</b>"
-								+"<div id=author_cit_div_"+index+" class=chart-div></div>";
-		$(author_cit_div).appendTo($("#citToggleDiv_"+index));
-		draw("author_cit_div_"+index,item.cit_year);
-		
-		
-		//Add div to clear float of chart-div and citator-div
-		$("<div class=clearfix></div>").appendTo($("#citToggleDiv_"+index));
-		
-		
-		//<!--Citation-Trend-Chart-->
-		var author_trend_cit_div = "<i class=icon-asterisk></i>"
-									+"<b>Citation Life Cycle:</b>"
-									+"<div class=chart-trend-div id=author_cit_trend_div_"+index+"></div>";
-		$(author_trend_cit_div).appendTo($("#citToggleDiv_"+index));
-		drawAuthorTrend("author_cit_trend_div_"+index,item.cit_trend,parent_item.cit_trend);
-		
-		
-		//Add div to clear float of chart-div and citator-div
-		$("<div class=clearfix></div>").appendTo($("#citToggleDiv_"+index));	
+		$("#exSelf_btn"+index).bind('click',{index:index, item:item, parent_item:parent_item},clickExSelf);		
 		
 	}//end if drawopt
 	
 }
 
+
+function clickExSelf(event){
+	index = event.data.index;
+	item = event.data.item;
+	parent_item = event.data.parent_item;
+	var totalCit, cit_year, cit_people, cit_trend, pa_cit_trend;
+			
+	if($("#exSelf_btn"+index).attr("exclude") == "false") //should exclude self-citation
+	{
+	
+		displayCitDetial(
+						index, 
+						item.exSelf_totalCit, 
+						item.exSelf_cit_year, 
+						item.exSelf_cit_people, 
+						item.exSelf_cit_trend, 
+						parent_item.exSelf_cit_trend
+						);
+				
+		$("#exSelf_btn"+index).attr("exclude", "true");
+		$("#exSelf_btn"+index).html("To Include Self-citation");
+		
+		
+	}
+	else if($("#exSelf_btn"+index).attr("exclude") == "true"){//should include self-citation
+		displayCitDetial(
+						index, 
+						item.totalCit, 
+						item.cit_year, 
+						item.cit_people, 
+						item.cit_trend, 
+						parent_item.cit_trend
+						);
+		
+		$("#exSelf_btn"+index).attr("exclude", "false");
+		$("#exSelf_btn"+index).html("To Exclude Self-citation");
+	}
+
+}
+
+function displayCitDetial(index, totalCit, cit_year, cit_people, cit_trend, pa_cit_trend)
+{
+	$("#citDetailDiv_"+index).html("");
+	//<!--Citation-Total-->
+	var html_detail = "<div><i class=icon-asterisk></i>"
+						+"<b>Total Citation No.: "+totalCit +"</b></div>";
+	$(html_detail).appendTo($("#citDetailDiv_"+index));
+	
+	
+	//<!--Citer No.-->
+	var citer = "<div class=citator-div><i class=icon-asterisk></i><b>Top Citers:</b><ul>";
+	if(cit_people.length != 0){
+		if(cit_people.length > TOPCITATOR){
+			for(var k =0; k<TOPCITATOR; k++){
+				citer += "<li>" + cit_people[k][0]+": "+cit_people[k][1] +"</li>";
+			}//for
+		}else{
+			for(var k =0; k<cit_people.length; k++){
+				citer += "<li>" + cit_people[k][0]+": "+cit_people[k][1] +"</li>";
+			}//for
+		}
+		var citer_div = citer+"</ul></div>";
+		$(citer_div).appendTo($("#citDetailDiv_"+index));
+	}
+		
+	
+	//<!--Citation-Year-Chart-->
+	var author_cit_div = "<i class=icon-asterisk></i>"
+							+"<b>Citation Distribution by Year:</b>"
+							+"<div id=author_cit_div_"+index+" class=chart-div></div>";
+	$(author_cit_div).appendTo($("#citDetailDiv_"+index));
+	draw("author_cit_div_"+index,cit_year);
+	
+	
+	//Add div to clear float of chart-div and citator-div
+	$("<div class=clearfix></div>").appendTo($("#citDetailDiv_"+index));
+	
+	
+	//<!--Citation-Trend-Chart-->
+	var author_trend_cit_div = "<i class=icon-asterisk></i>"
+								+"<b>Citation Life Cycle:</b>"
+								+"<div class=chart-trend-div id=author_cit_trend_div_"+index+"></div>";
+	$(author_trend_cit_div).appendTo($("#citDetailDiv_"+index));
+	drawAuthorTrend("author_cit_trend_div_"+index,cit_trend,pa_cit_trend);
+	
+	
+	//Add div to clear float of chart-div and citator-div
+	$("<div class=clearfix></div>").appendTo($("#citDetailDiv_"+index));	
+
+}
 
 function displayLoadingGif(container, index){
 

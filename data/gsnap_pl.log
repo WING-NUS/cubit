@@ -10718,3 +10718,14 @@ URL: http://scholar.google.com.sg/scholar?q=author%3A%22Ning%20Fang%22%20NUS&num
 ## Paper 0: Bacteriaâsurface interaction in the presence of proteins and surface attached poly (ethylene glycol) methacrylate chains
 # Processed 15 citedBy results ...... Sleep for 42.12158203125s
 # Process cited-by results, stored in ./gsnap/cache/gs//citedBy/15-0-citedBy-http%3A%2F%2Fscholar.google.com%2Fscholar%3Fcites%3D1704933453736785471%26amp%3Bas_sdt%3D2005%26amp%3Bsciodt%3D1%2C5%26amp%3Bhl%3Den%26amp%3Bnum%3D100
+# Copyright 2009 � by Luong Minh Thang
+
+Label = "", query = "author:"Hamed Kiani" NUS"
+Processing about 1-100 results ... 
+URL: http://scholar.google.com.sg/scholar?q=author%3A%22Hamed%20Kiani%22%20NUS&num=100&start=0&hl=en&btnG=Search&as_sdt=1%2C5&as_vis=1&as_ylo=&as_yhi=
+... Sleep for 43.67431640625s
+# Process HTML file ./gsnap/cache/gs//100-0-articles-:author%3A%22Hamed%20Kiani%22%20NUS-none-none.html
+## Paper 0: Face photo retrieval by sketch example
+## Paper 1: Face Photo Retrieval by Sketch Example
+## Paper 2: Inter-modality Face Sketch Recognition
+## Paper 3: FACE SKETCH RECOGNITION BY LOCAL RADON BINARY PATTERN: LRBP
