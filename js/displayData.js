@@ -6,9 +6,8 @@ $(document).ready(function(){
 	var main_id = getMainID();
 	var main_item = getMetaConfig(main_id)
 
-//	var main_item = getMetaConfig(main_id);
 	$("#header").html("<h1>" + main_item.name +"</h1>");
-//	setTimeout(getParentItem(main_item, main_item),0);
+
 	displayOutline(main_id,main_item.type,"#root_list",0,false,main_item,main_item);
 
 });
@@ -22,7 +21,7 @@ function displayOutline(id, type, container, index, needVerify, main_item, paren
 	//		Item
 	//		Citation_container
 	//		List_container
-	var citation_container, list_container, label;
+	var citation_container, list_container, label, orderBtn;
 	citation_container = "<div id=citationDiv_"+index+"></div>";
 	
 	if(type == "group"){
@@ -32,7 +31,12 @@ function displayOutline(id, type, container, index, needVerify, main_item, paren
 		
 	}else if(type == "person"){
 		list_container = "<ol id=listTbl_"+index+"></ol>";
-		label = "<br/><p class=lead><b>Publication List:</b></p>";		
+		label = "<br/><p class=lead><b>Publication List:</b></p>";
+		orderBtn = "<div class=row><div class=span2><label class=radio>"
+					+"<input type='radio' name='optionsRadios' id=orderBtn_"+index+"_1 value='year' checked>Ordered by Year</lable></div>"
+					+"<div class=span2><label class=radio>"
+					+"<input type='radio' name='optionsRadios' id=orderBtn_"+index+"_2 value='cite'>Ordered by Cite</lable></div></div>";	
+					
 		item = getPersonItem(id, main_item, needVerify); //Generate person_item
 		
 	}else{ //Warning info
@@ -41,8 +45,13 @@ function displayOutline(id, type, container, index, needVerify, main_item, paren
 	
 	$(citation_container).appendTo($(container));
 	$(label).appendTo($(container));
+	$(orderBtn).appendTo($(container));
 	$(list_container).appendTo($(container));
 		
+	//Bind orderBy click
+	$("#orderBtn_"+index+"_2").bind('click',{item:item,index:index},orderByCite);
+	$("#orderBtn_"+index+"_1").bind('click',{item:item,index:index},orderByYear);
+	
 	
 	//Generate:
 	//	citation-detail button
@@ -57,12 +66,7 @@ function displayOutline(id, type, container, index, needVerify, main_item, paren
 	$("#citToggleDiv_"+index).hide();
 	
 	//Generate:
-	//	citationDiv
-//	$("#citationBtn_"+index).mousedown(function(){	
-//		displayLoadingGif("#citToggleDiv_"+index, index);
-//		setInterval(displayLoadingGif("#citToggleDiv_"+index, index),30);
-//	});
-	
+	//	citationDiv	
 	$("#citationBtn_"+index).click(function(){
 	
 		displayLoadingGif("#citToggleDiv_"+index, index);
@@ -108,34 +112,63 @@ function displayOutline(id, type, container, index, needVerify, main_item, paren
 		}
 	}
 	else if(type == "person"){
-
-		for(var i = 0; i < item.article_list.length; i++){
-			var article_i = index+"_"+i;
-			
-			var article = item.article_list[i];
-			var html_li =  getHtmlArticle(article);
-			var article_li = "<li id=li_"+ article_i + ">"+html_li+"</li>";  //generate element li
-			$(article_li).appendTo($("#listTbl_"+index));
-			
-			//<!--generate detail button for each <li>-->
-			//<!--Id=detailButton_index_i-->
-			$("<span class='btn btn-mini' id=detailBtn_"+ article_i+ ">>>details</span>").appendTo($("#li_"+ article_i));
-			
-			//<!--generate detail_<div>, append to <li> -->
-			$("<div class=detail-div id=detailDiv_"+ article_i + " display=false drawopt=false></div>").appendTo($("#li_"+ article_i));				
-				
-			//<!--generate detail onclick action-->
-			$("#detailDiv_" + article_i).hide();		
-			$("#detailBtn_" + article_i).bind(
-											'click',
-											{article_i:article_i,item:item,article:article},
-											clickArticle);
-
-		}
+		displayPubList(item.article_list, item, index);
 	}
 	
 }
 
+
+function orderByCite(event){
+	var index = event.data.index;
+	var _test2 = $("#orderBtn_"+index+"_2");
+	if(_test2.attr("checked") != "undefined" && _test2.attr("checked") == "checked"){
+		var item = event.data.item;
+		article_list = item.article_list.sort(function(a,b){return b.numCite-a.numCite});
+		$("#listTbl_"+index).html("");
+		displayPubList(article_list, item, index);
+	}	
+}
+
+
+function orderByYear(event){
+	var index = event.data.index;
+	var _test1 = $("#orderBtn_"+index+"_1");
+	if(_test1.attr("checked") != "undefined" && _test1.attr("checked") == "checked"){
+		var item = event.data.item;
+		article_list = item.article_list.sort(function(a,b){return b.year-a.year});
+		$("#listTbl_"+index).html("");
+		displayPubList(article_list, item, index);
+	}	
+}
+
+function displayPubList(article_list, item, index){
+
+	for(var i = 0; i < article_list.length; i++){
+		
+		var article_i = index+"_"+i;
+		
+		var article = article_list[i];
+		var html_li =  getHtmlArticle(article);
+		var article_li = "<li id=li_"+ article_i + ">"+html_li+"</li>";  //generate element li
+		$(article_li).appendTo($("#listTbl_"+index));
+		
+		//<!--generate detail button for each <li>-->
+		//<!--Id=detailButton_index_i-->
+		$("<span class='btn btn-mini' id=detailBtn_"+ article_i+ ">>>details</span>").appendTo($("#li_"+ article_i));
+		
+		//<!--generate detail_<div>, append to <li> -->
+		$("<div class=detail-div id=detailDiv_"+ article_i + " display=false drawopt=false></div>").appendTo($("#li_"+ article_i));				
+			
+		//<!--generate detail onclick action-->
+		$("#detailDiv_" + article_i).hide();		
+		$("#detailBtn_" + article_i).bind(
+										'click',
+										{article_i:article_i,item:item,article:article},
+										clickArticle);
+
+	}
+
+}
 
 
 function clickPlusBtn(event){
@@ -407,7 +440,17 @@ function displayCitationInfo(index,citation_container,item, parent_item){
 		$(citDetailDiv).appendTo($("#citToggleDiv_"+index));
 		
 		//Display
-		displayCitDetial(
+		if(item.id == parent_item.id){
+			displayCitDetial(
+				index, 
+				item.totalCit, 
+				item.cit_year, 
+				item.cit_people, 
+				item.cit_trend, 
+				null
+				);
+		}else{
+			displayCitDetial(
 				index, 
 				item.totalCit, 
 				item.cit_year, 
@@ -416,6 +459,7 @@ function displayCitationInfo(index,citation_container,item, parent_item){
 				parent_item.cit_trend
 				);
 		
+		}
 		$("#exSelf_btn"+index).bind('click',{index:index, item:item, parent_item:parent_item},clickExSelf);		
 		
 	}//end if drawopt
@@ -431,8 +475,17 @@ function clickExSelf(event){
 			
 	if($("#exSelf_btn"+index).attr("exclude") == "false") //should exclude self-citation
 	{
-	
-		displayCitDetial(
+		if(item.id == parent_item.id){
+			displayCitDetial(
+						index, 
+						item.exSelf_totalCit, 
+						item.exSelf_cit_year, 
+						item.exSelf_cit_people, 
+						item.exSelf_cit_trend, 
+						null
+						);
+		}else{
+			displayCitDetial(
 						index, 
 						item.exSelf_totalCit, 
 						item.exSelf_cit_year, 
@@ -440,6 +493,8 @@ function clickExSelf(event){
 						item.exSelf_cit_trend, 
 						parent_item.exSelf_cit_trend
 						);
+		
+		}		
 				
 		$("#exSelf_btn"+index).attr("exclude", "true");
 		$("#exSelf_btn"+index).html("To Include Self-citation");
@@ -447,7 +502,17 @@ function clickExSelf(event){
 		
 	}
 	else if($("#exSelf_btn"+index).attr("exclude") == "true"){//should include self-citation
-		displayCitDetial(
+		if(item.id == parent_item.id){
+			displayCitDetial(
+						index, 
+						item.totalCit, 
+						item.cit_year, 
+						item.cit_people, 
+						item.cit_trend, 
+						null
+						);
+		}else{
+			displayCitDetial(
 						index, 
 						item.totalCit, 
 						item.cit_year, 
@@ -455,7 +520,7 @@ function clickExSelf(event){
 						item.cit_trend, 
 						parent_item.cit_trend
 						);
-		
+		}
 		$("#exSelf_btn"+index).attr("exclude", "false");
 		$("#exSelf_btn"+index).html("To Exclude Self-citation");
 	}
@@ -505,7 +570,12 @@ function displayCitDetial(index, totalCit, cit_year, cit_people, cit_trend, pa_c
 								+"<b>Citation Life Cycle:</b>"
 								+"<div class=chart-trend-div id=author_cit_trend_div_"+index+"></div>";
 	$(author_trend_cit_div).appendTo($("#citDetailDiv_"+index));
-	drawAuthorTrend("author_cit_trend_div_"+index,cit_trend,pa_cit_trend);
+	if(pa_cit_trend == null){
+		drawGroupTrend("author_cit_trend_div_"+index,cit_trend);
+	}else{
+		drawAuthorTrend("author_cit_trend_div_"+index,cit_trend,pa_cit_trend);
+	}
+	
 	
 	
 	//Add div to clear float of chart-div and citator-div

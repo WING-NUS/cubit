@@ -337,6 +337,7 @@ function getPersonItem(person_id, main_item, needVerify){
 	
 	//If person_item not exist
 	var person_item = new Object();  //
+	person_item.id = person_id;
 	
 	//Get meta config
 	if(!needVerify) //Read main config
@@ -345,6 +346,7 @@ function getPersonItem(person_id, main_item, needVerify){
 		person_item.citedBy = main_item.citedBy;
 		person_item.showIdentifier = main_item.showIdentifier;
 		person_item.fixGSError = main_item.fixGSError;
+		person_item.orderBy = main_item.orderBy;
 	}
 	else   //Read person verified config
 	{
@@ -354,6 +356,7 @@ function getPersonItem(person_id, main_item, needVerify){
 		person_item.showIdentifier = p_meta.showIdentifier;
 		person_item.fixGSError = p_meta.fixGSError;
 		person_item.excludeList = p_meta.excludeList;
+		person_item.orderBy = p_meta.orderBy;
 	}
 	
 
@@ -470,8 +473,13 @@ function getPersonItem(person_id, main_item, needVerify){
 				person_item.cit_trend = getAuthorTrend(article_list,cur_year);
 				person_item.exSelf_cit_trend = getAuthorExSelfTrend(article_list,cur_year)
 				
-				//
-				person_item.article_list = article_list;
+				//Order by year or citation
+				if(person_item.orderBy == "cite"){
+					person_item.article_list = article_list.sort(function(a,b){return b.numCite-a.numCite});
+				}else{
+					person_item.article_list = article_list.sort(function(a,b){return b.year-a.year});
+				}
+				
 				
 				//Add into AuthorTable, Return person_item
 				authorTable.put(person_id, person_item);
@@ -1064,6 +1072,7 @@ function getAuthorExSelfTrend(article_list,cur_year){
 //		metaOpt.citeBy (boolean)
 //		metaOpt.showIdentifier  (boolean)
 //		metaOpt.fixGSError : (boolean)
+//		metaOpt.orderBy: (year or cite)
 //		metaOpt.memberList: Array() --> member: Object
 //											member.id
 //											member.type
@@ -1129,6 +1138,20 @@ function getMetaConfig(id){
 		}else{
 			metaOpt.fixGSError = false;
 		}
+		
+		
+		//Get orderBy option
+		if(xx.getElementsByTagName("orderBy")[0].firstChild != null){
+			var orderBy = xx.getElementsByTagName("orderBy")[0].firstChild.nodeValue;
+			if(orderBy == "cite" || orderBy == "citation"){
+				metaOpt.orderBy = "cite";
+			}else{
+				metaOpt.orderBy = "year";
+			}
+		}else{
+			metaOpt.orderBy = "year";
+		}
+		
 		
 		
 		//Get Member list or Exclude g-identifier list

@@ -107,4 +107,29 @@ function draw(container,array){
     chart.draw(data, options);
  }
 
-   
+ function drawGroupTrend(container,group_cit_trend){
+ 
+	var data = new google.visualization.DataTable();
+	data.addColumn('string','n-st Year');
+	data.addColumn('number','Group');
+	var k;
+	for(var i = 0 ; i < group_cit_trend.length; i++){
+		k = i+1;
+		data.addRows([
+			[k+"",group_cit_trend[i]]		
+		]);
+	}
+	
+	var showEvery = Math.ceil(group_cit_trend.length/10);
+
+	var options = {   //set options 
+		title: 'Citation Life Cycle',
+		hAxis: {title: 'n-st Year', titleTextStyle: {color: 'black'},showTextEvery:showEvery},		
+		vAxis: {title: '#Average Citation'},
+		legend: {position: 'in', alignment: 'start', textStyle: {color: 'black', fontSize: 12}},
+	};
+
+	var chart = new google.visualization.LineChart(document.getElementById(container));
+    chart.draw(data, options);
+ 
+ }
