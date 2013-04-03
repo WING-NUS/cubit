@@ -327,7 +327,7 @@ function aggregateCitTrend(group_cit_trend, cit_trend_count, person_cit_trend, p
 //				.fixGSError
 //		
 //
-function getPersonItem(person_id, main_item, needVerify){
+function getPersonItem(person_id, name, main_item, needVerify){
 	
 	//Check whether person_item already exist in authorTable
 	var item = authorTable.get(person_id);
@@ -347,6 +347,7 @@ function getPersonItem(person_id, main_item, needVerify){
 		person_item.showIdentifier = main_item.showIdentifier;
 		person_item.fixGSError = main_item.fixGSError;
 		person_item.orderBy = main_item.orderBy;
+		person_item.name = name;
 	}
 	else   //Read person verified config
 	{
@@ -357,6 +358,7 @@ function getPersonItem(person_id, main_item, needVerify){
 		person_item.fixGSError = p_meta.fixGSError;
 		person_item.excludeList = p_meta.excludeList;
 		person_item.orderBy = p_meta.orderBy;
+		person_item.name = p_meta.name;
 	}
 	
 

@@ -111,7 +111,7 @@ function draw(container,array){
  
 	var data = new google.visualization.DataTable();
 	data.addColumn('string','n-st Year');
-	data.addColumn('number','Group');
+	data.addColumn('number','');
 	var k;
 	for(var i = 0 ; i < group_cit_trend.length; i++){
 		k = i+1;

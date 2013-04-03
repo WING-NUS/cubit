@@ -3,6 +3,15 @@
 	margin-bottom:20px;
 }
 
+.detail-author-div
+{
+	width:75%;
+	background-color:white ;
+	outline-style:dotted;
+	outline-width:1px;
+	padding:15px 10px 10px 20px;
+}
+
 .detail-div
 {
 	width:95%;
@@ -61,7 +70,10 @@ li
 {
 	font-weight:bold;
 }
-
+.cur_author
+{
+	font-weight:bold;
+}
 .person_item{
 	color: RoyalBlue;
 	font-size: 20px;
